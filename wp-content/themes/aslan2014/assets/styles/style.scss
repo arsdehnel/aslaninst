@@ -1,0 +1,25 @@
+/*!
+  Theme Name: Aslan Institute 2014
+  Author: Adam Dehnel
+  Author URI: http://arsdehnel.net/
+  Description: Custom theme developed for Aslan Institue in 2014
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "bourbon/bourbon";
+
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+@import "layout";
+@import "header";
+@import "nav";
+@import "content";
+@import "tabs";
+@import "carousel";
+@import "features";
+@import "providers";
+@import "summaries";
