@@ -1,0 +1,30 @@
+.nav-main{
+	width: $papa-bear-nav-main-width;
+	margin: 0 -1em;
+	padding: .25em 2em;
+	border: 1px solid #666;
+	background: #eee;
+	text-align: center;
+	a{
+		display: inline-block;
+		padding: .25em 2em;
+		color: $nav_color;
+		font-family: 'Josefin Sans', arial;
+		font-weight: 300;
+		font-size: 2em;
+		text-decoration: none;
+		@include transition( .2s all linear );
+		&:hover{
+			background-color: $nav-main-hover-bg;
+			color: $nav-main-hover-color;
+		}
+		&.active{
+			font-weight: 700;
+			border: 1px solid $nav-main-hover-bg;
+			background-color: tint( $nav-main-hover-bg, 70% );
+			&:hover{
+				background-color: $nav-main-hover-bg;
+			}
+		}
+	}
+}
