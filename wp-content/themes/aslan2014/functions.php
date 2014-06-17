@@ -91,6 +91,23 @@ function aslantinst2014_providers_list( $id ){
 	return $return;
 
 }
+
+function aslantinst2014_splash_animation(){
+
+	$args = array(
+			'post_type' => 'aslaninst_bighorse',
+			'post_status' => 'publish'
+		);
+	$horses = get_posts( $args );
+
+	$return = '';
+	foreach( $horses as $horse ):
+		$return .= include(locate_template('snippets/splash-animation-horse.php'));
+	endforeach;
+	return $return;
+
+}
+
 function aslantinst2014_training_summaries( $category ){
 
 	$args = array(
