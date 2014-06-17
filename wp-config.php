@@ -34,13 +34,17 @@ foreach($environments AS $url_partial => $env){
 	}
 }
 
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+
 // If no environment is set default to production
 if(!defined('ENVIRONMENT')) define('ENVIRONMENT', 'prod');
 
-// Define different DB connection details depending on environment
 switch(ENVIRONMENT){
 
 	case 'dev':
+
+		define('WP_PLUGIN_URL', 'http://aslaninst.local/wp-content/plugins');
+		define('WP_CONTENT_URL', 'http://aslaninst.local/wp-content');
 
 		define('DB_NAME', 'aslaninstorg');
 		define('DB_USER', 'aslaninstorg');
@@ -51,6 +55,8 @@ switch(ENVIRONMENT){
 		break;
 
 	case 'test':
+
+		define('WP_PLUGIN_URL', 'http://aslaninst.arsdehnel.net/wp-content/plugins');
 
 		define('DB_NAME', 'aslaninstorg');
 		define('DB_USER', 'aslaninstorg');
