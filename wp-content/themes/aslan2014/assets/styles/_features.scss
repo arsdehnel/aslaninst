@@ -1,0 +1,23 @@
+.features{
+	height: 20em;
+	.feature{
+		position: relative;
+		float: left;
+		height: 18em;
+		width: ( $papa-bear-site-width / 3.01 ) - 6em;
+		margin: 1em 3em;
+		padding: .5em;
+		border: 1px solid black;
+		box-shadow: .25em .25em 1em #666666;
+		img{
+			position: absolute;
+			top: 1em;
+			left: 1em;
+		}
+		h1{
+			padding-left: 7em;
+			height: 6em;
+			text-align: center;
+		}
+	}
+}
