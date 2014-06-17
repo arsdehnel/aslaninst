@@ -91,6 +91,25 @@ function aslantinst2014_providers_list( $id ){
 	return $return;
 
 }
+function aslantinst2014_training_summaries( $category ){
+
+	$args = array(
+			'post_type' => 'aslaninst_training',
+			'post_status' => 'publish',
+			'meta_key' => 'category',
+			'meta_value' => 'primary'
+		);
+	$summaries = get_posts( $args );
+
+	$return = '';
+	foreach( $summaries as $summary ):
+		$return .= include(locate_template('snippets/training-summary.php'));
+	endforeach;
+	return $return;
+
+}
+
+
 register_nav_menus(
 	array(
 		'main' => 'Main Menu',

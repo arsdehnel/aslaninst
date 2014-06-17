@@ -1,0 +1,51 @@
+.training-summary-wrapper{
+	@include clearfix();
+	article{
+		float: left;
+		margin: 1em;
+		background-color: #eeeeee;
+		h3{
+			margin: 0;
+			padding: 0;
+		}
+		p{
+			margin: 0;
+			padding: 1em;
+		}
+		a{
+			display: block;
+			color: white;
+			@include transition( .2s all linear );
+		}
+	}
+	&.primary{
+		article{
+			width: calc( 50% - 2em );
+			h3 a{
+				padding: .5em;
+				background-color: $rust;
+				font-family: 'Josefin Sans';
+				font-size: 2em;
+				font-weight: 700;
+				&:hover{
+					background-color: shade( $rust, 30% );
+				}
+			}
+		}
+	}
+	&.secondary{
+		article{
+			width: calc( 33% - 2em );
+			h3 a{
+				font-size: 1.5em;
+				font-weight: 600;
+				padding: .5em;
+				background-color: $sage;
+				padding: .6667em;
+				&:hover{
+					background-color: shade( $sage, 30% );
+				}
+			}
+		}
+	}
+}
