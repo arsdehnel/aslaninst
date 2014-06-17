@@ -4,6 +4,9 @@ wp-content/themes/aslan2014/.sass-cache/*
 # Remove JS Hint file #
 wp-content/themes/aslan2014/.jshintrc
 
+# Remove all the node modules #
+wp-content/themes/aslan2014/node_modules/*
+
 # No need to add the upgrade folder to the repo #
 wp-content/upgrade/*
 
