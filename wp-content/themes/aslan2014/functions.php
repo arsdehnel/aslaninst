@@ -75,6 +75,22 @@ function aslaninst2014_init(){
 function aslaninst2014_enqueue_scripts(){
 	wp_enqueue_style( 'aslaninst2014-style', get_stylesheet_uri(), array() );
 }
+
+function aslantinst2014_providers_list( $id ){
+
+	$args = array(
+			'post_type' => 'aslantinst_provider',
+			'post_status' => 'publish'
+		);
+	$providers = get_posts( $args );
+
+	$return = '';
+	foreach( $providers as $provider ):
+		$return .= include(locate_template('snippets/provider-listing-entry.php'));
+	endforeach;
+	return $return;
+
+}
 register_nav_menus(
 	array(
 		'main' => 'Main Menu',

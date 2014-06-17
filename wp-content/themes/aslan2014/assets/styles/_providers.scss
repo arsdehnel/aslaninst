@@ -1,0 +1,50 @@
+.provider-select-wrapper,
+.provider-profile{
+	float: left;
+	height: 30em;
+}
+.provider-select-wrapper{
+	width: 17em;
+	margin-right: 1em;
+	p{
+		text-align: center;
+		font-weight: 600;
+		height: 1em;
+	}
+	.provider-select{
+		border: 1px solid $sage;
+		overflow-y: scroll;
+		height: 27em;
+		a{
+			position: relative;
+			display: block;
+			padding: 1em;
+			text-decoration: none;
+			font-weight: 600;
+			color: $rust;
+			&:hover:after{
+				content: '';
+				position: absolute;
+				top: 1.2em;
+				right: 1em;
+				@include triangle( 1em, $rust, right );
+			}
+			&.active{
+				background: #B7410E;
+				color: white;
+				pointer-events: none;
+				&:after{
+					content: '';
+					position: absolute;
+					top: 1.2em;
+					right: 1em;
+					@include triangle( 1em, white, right );
+				}
+			}
+		}
+	}
+}
+.provider-profile{
+	width: ( $papa-bear-site-width - 21em );
+	border: 1px solid $sage;
+}
