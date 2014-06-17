@@ -1,0 +1,36 @@
+.tabs-wrapper{
+	.nav-tabs{
+		text-align: right;
+		padding-right: 4em;
+		a{
+			position: relative;
+			display: inline-block;
+			height: 0;
+			margin: 0 .5em;
+			padding: 0 2em;
+			border-bottom: $tab-height solid #eeeeee;
+			border-left: 1em solid transparent;
+			border-right: 1em solid transparent;
+			background-color: white;
+			line-height: $tab-height;
+			font-family: 'Josefin Sans', arial;
+			text-transform: uppercase;
+			color: $nav-color;
+			font-weight: 400;
+			text-decoration: none;
+			&.active{
+				font-weight: 700;
+				border-bottom-color: tint( $tab-active-bg, 40% );
+				color: $tab-active-color;
+			}
+			&:hover{
+				border-bottom-color: $tab-active-bg;
+				color: white;
+			}
+		}
+	}
+	.tabs-content{
+		min-height: 20em;
+		border: 1px solid black;
+	}
+}
