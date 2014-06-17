@@ -1,5 +1,5 @@
 # Remove SASS cache files #
-wp-content/themes/aslaninst/.sass-cache/*
+wp-content/themes/aslan2014/.sass-cache/*
 
 # No need to add the upgrade folder to the repo #
 wp-content/upgrade/*
