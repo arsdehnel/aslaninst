@@ -1,0 +1,17 @@
+.carousel{
+	height: 20em;
+	width: 100%;
+	overflow: hidden;
+	.horses{
+		margin: 0;
+		padding: 0;
+		.horse{
+			height: 20em;
+			width: $papa-bear-site-width;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: $sage;
+		}
+	}
+}
