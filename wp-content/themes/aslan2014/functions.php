@@ -9,13 +9,19 @@
 
 	*/
 
-add_action( 'init',               'aslaninst2014_init' );
-add_action( 'wp_enqueue_scripts', 'aslaninst2014_enqueue_scripts' );
+add_action( 'init'                 , 'aslaninst2014_init' );
+add_action( 'wp_enqueue_scripts'   , 'aslaninst2014_enqueue_scripts' );
+add_action( 'admin_enqueue_scripts', 'aslaninst2014_admin_queue_scripts' );
 
 function aslaninst2014_init(){
 
-	//register post types
-    register_post_type( 'aslantinst_provider',
+	/**
+	 * PROVIDERS
+	 *
+	 */
+
+	//post type
+    register_post_type( 'aslaninst_provider',
         array(
             'labels' => array(
                 'name'          => __( 'Providers' ),
@@ -26,11 +32,60 @@ function aslaninst2014_init(){
             'description'           => 'Providers for listing page',
             'public'                => true,
             'exclude_from_search'   => false,
-            'supports'              => array( 'title', 'editor' ),
+            'supports'              => array( 'title', 'editor', 'thumbnail' ),
             'menu_icon'				=> 'dashicons-nametag',
             'rewrite'				=> array('slug' => 'provider')
         )
     );
+
+    //taxonomy for insurances
+	$labels = array(
+		'name'              => _x( 'Insurances', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Insurance', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Insurances Accepted' ),
+		'all_items'         => __( 'All Insurances' ),
+		'edit_item'         => __( 'Edit Insurance' ),
+		'update_item'       => __( 'Update Insurance' ),
+		'add_new_item'      => __( 'Add New Insurance' ),
+		'new_item_name'     => __( 'New Insurance' ),
+		'menu_name'         => __( 'Insurance Options' ),
+	);
+
+	$args = array(
+		'hierarchical'      => false,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => false,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'insurances' ),
+	);
+
+	register_taxonomy( 'aslaninst_insurance', array( 'aslaninst_provider' ), $args );
+
+    //and a taxonomy for specialties
+	$labels = array(
+		'name'              => _x( 'Specialties', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Specialty', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search Specialties' ),
+		'all_items'         => __( 'All Specialties' ),
+		'edit_item'         => __( 'Edit Specialty' ),
+		'update_item'       => __( 'Update Specialty' ),
+		'add_new_item'      => __( 'Add New Specialty' ),
+		'new_item_name'     => __( 'New Specialty' ),
+		'menu_name'         => __( 'Specialties' ),
+	);
+
+	$args = array(
+		'hierarchical'      => false,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => false,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'specialties' ),
+	);
+
+	register_taxonomy( 'aslaninst_specialty', array( 'aslaninst_provider' ), $args );
+
     register_post_type( 'aslaninst_training',
         array(
             'labels' => array(
@@ -75,11 +130,14 @@ function aslaninst2014_init(){
 function aslaninst2014_enqueue_scripts(){
 	wp_enqueue_style( 'aslaninst2014-style', get_stylesheet_uri(), array() );
 }
+function aslaninst2014_admin_queue_scripts( $hook ){
+	wp_enqueue_style( 'aslaninst2014-style', get_template_directory_uri() . '/admin.css', array() );
+}
 
-function aslantinst2014_providers_list( $id ){
+function aslaninst2014_providers_list( $id ){
 
 	$args = array(
-			'post_type' => 'aslantinst_provider',
+			'post_type' => 'aslaninst_provider',
 			'post_status' => 'publish'
 		);
 	$providers = get_posts( $args );
@@ -92,7 +150,7 @@ function aslantinst2014_providers_list( $id ){
 
 }
 
-function aslantinst2014_splash_animation(){
+function aslaninst2014_splash_animation(){
 
 	$args = array(
 			'post_type' => 'aslaninst_bighorse',
@@ -108,7 +166,7 @@ function aslantinst2014_splash_animation(){
 
 }
 
-function aslantinst2014_training_summaries( $category ){
+function aslaninst2014_training_summaries( $category ){
 
 	$args = array(
 			'post_type' => 'aslaninst_training',
@@ -123,6 +181,16 @@ function aslantinst2014_training_summaries( $category ){
 		$return .= include(locate_template('snippets/training-summary.php'));
 	endforeach;
 	return $return;
+
+}
+
+function aslaninst2014_acf_taxonomy_to_string( $acf_array ){
+
+	foreach( $acf_array as $entry ):
+		$return[] = $entry->name;
+	endforeach;
+
+	return implode( ', ', $return );
 
 }
 
