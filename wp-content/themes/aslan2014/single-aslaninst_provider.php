@@ -16,29 +16,14 @@ get_header(); ?>
     			<p>Select Provider</p>
     			<nav class="provider-select">
 	    			<?php
-	    				echo aslantinst2014_providers_list( get_the_id() );
+	    				echo aslaninst2014_providers_list( get_the_id() );
 	    			?>
     			</nav><!-- /.provider-select -->
     		</div><!-- /.provider-select-wrapper -->
     		<div class="provider-profile" id="provider-profile">
-				<?php
-					//if ( have_posts() ) :
-
-						// Start the Loop.
-					//	while ( have_posts() ) : the_post();
-
-							/*
-							 * Include the post format-specific template for the content. If you want to
-							 * use this in a child theme, then include a file called called content-___.php
-							 * (where ___ is the post format) and that will be used instead.
-							 */
-
-							echo the_title();
-
-					//	endwhile;
-
-					//endif;
-				?>
+    			<?php
+    				get_template_part( 'templates/provider', 'profile' );
+    			?>
     		</div><!-- /.provider-profile -->
 		</section><!-- /.content -->
   	<?php endwhile; endif; ?>

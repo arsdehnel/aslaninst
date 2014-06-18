@@ -35,6 +35,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'assets/styles/build/style.css': 'assets/styles/style.scss',
+                    'assets/styles/build/admin.css': 'assets/styles/admin.scss',
                     'assets/styles/build/editor-style.css': 'assets/styles/editor-style.scss'
                 }
             }

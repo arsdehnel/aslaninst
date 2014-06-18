@@ -45,6 +45,43 @@
 	}
 }
 .provider-profile{
+	position: relative;
 	width: ( $papa-bear-site-width - 21em );
+	padding: 1em;
 	border: 1px solid $sage;
+	.provider-thumb{
+		position: absolute;
+		top: 1em;
+		left: 1em;
+	}
+	.provider-details{
+		padding-left: calc( 1em + 180px );
+		min-height: 180px;
+		h3{
+			margin: 0;
+			font-size: 2em;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			margin: 1em 0;
+			strong{
+				width: 12em;
+			}
+			strong,
+			span{
+				vertical-align: top;
+				display: inline-block;
+			}
+		}
+	}
+	.provider-website{
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		@include button();
+	}
 }
