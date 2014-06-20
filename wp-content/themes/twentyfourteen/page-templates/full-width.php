@@ -9,8 +9,7 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
-
+<div id="main-content" class="main-content 333">
 <?php
 	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
 		// Include the featured content template.

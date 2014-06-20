@@ -16,7 +16,7 @@ get_header(); ?>
     			<p>Select Provider</p>
     			<nav class="provider-select">
 	    			<?php
-	    				echo aslantinst2014_providers_list( get_the_id() );
+	    				echo aslaninst2014_providers_list( get_the_id() );
 	    			?>
     			</nav><!-- /.provider-select -->
     		</div><!-- /.provider-select-wrapper -->

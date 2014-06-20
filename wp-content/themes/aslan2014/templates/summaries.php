@@ -14,13 +14,13 @@ get_header(); ?>
     		</header>
     		<div class="training-summary-wrapper primary">
     			<?php
-    				echo aslantinst2014_training_summaries( 'primary' );
+    				echo aslaninst2014_training_summaries( 'primary' );
     			?>
 			</div><!-- /.training-summary-wrapper.primary -->
     		<div class="training-summary-wrapper secondary">
     			<h2>Other Training Opportunities</h2>
     			<?php
-    				echo aslantinst2014_training_summaries( 'secondary' );
+    				echo aslaninst2014_training_summaries( 'secondary' );
     			?>
 			</div><!-- /.training-summary-wrapper.secondary -->
 		</section><!-- /.content -->
