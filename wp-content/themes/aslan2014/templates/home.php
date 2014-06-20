@@ -11,7 +11,7 @@ get_header(); ?>
   			<div class="carousel">
   				<ul class="horses">
 	    			<?php
-	    				echo aslantinst2014_splash_animation();
+	    				echo aslaninst2014_splash_animation();
 	    			?>
 	  			</ul><!-- /.horses -->
   			</div><!-- /.carousel -->

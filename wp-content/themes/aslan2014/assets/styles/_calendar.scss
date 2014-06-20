@@ -1,0 +1,37 @@
+.ai1ec-month-view .ai1ec-day{
+	padding-top: 2em;
+}
+.ai1ec-month-view .ai1ec-date{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 2em;
+	text-align: center;
+	line-height: 1.5em;
+	background: $rust;
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #777;
+	a{
+		color: white;
+	}
+}
+
+.single-ai1ec_event{
+	.event-details-agenda-rail{
+		width: 15em;
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		bottom: 1em;
+		border: 1px solid $sage;
+		padding: 1em;
+	}
+	.event-details{
+		padding-left: 16em;
+	}
+	.ai1ec-calendar-toolbar,
+	.ai1ec-pagination{
+		display: none;
+	}
+}

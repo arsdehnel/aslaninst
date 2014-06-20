@@ -1,33 +1,43 @@
 <?php
-/**
- * The main template file
- *
- */
+/*
+Template Name: default single post template
+* for this theme it's also acting as a router of sorts
+* so all the templates can live together in the templates folder
+* rather than a bunch of single-* files here in the root
+*/
 
 get_header(); ?>
 
-<div id="main">
-	single!
-</div>
-<?php
+<div class="main" role="main">
+  	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  		<section class="content" id="post-<?php the_ID(); ?>">
+    		<?php
+    			if( get_post_type( get_the_ID() ) == 'aslaninst_provider' ):
 
-	if ( have_posts() ) :
+    				//this is the header and excerpt
+    				get_template_part( 'partials/content', 'header' );
 
-		// Start the Loop.
-		while ( have_posts() ) : the_post();
+    				//the left rail selector pane
+    				get_template_part( 'partials/provider', 'selector' );
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
+    				//and the profile area
+    				get_template_part( 'partials/provider', 'profile' );
 
-			echo the_title();
+    			elseif( get_post_type( get_the_ID() ) == 'ai1ec_event' ):
 
-		endwhile;
+    				//this will output the "left rail" sort of thing
+    				get_template_part( 'partials/calendar', 'agenda' );
 
-	endif;
+    				//and then this will show the details of the event
+    				get_template_part( 'partials/calendar', 'details' );
 
-	get_footer();
+    			else:
+    				echo get_post_type( get_the_ID() ) . ' has no customized template setup.';
+    				echo the_content();
+				endif;
+    		?>
+		</section><!-- /.content -->
+  	<?php endwhile; endif; ?>
+</div><!-- /.main -->
 
-
+<?php get_footer(); ?>
