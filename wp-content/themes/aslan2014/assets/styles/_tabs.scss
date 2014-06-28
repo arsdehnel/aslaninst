@@ -20,11 +20,14 @@
 			text-decoration: none;
 			&.active{
 				font-weight: 700;
-				border-bottom-color: tint( $tab-active-bg, 40% );
 				color: $tab-active-color;
+				border-bottom-color: $tab-active-bg;
+				&:hover{
+					border-bottom-color: $tab-active-bg;
+				}
 			}
 			&:hover{
-				border-bottom-color: $tab-active-bg;
+				border-bottom-color: tint( $tab-active-bg, 40% );
 				color: white;
 			}
 		}

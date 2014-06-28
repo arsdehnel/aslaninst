@@ -31,9 +31,19 @@ get_header(); ?>
     				//and then this will show the details of the event
     				get_template_part( 'partials/calendar', 'details' );
 
+    			elseif( get_post_type( get_the_ID() ) == 'aslaninst_training' ):
+
+    				//this is the header and excerpt
+    				get_template_part( 'partials/content', 'header' );
+
+    				//and then we just needs the tabs
+    				get_template_part( 'partials/content', 'tabs' );
+
     			else:
+
     				echo get_post_type( get_the_ID() ) . ' has no customized template setup.';
     				echo the_content();
+
 				endif;
     		?>
 		</section><!-- /.content -->

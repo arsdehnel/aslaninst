@@ -12,15 +12,10 @@ get_header(); ?>
       			<h2><?php the_title(); ?></h2>
       			<p><?php the_content(); ?></p>
     		</header>
-    		<div class="tabs-wrapper">
-    			<nav class="nav-tabs">
-    				<a href="#" class="active">tab #1</a>
-    				<a href="#">tab #2</a>
-    				<a href="#">tab #3</a>
-    			</nav>
-    			<div class="tabs-content">
-				</div><!-- /.tabs-content -->
-			</div><!-- /.tabs-wrapper -->
+			<?php
+				//and then we just needs the tabs
+				get_template_part( 'partials/content', 'tabs' );
+			?>
 		</section><!-- /.content -->
   	<?php endwhile; endif; ?>
 </div><!-- /.main -->

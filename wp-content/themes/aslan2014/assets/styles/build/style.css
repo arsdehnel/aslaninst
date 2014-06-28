@@ -120,11 +120,14 @@ body {
 }
 .tabs-wrapper .nav-tabs a.active {
   font-weight: 700;
-  border-bottom-color: #a6cea1;
   color: white;
+  border-bottom-color: #6bae63;
+}
+.tabs-wrapper .nav-tabs a.active:hover {
+  border-bottom-color: #6bae63;
 }
 .tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: #6bae63;
+  border-bottom-color: #a6cea1;
   color: white;
 }
 .tabs-wrapper .tabs-content {
