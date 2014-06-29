@@ -6,7 +6,7 @@
 	$training_summary_return .= '</a></h3>';
 	$training_summary_return .= '</header>';
 	$training_summary_return .= '<p>';
-	$training_summary_return .= $summary->post_content;
+	$training_summary_return .= $summary->post_excerpt;
 	$training_summary_return .= '</p>';
 	$training_summary_return .= '</article>';
 	return $training_summary_return;

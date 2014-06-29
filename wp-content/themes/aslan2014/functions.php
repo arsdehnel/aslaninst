@@ -323,7 +323,7 @@ function aslaninst2014_training_summaries( $category ){
 			'post_type' => 'aslaninst_training',
 			'post_status' => 'publish',
 			'meta_key' => 'category',
-			'meta_value' => 'primary'
+			'meta_value' => $category
 		);
 	$summaries = get_posts( $args );
 

@@ -30,7 +30,7 @@
 				@include triangle( 1em, $rust, right );
 			}
 			&.active{
-				background: #B7410E;
+				background: $rust;
 				color: white;
 				pointer-events: none;
 				&:after{
@@ -82,6 +82,6 @@
 		position: absolute;
 		top: 1em;
 		right: 1em;
-		@include button();
+		@include button( $sage );
 	}
 }

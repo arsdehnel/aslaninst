@@ -31,18 +31,73 @@ body {
 }
 .site-header h1 {
   margin: .5em;
+  font-family: "Josefin Sans";
+  font-weight: 700;
 }
 .site-header h2 {
   position: absolute;
   bottom: .5em;
-  left: 19.5em;
+  left: 12em;
   margin: 0;
   padding: 0;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 2.5em;
 }
-.site-header .site-meta {
+.site-header .vcard {
   position: absolute;
   top: 1em;
   right: 1em;
+}
+.site-header .vcard .addr-line * {
+  display: inline-block;
+}
+.site-header .connect-options {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  margin: 0;
+  padding: 0;
+}
+.site-header .connect-options li {
+  display: inline-block;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.site-header .connect-options li a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, rgba(0, 0, 0, 0)), color-stop(95%, rgba(0, 0, 0, 0.6)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
+  background-position: 0 0;
+  color: black;
+}
+.site-header .connect-options li a:hover {
+  text-decoration: none;
+  background: none;
+}
+.site-header .connect-options li.facebook {
+  background: transparent url("assets/images/icon16-facebook.png") 20px 3px no-repeat;
+}
+.site-header .connect-options li.constant-contact {
+  background: transparent url("assets/images/icon16-constant-contact.png") 20px 3px no-repeat;
+}
+.site-header .connect-options li.email {
+  background: transparent url("assets/images/icon16-email.png") 20px 3px no-repeat;
+}
+.site-header .connect-options li:before {
+  content: '|';
+  display: inline-block;
+  padding: 0 -webkit-calc(20px + .5em ) 0 0.5em;
+  padding: 0 calc(20px + .5em ) 0 0.5em;
+}
+.site-header .connect-options li:first-child {
+  padding: 0 0 0 8px;
+}
+.site-header .connect-options li:first-child:before {
+  content: '';
 }
 
 .nav-main {
@@ -121,13 +176,13 @@ body {
 .tabs-wrapper .nav-tabs a.active {
   font-weight: 700;
   color: white;
-  border-bottom-color: #6bae63;
+  border-bottom-color: #666666;
 }
 .tabs-wrapper .nav-tabs a.active:hover {
-  border-bottom-color: #6bae63;
+  border-bottom-color: #666666;
 }
 .tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: #a6cea1;
+  border-bottom-color: #a3a3a3;
   color: white;
 }
 .tabs-wrapper .tabs-content {
@@ -150,7 +205,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #6bae63;
+  background-color: #666666;
 }
 
 .features {
@@ -193,7 +248,7 @@ body {
   height: 1em;
 }
 .provider-select-wrapper .provider-select {
-  border: 1px solid #6bae63;
+  border: 1px solid #666666;
   overflow-y: scroll;
   height: 27em;
 }
@@ -203,7 +258,7 @@ body {
   padding: 1em;
   text-decoration: none;
   font-weight: 600;
-  color: #b7410e;
+  color: #666666;
 }
 .provider-select-wrapper .provider-select a:hover:after {
   content: '';
@@ -215,10 +270,10 @@ body {
   border-color: transparent;
   border-style: solid;
   border-width: 0.5em;
-  border-left-color: #b7410e;
+  border-left-color: #666666;
 }
 .provider-select-wrapper .provider-select a.active {
-  background: #B7410E;
+  background: #666666;
   color: white;
   pointer-events: none;
 }
@@ -239,7 +294,7 @@ body {
   position: relative;
   width: 65em;
   padding: 1em;
-  border: 1px solid #6bae63;
+  border: 1px solid #666666;
 }
 .provider-profile .provider-thumb {
   position: absolute;
@@ -275,33 +330,33 @@ body {
   position: absolute;
   top: 1em;
   right: 1em;
-  border: 1px solid #076fe4;
+  border: 1px solid #424242;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #8ebcf1;
+  box-shadow: inset 0 1px 0 0 #8c8c8c;
   color: white;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
-  background-color: #4294f0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4294f0), color-stop(100%, #0776f3));
-  background-image: -webkit-linear-gradient(#4294f0, #0776f3);
-  background-image: linear-gradient(#4294f0, #0776f3);
+  background-color: #666666;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #4a4a4a));
+  background-image: -webkit-linear-gradient(#666666, #4a4a4a);
+  background-image: linear-gradient(#666666, #4a4a4a);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #0065d6;
+  text-shadow: 0 1px 0 #383838;
   background-clip: padding-box;
 }
 .provider-profile .provider-website:hover:not(:disabled) {
-  box-shadow: inset 0 1px 0 0 #60a2ec;
+  box-shadow: inset 0 1px 0 0 #737373;
   cursor: pointer;
-  background-color: #2f87ea;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f87ea), color-stop(100%, #086fe3));
-  background-image: -webkit-linear-gradient(#2f87ea, #086fe3);
-  background-image: linear-gradient(#2f87ea, #086fe3);
+  background-color: #595959;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #595959), color-stop(100%, #424242));
+  background-image: -webkit-linear-gradient(#595959, #424242);
+  background-image: linear-gradient(#595959, #424242);
 }
 .provider-profile .provider-website:active:not(:disabled) {
-  border: 1px solid #076fe4;
-  box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
+  border: 1px solid #424242;
+  box-shadow: inset 0 0 8px 4px #3b3b3b, inset 0 0 8px 4px #3b3b3b, 0 1px 1px 0 #eeeeee;
 }
 .provider-profile .provider-website:disabled {
   opacity: 0.5;
@@ -343,13 +398,13 @@ body {
 }
 .training-summary-wrapper.primary article h3 a {
   padding: .5em;
-  background-color: #b7410e;
+  background-color: #666666;
   font-family: 'Josefin Sans';
   font-size: 2em;
   font-weight: 700;
 }
 .training-summary-wrapper.primary article h3 a:hover {
-  background-color: #802d09;
+  background-color: #474747;
 }
 .training-summary-wrapper.secondary article {
   width: -webkit-calc(33% - 2em );
@@ -359,11 +414,11 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   padding: .5em;
-  background-color: #6bae63;
+  background-color: #666666;
   padding: .6667em;
 }
 .training-summary-wrapper.secondary article h3 a:hover {
-  background-color: #4a7945;
+  background-color: #474747;
 }
 
 .ai1ec-month-view .ai1ec-day {
@@ -378,7 +433,7 @@ body {
   width: 2em;
   text-align: center;
   line-height: 1.5em;
-  background: #b7410e;
+  background: #666666;
   font-size: 1em;
   text-shadow: 1px 1px 1px #777;
 }
@@ -392,7 +447,7 @@ body {
   top: 1em;
   left: 1em;
   bottom: 1em;
-  border: 1px solid #6bae63;
+  border: 1px solid #666666;
   padding: 1em;
 }
 .single-ai1ec_event .event-details {
@@ -401,4 +456,15 @@ body {
 .single-ai1ec_event .ai1ec-calendar-toolbar,
 .single-ai1ec_event .ai1ec-pagination {
   display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

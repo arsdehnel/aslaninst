@@ -29,12 +29,23 @@
 		<header class="site-header">
 			<h1><img src="http://placehold.it/350x100"></h1>
 			<h2><?php wp_title('', true, 'right'); ?></h2>
-			<ul class="site-meta">
-				<li>Phone</li>
-				<li>Email</li>
-				<li>Twitter</li>
-				<li>Constant Contact</li>
-				<li>Facebook</li>
+			<address class="vcard">
+			   	<div class="adr">
+			   		<div class="addr-line">
+				      	<div class="street-address">4141 Old Sibley Memorial Highway</div>
+					</div>
+			   		<div class="addr-line">
+				      	<div class="locality">Eagan, MN</div >
+				      	<div class="postal-code">55122</div >
+				      	<div class="country-name sr-only">USA</div >
+					</div>
+			   	</div>
+			   	<div class="tel">Phone: 651.686.8818</div>
+			</address>
+			<ul class="connect-options">
+				<li class="email"><a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a></li>
+				<li class="facebook"><a href="https://www.facebook.com/pages/Aslan-Institute/57758293600">Facebook</a></li>
+				<li class="constant-contact"><a href="#">Newsletter</a></li>
 			</ul>
 		</header>
 		<nav class="nav-main">
