@@ -3,7 +3,7 @@
 	<div class="provider-details">
 		<h3><?php echo the_title(); ?></h3>
 		<ul>
-			<li><strong>Email</strong><span><?php the_field('email'); ?></span></li>
+			<li><strong>Email</strong><span><?php echo antispambot( the_field('email') ); ?>"><?php echo antispambot( the_field('email') ); ?></span></li>
 			<li><strong>Phone</strong><span><?php the_field('phone_number'); ?></span></li>
 			<li><strong>Specialties</strong><span><?php echo aslaninst2014_acf_taxonomy_to_string( get_field('specialties') ); ?></span></li>
 			<li><strong>Insurances Accepted</strong><span><?php echo aslaninst2014_acf_taxonomy_to_string( get_field('insurances_accepted') ); ?></span></li>
