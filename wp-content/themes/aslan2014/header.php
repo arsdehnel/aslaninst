@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 	<div class="site-wrapper">
 		<header class="site-header">
-			<h1><img src="http://placehold.it/350x100"></h1>
+			<h1><img src="<?php echo get_theme_root_uri() . '/' . get_template(); ?>/assets/images/logo.jpg"></h1>
 			<h2><?php wp_title('', true, 'right'); ?></h2>
 			<address class="vcard">
 			   	<div class="adr">

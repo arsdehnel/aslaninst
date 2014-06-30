@@ -8,10 +8,9 @@
 			height: 0;
 			margin: 0 .5em;
 			padding: 0 2em;
-			border-bottom: $tab-height solid #eeeeee;
+			border-bottom: $tab-height solid $tab-inactive-bg;
 			border-left: 1em solid transparent;
 			border-right: 1em solid transparent;
-			background-color: white;
 			line-height: $tab-height;
 			font-family: 'Josefin Sans', arial;
 			text-transform: uppercase;
@@ -35,5 +34,6 @@
 	.tabs-content{
 		min-height: 20em;
 		border: 1px solid black;
+		background: white;
 	}
 }

@@ -4,9 +4,13 @@
 body{
 	font-family: 'Open Sans', arial;
 	font-size: 80%;
+	background: $rust;
 }
 .site-wrapper{
 	width: $papa-bear-site-width;
 	margin: 0 auto;
 	border: 1px solid #666;
+}
+.main{
+	background: tint( $sage, 80% );
 }

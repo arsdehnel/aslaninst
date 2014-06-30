@@ -1,6 +1,6 @@
 // COLORS
-$sage: #666666; //#6bae63;
-$rust: #666666; //#B7410E;
+$sage: #6bae63;
+$rust: #B7410E;
 
 // FONTS
 $title-font: 'Josefin Sans';
@@ -17,10 +17,13 @@ $papa-bear-site-width: $papa-bear - 4em;
 // NAV
 $papa-bear-nav-main-width: $papa-bear-site-width + 2em;
 $nav_color: #000000;
-$nav-main-hover-bg: #444444;
-$nav-main-hover-color: white;
+$nav-main-bg: $sage;
+$nav-main-hover-bg: tint( $sage, 50% );
+$nav-main-hover-color: black;
+$nav-wrap-triangle-color: tint( $nav-main-bg, 40% );
 
 // TABS
 $tab-height: 2em;
 $tab-active-bg: $sage;
 $tab-active-color: white;
+$tab-inactive-bg: white;
