@@ -213,7 +213,7 @@ body {
 }
 
 .carousel {
-  height: 20em;
+  height: 15em;
   width: 100%;
   overflow: hidden;
 }
@@ -222,12 +222,93 @@ body {
   padding: 0;
 }
 .carousel .horses .horse {
-  height: 20em;
+  position: relative;
+  height: 15em;
   width: 86em;
   margin: 0;
-  padding: 0;
+  padding: 1em;
   list-style: none;
   background-color: #6bae63;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.carousel .horse-content {
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  color: transparent;
+  font-size: 2em;
+}
+.js .carousel .horse-content {
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: all 12s linear;
+  transition: all 12s linear;
+}
+.js .carousel .horse-content span[class*=char] {
+  margin: 0;
+  -webkit-transition: margin 12s linear;
+  transition: margin 12s linear;
+}
+.js .carousel .horse-content.on {
+  -webkit-transform: translate3d(30px, 25px, 0) scale(1.5, 1.5);
+  transform: translate3d(30px, 25px, 0) scale(1.5, 1.5);
+}
+.js .carousel .horse-content.on span[class*=char] {
+  margin: 0 .5em;
+}
+.js .carousel .horse-content span[class*=char] {
+  color: white;
+  opacity: .1;
+  display: inline-block;
+  -webkit-transform: scale(0.2, 0.2);
+  -ms-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.02, 1.5, 0.9, 1.31);
+  transition: transform 0.3s cubic-bezier(0.02, 1.5, 0.9, 1.31);
+}
+.js .carousel .horse-content span[class*=char].on {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+}
+.carousel .horse-content.location-top-left {
+  top: 1em;
+  text-align: left;
+}
+.carousel .horse-content.location-top-center {
+  top: 1em;
+  text-align: center;
+}
+.carousel .horse-content.location-top-right {
+  top: 1em;
+  text-align: right;
+}
+.carousel .horse-content.location-middle-left {
+  top: 1em;
+  text-align: left;
+}
+.carousel .horse-content.location-middle-center {
+  top: 1em;
+  text-align: center;
+}
+.carousel .horse-content.location-middle-right {
+  top: 1em;
+  text-align: right;
+}
+.carousel .horse-content.location-bottom-left {
+  bottom: 1em;
+  text-align: left;
+}
+.carousel .horse-content.location-bottom-center {
+  bottom: 1em;
+  text-align: center;
+}
+.carousel .horse-content.location-bottom-right {
+  bottom: 1em;
+  text-align: right;
 }
 
 .features {

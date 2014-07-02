@@ -1,17 +1,90 @@
 .carousel{
-	height: 20em;
+	height: 15em;
 	width: 100%;
 	overflow: hidden;
 	.horses{
 		margin: 0;
 		padding: 0;
 		.horse{
-			height: 20em;
+			position: relative;
+			height: 15em;
 			width: $papa-bear-site-width;
 			margin: 0;
-			padding: 0;
+			padding: 1em;
 			list-style: none;
 			background-color: $sage;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+	}
+	.horse-content{
+		position: absolute;
+		left: 1em;
+		right: 1em;
+		color: transparent;
+		font-size: 2em;
+		// this is in the .js class because it's all tied to the carousel working
+		// even though this would sort of work without javascript
+		.js &{
+			transform-origin: 0 0;
+			transition: all 12s linear;
+			span[class*=char]{
+				margin: 0;
+				transition: margin 12s linear;
+			}
+			&.on{
+				transform: translate3d(30px,25px,0) scale(1.5,1.5);
+				span[class*=char]{
+					margin: 0 .5em;
+				}
+			}
+		}
+		.js & span[class*=char]{
+			color: white;
+			opacity: .1;
+			display: inline-block;
+			transform: scale(.2,.2);
+			transition: transform .3s cubic-bezier(.02,1.5,.9,1.31);
+			&.on{
+				transform: scale(1,1);
+				opacity: 1;
+			}
+		}
+		&.location-top-left{
+			top: 1em;
+			text-align: left;
+		}
+		&.location-top-center{
+			top: 1em;
+			text-align: center;
+		}
+		&.location-top-right{
+			top: 1em;
+			text-align: right;
+		}
+		&.location-middle-left{
+			top: 1em;
+			text-align: left;
+		}
+		&.location-middle-center{
+			top: 1em;
+			text-align: center;
+		}
+		&.location-middle-right{
+			top: 1em;
+			text-align: right;
+		}
+		&.location-bottom-left{
+			bottom: 1em;
+			text-align: left;
+		}
+		&.location-bottom-center{
+			bottom: 1em;
+			text-align: center;
+		}
+		&.location-bottom-right{
+			bottom: 1em;
+			text-align: right;
 		}
 	}
 }

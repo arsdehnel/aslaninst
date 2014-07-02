@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
+	<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
     <meta charset="utf-8">
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
@@ -17,9 +18,7 @@
     <!-- Wordpress Head Items -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>
-	<![endif]-->
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/build/jquery-1.11.1.min.js"></script>
 
     <?php wp_head(); ?>
 
@@ -27,7 +26,7 @@
 <body <?php body_class(); ?>>
 	<div class="site-wrapper">
 		<header class="site-header">
-			<h1><img src="<?php echo get_theme_root_uri() . '/' . get_template(); ?>/assets/images/logo.jpg"></h1>
+			<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg"></h1>
 			<h2><?php wp_title('', true, 'right'); ?></h2>
 			<address class="vcard">
 			   	<div class="adr">

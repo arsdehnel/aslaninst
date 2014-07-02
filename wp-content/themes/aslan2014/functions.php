@@ -317,6 +317,11 @@ function aslaninst2014_splash_animation(){
 
 }
 
+function aslaninst2014_animation_image_url( $post_id ){
+	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post_id), 'large' );
+	return $thumb[0];
+}
+
 function aslaninst2014_training_summaries( $category ){
 
 	$args = array(

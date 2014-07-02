@@ -73,7 +73,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'assets/js/*.js'
+                'assets/scripts/*.js'
             ]
         },
 
@@ -81,13 +81,14 @@ module.exports = function(grunt) {
         uglify: {
             main: {
                 options: {
-                    sourceMap: 'assets/js/build/main.js.map',
+                    sourceMap: 'assets/scripts/build/main.js.map',
                     sourceMappingURL: 'main.js.map',
                     sourceMapPrefix: 2
                 },
                 files: {
-                    'assets/js/build/main.min.js': [
-                        'assets/js/main.js'
+                    'assets/scripts/build/main.min.js': [
+                        'assets/scripts/jquery.lettering.min.js',
+                        'assets/scripts/main.js'
                     ]
                 }
             }

@@ -13,10 +13,11 @@ $papa-bear: 90em;
 
 // LAYOUT
 $papa-bear-site-width: $papa-bear - 4em;
+$body-bg: $rust;
 
 // NAV
 $papa-bear-nav-main-width: $papa-bear-site-width + 2em;
-$nav_color: #000000;
+$nav_color: black;
 $nav-main-bg: $sage;
 $nav-main-hover-bg: tint( $sage, 50% );
 $nav-main-hover-color: black;
