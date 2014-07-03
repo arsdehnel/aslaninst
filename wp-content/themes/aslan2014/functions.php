@@ -93,7 +93,20 @@ function aslaninsttabs_save_meta_box( $post_id ){
 
 }
 
+add_filter('manage_aslaninst_bighorse_posts_columns', 'aslaninst_bighorse_table_head');
+
+function aslaninst_bighorse_table_head( $defaults ) {
+	unset($defaults['title']);
+	unset($defaults['date']);
+	$defaults['text'] = 'Text';
+    $defaults['menu_order'] = 'Order';
+    $defaults['author'] = 'Added By';
+    return $defaults;
+}
+
+
 add_filter('manage_aslaninst_tabs_posts_columns', 'aslaninst_tabs_table_head');
+
 function aslaninst_tabs_table_head( $defaults ) {
     $defaults['title'] = 'Tab Text';
     $defaults['parent'] = 'Parent Page';
@@ -103,12 +116,17 @@ function aslaninst_tabs_table_head( $defaults ) {
 }
 
 add_action( 'manage_aslaninst_tabs_posts_custom_column', 'aslaninst_table_content', 10, 2 );
+add_action( 'manage_aslaninst_bighorse_posts_custom_column', 'aslaninst_table_content', 10, 2 );
 
 function aslaninst_table_content( $column_name, $post_id ) {
 
     if ($column_name == 'parent') {
 	    $parent_id = get_post_meta( $post_id, 'aslaninst_tab_parent_id', true );
     	echo get_the_title( $parent_id );
+    }
+
+    if ($column_name == 'text') {
+	    echo get_the_content( $post_id );
     }
 
     if ($column_name == 'menu_order') {
