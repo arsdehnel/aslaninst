@@ -490,6 +490,7 @@ body {
   float: left;
   margin: 1em;
   background-color: #eeeeee;
+  box-shadow: 3px 3px 5px #888;
 }
 .training-summary-wrapper article h3 {
   margin: 0;
