@@ -322,8 +322,11 @@ function aslaninst2014_providers_list( $id ){
 function aslaninst2014_splash_animation(){
 
 	$args = array(
+			'posts_per_page' => -1,
 			'post_type' => 'aslaninst_bighorse',
-			'post_status' => 'publish'
+			'post_status' => 'publish',
+			'orderby' => 'menu_order',
+			'order' => 'ASC'
 		);
 	$horses = get_posts( $args );
 

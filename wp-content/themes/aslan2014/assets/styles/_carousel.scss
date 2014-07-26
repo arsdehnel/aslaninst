@@ -6,15 +6,22 @@
 		margin: 0;
 		padding: 0;
 		.horse{
-			position: relative;
+			position: absolute;
+			top: 0;
+			left: 0;
 			height: 15em;
 			width: $papa-bear-site-width;
 			margin: 0;
 			padding: 1em;
+			opacity: 0;
 			list-style: none;
 			background-color: $sage;
 			background-size: cover;
 			background-position: 50% 50%;
+			transition: opacity 1s linear;
+			&.active{
+				opacity: 1;
+			}
 		}
 	}
 	.horse-content{

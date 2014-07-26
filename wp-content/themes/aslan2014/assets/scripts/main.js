@@ -17,7 +17,7 @@ var aslanCarousel = {
 		$('.carousel').each(function(){
 			var carousel = $(this);
 			setTimeout(function(){
-				ac.nextSlide(carousel);
+				ac.nextSlide( carousel );
 			},500);
 		})
 	},
@@ -26,7 +26,7 @@ var aslanCarousel = {
 
 		var ac = this;
 
-		// get the "outgoing horse" and make it go away
+		// get the "outgoing horse" so we can make it go away later
 		var outHorse = carouselObj.find('.horse.active');
 
 		// get the "next" one
@@ -37,34 +37,34 @@ var aslanCarousel = {
 			var inHorse = carouselObj.find('.horse').first();
 		}
 
-		ac.animateSlide( inHorse );
+		inHorse.addClass('active');
+		outHorse.removeClass('active').find('.horse-content').removeClass('on');
 
-		// make the outgoing horse go away
-		outHorse.animate({opacity:0},ac.crossFadeDuration,function(){
-			outHorse.addClass('hide');
-		})
+		ac.animateSlide( carouselObj, inHorse );
 
 	},
 
-	animateSlide: function( slideObj ){
+	animateSlide: function( carouselObj, slideObj ){
 
-		var duration = slideObj.data('duration');
+		var ac = this;
+
+		var duration = parseInt( slideObj.data('duration'), 10 ) * 1000;
+
+		// the fancy way the text shows up
 		var textAnimDuration = 300;
-		var charCount = 0;
-		var charAnimateDuration = 0;
+
 		var curChar = 0;
 
 		slideObj.find('.horse-content').addClass('on').lettering('words').find('span').lettering();
 
 		var chars = slideObj.find('span[class*=char]');
 
-		charCount = chars.size();
+		var charCount = chars.size();
 
-		charAnimateDuration = ( textAnimDuration / charCount );
+		var	charAnimateDuration = ( textAnimDuration / charCount );
 
 		var charAnimate = setInterval(function(){
 
-			//chars.eq(curChar).animate({opacity: "1"},200);
 			chars.eq(curChar).addClass('on');
 
 			curChar++;
@@ -74,6 +74,10 @@ var aslanCarousel = {
 			}
 
 		}, charAnimateDuration);
+
+		setTimeout(function(){
+			ac.nextSlide( carouselObj );
+		},duration)
 
 
 	}

@@ -1,0 +1,930 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getProtocol"
+			],
+			[
+				"res",
+				"resultfile"
+			],
+			[
+				"base",
+				"baseUrl"
+			],
+			[
+				"filena",
+				"filename"
+			],
+			[
+				"proto",
+				"protocol"
+			],
+			[
+				"ca",
+				"casper"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"prot",
+				"protocol"
+			],
+			[
+				"pr",
+				"protocol"
+			],
+			[
+				"ret",
+				"retVal"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"ext",
+				"extension"
+			],
+			[
+				"ind",
+				"indexOf"
+			],
+			[
+				"capt",
+				"captureFilename"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"url",
+				"urlStatus"
+			],
+			[
+				"file",
+				"filenameStatus"
+			],
+			[
+				"filename",
+				"filenameStatus"
+			],
+			[
+				"arr",
+				"arrSearch"
+			],
+			[
+				"start",
+				"startUrl"
+			],
+			[
+				"spid",
+				"spiderLinks2"
+			],
+			[
+				"spi",
+				"spiderLinks2"
+			],
+			[
+				"e",
+				"echo"
+			],
+			[
+				"link",
+				"linkArr"
+			],
+			[
+				"sp",
+				"spiderLinks"
+			],
+			[
+				"color",
+				"colorizer"
+			],
+			[
+				"blo",
+				"blocked"
+			],
+			[
+				"case",
+				"casper"
+			],
+			[
+				"find",
+				"findUrl"
+			],
+			[
+				"jso",
+				"JSON"
+			],
+			[
+				"retur",
+				"returnVal"
+			],
+			[
+				"horse",
+				"horse-content"
+			],
+			[
+				"next",
+				"nextSlide"
+			],
+			[
+				"array_un",
+				"array_unshift"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"char",
+				"charCount"
+			],
+			[
+				"in",
+				"inHorse"
+			],
+			[
+				"out",
+				"outHorse"
+			],
+			[
+				"background-",
+				"background-size"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"$post",
+				"$post_type_label"
+			],
+			[
+				"aslaninst",
+				"aslaninst_training"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"$spe",
+				"$specialties"
+			],
+			[
+				"$sp",
+				"$specialty"
+			],
+			[
+				"$post_",
+				"$post_type_obj"
+			],
+			[
+				"$pr",
+				"$provider_listing_entry_return"
+			],
+			[
+				"$nav-m",
+				"$nav-main-hover-bg"
+			],
+			[
+				"#sim",
+				"#simplemodal-window"
+			],
+			[
+				"jq",
+				"jqXHR"
+			],
+			[
+				"wp",
+				"wp_simplemodal"
+			],
+			[
+				"$func",
+				"$func_name"
+			],
+			[
+				"$fun",
+				"$func_name"
+			],
+			[
+				"simpl",
+				"simplemodal-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"$modal",
+				"$modal_large"
+			],
+			[
+				"CURR",
+				"current_value"
+			],
+			[
+				"postaccess",
+				"postaccesscontroller_admin_notices"
+			],
+			[
+				"sort",
+				"sortable_columns"
+			],
+			[
+				"post",
+				"postaccesscontroller_db"
+			],
+			[
+				"postaccessco",
+				"postaccesscontroller_db"
+			],
+			[
+				"strt",
+				"strtolower"
+			],
+			[
+				"$user",
+				"$user_subquery"
+			],
+			[
+				"$group",
+				"$group_masters"
+			],
+			[
+				"group_master",
+				"group_masters_lkup  (function)"
+			],
+			[
+				"group",
+				"group_master"
+			],
+			[
+				"display",
+				"display_name"
+			],
+			[
+				"wp_po",
+				"wp_postaccess_group_detail"
+			],
+			[
+				"get_current",
+				"get_current_user_id"
+			],
+			[
+				"post_ty",
+				"post_type"
+			],
+			[
+				"$pac",
+				"$pac_db"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"s",
+				"subsubsub"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"po",
+				"postaccesscontroller-details"
+			],
+			[
+				"current",
+				"current_value"
+			],
+			[
+				"pac_grp_dtl",
+				"pac_grp_dtl_id"
+			],
+			[
+				"pac_",
+				"pac_grp_dtl_id"
+			],
+			[
+				"pac_grp",
+				"pac_grp_mstr_id"
+			],
+			[
+				"pac",
+				"pac_group_users"
+			],
+			[
+				"pac_gr",
+				"pac_grp_mstr_id"
+			],
+			[
+				"remo",
+				"removeClass  (function)"
+			],
+			[
+				"cur_val",
+				"cur_val_noacs_msg_type"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"meta",
+				"meta_box_priority"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/crawler.js",
+			"settings":
+			{
+				"buffer_size": 4392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/todo.txt",
+			"settings":
+			{
+				"buffer_size": 50,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/data.json",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/functions.js",
+			"settings":
+			{
+				"buffer_size": 3070,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/arsdehnel/Sites/phantomjs/.gitignore",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/functions.js",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/results.html",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/data.json",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/crawler.js",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/todo.txt",
+		"/Users/arsdehnel/Library/Application Support/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0--aslaninst.com/data2.json",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0/data.json",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0/todo.txt",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.3.0/crawler.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/spider.js",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.2.0/todo.txt",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.2.0/data.json",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.2.0/crawler.js",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler/try4.js",
+		"/Users/arsdehnel/Sites/phantomjs/polite-crawler/urls.json",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/try3.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/webcrawler.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/link-gatherer.js",
+		"/Users/arsdehnel/Sites/phantomjs/scrapeMenu.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/crawler.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/try4.js",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/urls.json",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/data.json",
+		"/Users/arsdehnel/Sites/phantomjs/screenshot-crawler/screenshot.js",
+		"/Users/arsdehnel/Sites/phantomjs/spider.js",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_utilities.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_summaries.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/functions.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/Gruntfile.js",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_variables.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/scripts/main.js",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_carousel.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_layout.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/header.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/snippets/splash-animation-horse.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/footer.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/calendar.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/home.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/provider-listing.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/summaries.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/tabs.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_header.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_nav.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_tabs.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_providers.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_fonts.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/snippets/training-summary.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/provider-profile.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/style.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014 copy/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/content-tabs.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_content.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/calendar-details.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/single.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_calendar.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/calendar-agenda",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan/twig/categories.twig",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/all-in-one-event-calendar/cache/twig/f3/2f/1cf81da29a7427b97685e5756f79462ddbaf6853ac6ad62fd45b936c61e6.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/content-header.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan/twig/event-single.twig",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/partials/provider-selector.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/all-in-one-event-calendar/app/view/calendar/taxonomy.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/templates/provider-profile.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/all-in-one-event-calendar/app/config/constants.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan/less/override.less",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan/twig/calendar.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan2014/less/override.less",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan2014/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes-ai1ec/aslan2014/css/override.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/all-in-one-event-calendar/public/themes-ai1ec/aslan2014/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/twentyfourteen/index.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/twentyfourteen/page.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/twentyfourteen/page-templates/full-width.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/content-page.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/page2.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/twentyfourteen/content.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/twentyfourteen/single.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/index.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/all-in-one-event-calendar/vendor/twig/Lexer.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/admin.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/single-aslaninst_provider.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/single-aslantinst_provider.php",
+		"/Users/arsdehnel/Sites/aslaninst/.gitignore",
+		"/Users/arsdehnel/Sites/aslaninst/wordpress/wp-includes/canonical.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/snippets/provider-listing-entry.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/single-aslaninst-provider.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/page-aslaninst-provider.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_mixins.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/_features.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-config.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/layout.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/.jshintrc",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/admin-menu-editor/includes/menu-editor-core.php",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/plugins/admin-menu-editor/js/menu-editor.js",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/build/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/dev/editor-style.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/assets/styles/dev/style.scss",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslan2014/package.json",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslaninst2014/package.json",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslaninst2014/Gruntfile.js",
+		"/Users/arsdehnel/Sites/aslaninst/wp-content/themes/aslaninst2014/style.css",
+		"/Users/arsdehnel/Sites/aslaninst/index.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/views/public-page-html.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/core.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/css/public.css",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/ui.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/js/public.js",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/readme.txt",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/tinymce/modal-list.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/tinymce/wp_simplemodal.css",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/db.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/tinymce/wp_simplemodal.js",
+		"/Users/arsdehnel/Sites/peerministryorg/wp-content/plugins/ajax-content-renderer/betancourt-ajax-content.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/views/simplemodal_post_type/meta_box.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/css/admin-general.css",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/simple-modal.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/simplemodal_post_type.php",
+		"/Users/arsdehnel/Sites/wp_plugins/post-access-controller/trunk/js/meta-box.js",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/js/editor_plugin.js",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/upgrades.txt",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/settings.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/views/settings.php",
+		"/Users/arsdehnel/Sites/wp_plugins/simple-modal/classes/post_meta.php",
+		"/Users/arsdehnel/Sites/wp_plugins/post-access-controller/trunk/views/group_post_type/list.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.js",
+			"*.scss",
+			"",
+			"*.php",
+			"",
+			"*.php",
+			"",
+			"*.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blocked",
+			"allowed",
+			"blocked",
+			"datafile",
+			"functions",
+			"arrSearch",
+			"absoluteUri",
+			"pending",
+			"filename",
+			"relUrl",
+			"echo",
+			"filenameStatus",
+			"urlStatus",
+			"protocolStatus",
+			"absoluteUri",
+			"pending",
+			".push()",
+			"baseUrl",
+			"url",
+			"baseUrl",
+			"status",
+			"==",
+			"this.",
+			"format",
+			"json",
+			"jpg",
+			".hide",
+			"25px",
+			"30px",
+			"carousel",
+			"animateCarousels",
+			"animate",
+			"console",
+			"$rust",
+			"$sage",
+			"location-top",
+			"top",
+			"#666",
+			"tint",
+			"#666666",
+			"ddd",
+			"#666",
+			"20px",
+			"facebook",
+			"50",
+			"aslaninst_page_tabs",
+			"aslaninsttabs_save_meta_box",
+			"tab_data_meta_box",
+			"chapter_attributes_meta_box",
+			"aslaninst_training",
+			"hierarchi",
+			"aslantinst2014_training_summaries",
+			"sadfasf",
+			"sadfast",
+			"available_views",
+			"text_categories",
+			"ai1ec-event-details",
+			"cache",
+			".ai1ec-month-view .ai1ec-date",
+			"dd",
+			"provider-select-wrapper",
+			"page-template-default",
+			"150x150",
+			"h4",
+			"aslant",
+			"Email",
+			"dt",
+			"dl",
+			"Insurance",
+			"Insurances",
+			"$provider_listing_entry_return",
+			"$horses",
+			"$provider_listing_entry_return",
+			"aslaninst2014_init",
+			"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eius distinctio soluta mollitia vero porro accusantium laudantium, maiores facere tempora reprehenderit, dignissimos eos qui libero? Nostrum quam mollitia tempore inventore similique assumenda, maxime rem, quia atque et. Explicabo, repudiandae temporibus iusto obcaecati quisquam hic accusantium alias. Facilis atque, ratione nobis rerum inventore adipisci. Itaque adipisci officiis, aut libero ab! Ducimus est ipsam aliquid exercitationem sequi laudantium quod magni hic in placeat molestias perspiciatis aperiam veritatis tempora, porro, ratione, qui unde.</p>",
+			"h2",
+			"clearfix",
+			"Evolutin",
+			"page",
+			"article",
+			";\n",
+			"plugin_file",
+			"$editor_data",
+			"$editor_data['images_url']",
+			"cut menu",
+			"url",
+			"editor_id",
+			"admin-ajax",
+			"admin-ajax.php",
+			"class",
+			"simplemodal-tinymce-modal-select",
+			"249",
+			"$sizes",
+			"wp-simplemodal",
+			"ajaxurl",
+			"admin-general.css",
+			"small",
+			"simplemodal-small",
+			"small",
+			"$return",
+			"sprintf",
+			"$modal_sizes",
+			"sm-",
+			"easy",
+			"$pac_core",
+			"$pac_ui",
+			"$pac_db",
+			"postaccesscontroller",
+			"EASYMODAL",
+			"POSTACCESSCONTROLLER_DIR",
+			"updated",
+			"display_admin_notices",
+			"save.php",
+			"nonce",
+			"admin_notice",
+			"print_r",
+			"status_code",
+			"group_listing_data_lkup",
+			"$this->columns",
+			"storage_class",
+			"$storage_class",
+			"$default_options",
+			"list-table.php",
+			"PAC_List_Table",
+			"postaccesscontroller_ui",
+			"PAC_list_table",
+			"PAC_List_Table",
+			"__FILE__"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/crawler.js",
+					"settings":
+					{
+						"buffer_size": 4392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/todo.txt",
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/data.json",
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/arsdehnel/Sites/phantomjs/polite-crawler-0.4.0/functions.js",
+					"settings":
+					{
+						"buffer_size": 3070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2160,
+								2160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"peerministryorg/archive.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"w",
+				"/Users/arsdehnel/Sites/wp_plugins.sublime-project"
+			],
+			[
+				"",
+				"/Users/arsdehnel/Sites/aslaninst.sublime-project"
+			],
+			[
+				"pe",
+				"/Users/arsdehnel/Sites/peerministry.sublime-project"
+			],
+			[
+				"ar",
+				"/Users/arsdehnel/Sites/arsdehnelnet.sublime-project"
+			],
+			[
+				"a",
+				"/Users/arsdehnel/Sites/arsdehnelnet.sublime-project"
+			],
+			[
+				"p",
+				"/Users/arsdehnel/Sites/peerministry.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true
+}

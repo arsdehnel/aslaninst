@@ -16,7 +16,7 @@
 body {
   font-family: 'Open Sans', arial;
   font-size: 80%;
-  background: #b7410e;
+  background: #d7410e;
 }
 
 .site-wrapper {
@@ -222,15 +222,23 @@ body {
   padding: 0;
 }
 .carousel .horses .horse {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 15em;
   width: 86em;
   margin: 0;
   padding: 1em;
+  opacity: 0;
   list-style: none;
   background-color: #6bae63;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+.carousel .horses .horse.active {
+  opacity: 1;
 }
 .carousel .horse-content {
   position: absolute;
@@ -320,7 +328,8 @@ body {
 }
 
 .features {
-  height: 20em;
+  height: 27em;
+  padding: 3em 0;
 }
 .features .feature {
   position: relative;
@@ -370,7 +379,7 @@ body {
   padding: 1em;
   text-decoration: none;
   font-weight: 600;
-  color: #b7410e;
+  color: #d7410e;
 }
 .provider-select-wrapper .provider-select a:hover:after {
   content: '';
@@ -382,10 +391,10 @@ body {
   border-color: transparent;
   border-style: solid;
   border-width: 0.5em;
-  border-left-color: #b7410e;
+  border-left-color: #d7410e;
 }
 .provider-select-wrapper .provider-select a.active {
-  background: #b7410e;
+  background: #d7410e;
   color: white;
   pointer-events: none;
 }
@@ -512,13 +521,14 @@ body {
 }
 .training-summary-wrapper.primary article h3 a {
   padding: .5em;
-  background-color: #b7410e;
-  font-family: 'Josefin Sans';
-  font-size: 2em;
+  background-color: #d7410e;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  text-decoration: none;
   font-weight: 700;
 }
 .training-summary-wrapper.primary article h3 a:hover {
-  background-color: #802d09;
+  background-color: #962d09;
 }
 .training-summary-wrapper.secondary article {
   width: -webkit-calc(33% - 2em );
@@ -528,11 +538,12 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   padding: .5em;
-  background-color: #6bae63;
+  background-color: #e5c100;
   padding: .6667em;
+  text-decoration: none;
 }
 .training-summary-wrapper.secondary article h3 a:hover {
-  background-color: #4a7945;
+  background-color: #b29600;
 }
 
 .ai1ec-month-view .ai1ec-day {
@@ -547,7 +558,7 @@ body {
   width: 2em;
   text-align: center;
   line-height: 1.5em;
-  background: #b7410e;
+  background: #d7410e;
   font-size: 1em;
   text-shadow: 1px 1px 1px #777;
 }
@@ -581,4 +592,8 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.hide {
+  display: none !important;
 }
