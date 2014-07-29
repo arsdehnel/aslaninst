@@ -238,7 +238,7 @@ function aslaninst2014_init(){
             'public'                => true,
             'exclude_from_search'   => false,
             'hierarchical'          => true,
-            'supports'              => array( 'title', 'editor', 'excerpt', 'page-attributes' ),
+            'supports'              => array( 'title', 'editor', 'excerpt', 'page-attributes', 'thumbnail' ),
             'menu_icon'				=> 'dashicons-nametag',
             'rewrite'				=> array('slug' => 'training')
         )
