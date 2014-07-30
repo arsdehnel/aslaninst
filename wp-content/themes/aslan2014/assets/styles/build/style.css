@@ -37,7 +37,7 @@ body {
 }
 .site-header h1 {
   margin: .5em;
-  font-family: "Josefin Sans";
+  font-family: "Open Sans";
   font-weight: 700;
 }
 .site-header h2 {
@@ -128,9 +128,9 @@ body {
   display: inline-block;
   padding: .25em 2em;
   color: black;
-  font-family: 'Josefin Sans', arial;
+  font-family: "Open Sans";
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.7em;
   text-decoration: none;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
@@ -182,7 +182,7 @@ body {
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
   line-height: 2em;
-  font-family: 'Josefin Sans', arial;
+  font-family: "Open Sans";
   text-transform: uppercase;
   color: black;
   font-weight: 400;
@@ -519,7 +519,7 @@ body {
   font-family: "Open Sans";
   font-size: 1.5em;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 300;
 }
 .training-summary-wrapper.primary article h3 a:hover {
   background-color: #962d09;
