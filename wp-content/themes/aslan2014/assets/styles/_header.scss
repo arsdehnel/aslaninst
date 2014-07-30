@@ -19,7 +19,11 @@
 		.addr-line{
 			*{
 				display: inline-block;
+				font-style: normal;
 			}
+		}
+		.tel{
+			font-style: normal;
 		}
 	}
 	.connect-options{
