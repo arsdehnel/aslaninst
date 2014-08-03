@@ -96,7 +96,7 @@ function aslaninsttabs_save_meta_box( $post_id ){
 add_filter('manage_aslaninst_bighorse_posts_columns', 'aslaninst_bighorse_table_head');
 
 function aslaninst_bighorse_table_head( $defaults ) {
-	unset($defaults['title']);
+	//unset($defaults['title']);
 	unset($defaults['date']);
 	$defaults['text'] = 'Text';
     $defaults['menu_order'] = 'Order';
