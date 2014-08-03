@@ -27,6 +27,7 @@ body {
 
 .main {
   background: #eee;
+  min-height: 400px;
 }
 
 .site-header {
