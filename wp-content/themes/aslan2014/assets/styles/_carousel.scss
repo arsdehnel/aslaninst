@@ -43,10 +43,47 @@
 					transform: translate3d(30px,25px,0);
 				}
 			}
+			&.location-top-center,
 			&.location-top-right{
 				transform-origin: 100% 0;
 				&.on{
 					transform: translate3d(5px,35px,0) scale(1.5, 1.5);
+				}
+			}
+			&.location-middle-left{
+				transform-origin: 0 0;
+				&.on{
+					transform: translate3d(50px,10px,0);
+				}
+			}
+			&.location-middle-center{
+				transform-origin: 50% 50%;
+				&.on{
+					transform: scale( 2, 2 );
+				}
+			}
+			&.location-middle-right{
+				transform-origin: 100% 50%;
+				&.on{
+					transform: translate3d(-30px,5px,0) scale( 2, 1.5 );
+				}
+			}
+			&.location-bottom-left{
+				transform-origin: 0 100%;
+				&.on{
+					transform: translate3d(30px,0,0);
+				}
+			}
+			&.location-bottom-center{
+				transform-origin: 100% 50%;
+				&.on{
+					transform: translate3d(-20px,30px,0) scale( 2, 2 );
+				}
+			}
+			&.location-bottom-right{
+				transform-origin: 100% 50%;
+				&.on{
+					transform: translate3d(-30px,5px,0) scale( 2, 1.5 );
 				}
 			}
 		}

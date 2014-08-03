@@ -26,7 +26,7 @@ body {
 }
 
 .main {
-  background: #e1eedf;
+  background: #eee;
 }
 
 .site-header {
@@ -152,6 +152,22 @@ body {
   background-color: #b5d6b1;
 }
 
+.nav-footer {
+  background: gold;
+  text-align: right;
+}
+.nav-footer a {
+  display: inline-block;
+  text-align: center;
+}
+.nav-footer a:before {
+  content: '|';
+  display: inline-block;
+}
+.nav-footer a:first-child:before {
+  content: '';
+}
+
 .content {
   position: relative;
   padding: 1em;
@@ -263,14 +279,69 @@ body {
   -webkit-transform: translate3d(30px, 25px, 0);
   transform: translate3d(30px, 25px, 0);
 }
-.js .carousel .horse-content.location-top-right {
+.js .carousel .horse-content.location-top-center, .js .carousel .horse-content.location-top-right {
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
-.js .carousel .horse-content.location-top-right.on {
+.js .carousel .horse-content.location-top-center.on, .js .carousel .horse-content.location-top-right.on {
   -webkit-transform: translate3d(5px, 35px, 0) scale(1.5, 1.5);
   transform: translate3d(5px, 35px, 0) scale(1.5, 1.5);
+}
+.js .carousel .horse-content.location-middle-left {
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.js .carousel .horse-content.location-middle-left.on {
+  -webkit-transform: translate3d(50px, 10px, 0);
+  transform: translate3d(50px, 10px, 0);
+}
+.js .carousel .horse-content.location-middle-center {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.js .carousel .horse-content.location-middle-center.on {
+  -webkit-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+.js .carousel .horse-content.location-middle-right {
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.js .carousel .horse-content.location-middle-right.on {
+  -webkit-transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
+  transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
+}
+.js .carousel .horse-content.location-bottom-left {
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.js .carousel .horse-content.location-bottom-left.on {
+  -webkit-transform: translate3d(30px, 0, 0);
+  transform: translate3d(30px, 0, 0);
+}
+.js .carousel .horse-content.location-bottom-center {
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.js .carousel .horse-content.location-bottom-center.on {
+  -webkit-transform: translate3d(-20px, 30px, 0) scale(2, 2);
+  transform: translate3d(-20px, 30px, 0) scale(2, 2);
+}
+.js .carousel .horse-content.location-bottom-right {
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.js .carousel .horse-content.location-bottom-right.on {
+  -webkit-transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
+  transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
 }
 .js .carousel .horse-content span[class*=char] {
   color: white;
