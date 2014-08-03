@@ -46,6 +46,21 @@
 	}
 }
 
-nav.nav-main:before {
+.nav-footer{
+	background: $gold;
+	text-align: right;
+	a{
+		display: inline-block;
+		text-align: center;
+		&:before{
+			content: '|';
+			display: inline-block;
+		}
+		&:first-child{
+			&:before{
+				content: '';
+			}
+		}
 
+	}
 }
