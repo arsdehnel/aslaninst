@@ -1,5 +1,9 @@
 <div class="provider-profile" id="provider-profile">
-	<img src="http://placehold.it/180x180" class="provider-thumb">
+	<?php
+		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+  			echo get_the_post_thumbnail( $post->ID, 'thumbnail', array('class' => 'provider-thumb'));
+		}
+	?>
 	<div class="provider-details">
 		<h3><?php echo the_title(); ?></h3>
 		<ul>
