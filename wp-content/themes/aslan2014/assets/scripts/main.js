@@ -1,4 +1,55 @@
-window.log=function(){log.history=log.history||[];log.history.push(arguments);if(this.console){console.log(Array.prototype.slice.call(arguments))}};
+// usage: log('inside coolFunc',this,arguments);
+// http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
+window.log = function(){
+  log.history = log.history || [];   // store logs to an array for reference
+  log.history.push(arguments);
+  if(this.console){
+    console.log( Array.prototype.slice.call(arguments) );
+  }
+};
+
+var aslanInstitute = {
+
+	init: function(){
+		this.bindUIFunctions();
+	},
+
+	bindUIFunctions: function(){
+
+		$('body')
+			.on('click','.constant-contact a',function(e){
+				e.preventDefault();
+				aslanInstitute.modalOpen( $(this).attr('href') );
+			})
+			.on('click','.modal-close',function(e){
+				e.preventDefault();
+				aslanInstitute.modalClose();
+			})
+
+	},
+
+	modalOpen: function( url ){
+
+		$('.modal-overlay').removeClass('hide');
+
+		var iFrame = $('<iframe />');
+		iFrame.attr('src',url);
+		$('.modal-window').append(iFrame).removeClass('hide');
+
+		// $('.modal-window').load(url,function(){
+		// 	$(this).removeClass('hide');
+		// });
+
+	},
+
+	modalClose: function(){
+
+		$('.modal-window').addClass('hide').children(':not(.modal-close)').remove();
+		$('.modal-overlay').addClass('hide');
+
+	}
+
+}
 
 var aslanCarousel = {
 
@@ -19,7 +70,7 @@ var aslanCarousel = {
 			setTimeout(function(){
 				ac.nextSlide( carousel );
 			},500);
-		})
+		});
 	},
 
 	nextSlide: function( carouselObj ){
@@ -34,7 +85,7 @@ var aslanCarousel = {
 
 		// either we didn't find a "next" or we had no outHorse to start with
 		if( inHorse.size() === 0 ){
-			var inHorse = carouselObj.find('.horse').first();
+			inHorse = carouselObj.find('.horse').first();
 		}
 
 		inHorse.addClass('active');
@@ -55,7 +106,8 @@ var aslanCarousel = {
 
 		var curChar = 0;
 
-		slideObj.find('.horse-content').addClass('on').lettering('words').find('span').lettering();
+		//slideObj.find('.horse-content').addClass('on').lettering('words').find('span').lettering();
+		slideObj.find('.horse-content').addClass('on');//.lettering('words').find('span').lettering();
 
 		var chars = slideObj.find('span[class*=char]');
 
@@ -77,11 +129,12 @@ var aslanCarousel = {
 
 		setTimeout(function(){
 			ac.nextSlide( carouselObj );
-		},duration)
+		},duration);
 
 
 	}
 
-}
+};
 
+aslanInstitute.init();
 aslanCarousel.init();
