@@ -1,0 +1,9 @@
+.btn-no-box{
+	border: 0;
+	background: transparent;
+	color: $rust;
+	cursor: pointer;
+}
+.btn{
+	@include button( $rust );
+}
