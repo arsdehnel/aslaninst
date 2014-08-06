@@ -49,9 +49,13 @@
 .nav-footer{
 	background: $gold;
 	text-align: right;
+	padding: .5em;
 	a{
 		display: inline-block;
 		text-align: center;
+		padding: .5em;
+		text-decoration: none;
+		color: white;
 		&:before{
 			content: '|';
 			display: inline-block;
