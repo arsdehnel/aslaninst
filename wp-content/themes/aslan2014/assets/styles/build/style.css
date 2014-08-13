@@ -446,13 +446,18 @@ body {
 .provider-select-wrapper .provider-select {
   border: 1px solid black;
   overflow-y: scroll;
-  height: 27em;
   background: white;
+}
+.provider-select-wrapper .provider-select.leadership {
+  height: 8em;
+}
+.provider-select-wrapper .provider-select.providers {
+  height: 16em;
 }
 .provider-select-wrapper .provider-select a {
   position: relative;
   display: block;
-  padding: 1em;
+  padding: .25em .5em;
   text-decoration: none;
   font-weight: 600;
   color: #d7410e;
@@ -460,8 +465,8 @@ body {
 .provider-select-wrapper .provider-select a:hover:after {
   content: '';
   position: absolute;
-  top: 1.2em;
-  right: 1em;
+  top: .5em;
+  right: .25em;
   height: 0;
   width: 0;
   border-color: transparent;
@@ -477,8 +482,8 @@ body {
 .provider-select-wrapper .provider-select a.active:after {
   content: '';
   position: absolute;
-  top: 1.2em;
-  right: 1em;
+  top: .5em;
+  right: .25em;
   height: 0;
   width: 0;
   border-color: transparent;

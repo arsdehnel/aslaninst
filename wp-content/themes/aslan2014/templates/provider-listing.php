@@ -12,10 +12,16 @@ get_header(); ?>
 			<p><?php the_excerpt(); ?></p>
 	</header>
 	<div class="provider-select-wrapper">
-		<p>Select Provider</p>
-		<nav class="provider-select">
+		<p>Leadership Team</p>
+		<nav class="provider-select leadership">
 			<?php
-				echo aslaninst2014_providers_list( get_the_id() );
+				echo aslaninst2014_providers_list( get_the_id(), 'leadership' );
+			?>
+		</nav><!-- /.provider-select -->
+		<p>Providers</p>
+		<nav class="provider-select providers">
+			<?php
+				echo aslaninst2014_providers_list( get_the_id(), 'provider' );
 			?>
 		</nav><!-- /.provider-select -->
 	</div><!-- /.provider-select-wrapper -->

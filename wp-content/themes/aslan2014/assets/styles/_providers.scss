@@ -14,20 +14,25 @@
 	.provider-select{
 		border: 1px solid black;
 		overflow-y: scroll;
-		height: 27em;
+		&.leadership{
+			height: 8em;
+		}
+		&.providers{
+			height: 16em;
+		}
 		background: white;
 		a{
 			position: relative;
 			display: block;
-			padding: 1em;
+			padding: .25em .5em;
 			text-decoration: none;
 			font-weight: 600;
 			color: $rust;
 			&:hover:after{
 				content: '';
 				position: absolute;
-				top: 1.2em;
-				right: 1em;
+				top: .5em;
+				right: .25em;
 				@include triangle( 1em, $rust, right );
 			}
 			&.active{
@@ -37,8 +42,8 @@
 				&:after{
 					content: '';
 					position: absolute;
-					top: 1.2em;
-					right: 1em;
+					top: .5em;
+					right: .25em;
 					@include triangle( 1em, white, right );
 				}
 			}
