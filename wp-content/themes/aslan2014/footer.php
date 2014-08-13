@@ -1,6 +1,6 @@
 		<footer class="site-footer">
 			<nav class="nav-footer">
-				<a href="/wp-admin">My Account</a>
+				<!-- <a href="/wp-admin">My Account</a> -->
 			</nav>
 		</footer>
 	</div><!-- /.site-wrapper -->
