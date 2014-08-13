@@ -303,11 +303,13 @@ function aslaninst2014_admin_queue_scripts( $hook ){
 	wp_enqueue_style( 'aslaninst2014-style', get_template_directory_uri() . '/admin.css', array() );
 }
 
-function aslaninst2014_providers_list( $id ){
+function aslaninst2014_providers_list( $id, $member_type ){
 
 	$args = array(
 			'post_type' => 'aslaninst_provider',
-			'post_status' => 'publish'
+			'post_status' => 'publish',
+			'meta_key' => 'member_type',
+			'meta_value' => $member_type
 		);
 	$providers = get_posts( $args );
 
