@@ -15,7 +15,7 @@ get_header(); ?>
     			if( get_post_type( get_the_ID() ) == 'aslaninst_provider' ):
 
     				//this is the header and excerpt
-    				get_template_part( 'partials/content', 'header' );
+    				get_template_part( 'partials/provider', 'header' );
 
     				//the left rail selector pane
     				get_template_part( 'partials/provider', 'selector' );

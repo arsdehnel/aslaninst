@@ -16,6 +16,8 @@ add_action( 'admin_enqueue_scripts', 'aslaninst2014_admin_queue_scripts' );
 add_action( 'add_meta_boxes', function() { add_meta_box('aslaninst_tabs', 'Tab Details', 'tab_details_meta_box', 'aslaninst_tabs', 'side', 'high');});
 add_action( 'save_post', 'aslaninsttabs_save_meta_box' );
 
+include_once( 'includes/providers.php' );
+
 function tab_details_meta_box($post) {
 
 	// Add an nonce field so we can check for it later.
@@ -154,6 +156,8 @@ function aslaninst2014_init(){
 	 * PROVIDERS
 	 *
 	 */
+
+	add_post_type_support( 'page', 'excerpt' );
 
 	//post type
     register_post_type( 'aslaninst_provider',
