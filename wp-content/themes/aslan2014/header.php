@@ -51,8 +51,10 @@
 		<nav class="nav-main">
 			<?php
 				$items = wp_get_nav_menu_items( 'main' );
+				$active_id = aslaninst2014_active_menu_lkup( $items );
 				foreach( $items as $item ):
-					if( is_page( $item->object_id ) ):
+					if( $item->object_id == $active_id ):
+					// if( is_page( $item->object_id ) ):
 						$class = " active";
 					else:
 						$class = "";
