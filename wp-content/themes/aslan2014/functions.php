@@ -171,7 +171,7 @@ function aslaninst2014_init(){
             'description'           => 'Providers for listing page',
             'public'                => true,
             'exclude_from_search'   => false,
-            'supports'              => array( 'title', 'editor', 'thumbnail' ),
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'menu_order' ),
             'menu_icon'				=> 'dashicons-nametag',
             'rewrite'				=> array('slug' => 'provider')
         )
