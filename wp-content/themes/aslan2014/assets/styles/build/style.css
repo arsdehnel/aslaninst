@@ -160,6 +160,7 @@ body {
   background: gold;
   text-align: right;
   padding: .5em;
+  line-height: 2em;
 }
 .nav-footer a {
   display: inline-block;
