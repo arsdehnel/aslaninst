@@ -6,4 +6,6 @@
 }
 .btn{
 	@include button( $rust );
+	font-size: 1em;
+	padding: .5em 1em;
 }

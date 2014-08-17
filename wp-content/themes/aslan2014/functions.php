@@ -34,10 +34,10 @@
 		big_horses_init();
 		training_init();
 
-	    //custom post type needs the rules to be refreshed
-	    //really this should just need to be done once whenever this file is changed
-	    //so they can be cached for subsequent changes
-	    flush_rewrite_rules();
+	    // custom post type needs the rules to be refreshed
+	    // really this should just need to be done once whenever this file is changed
+	    // so they can be cached for subsequent changes
+	    // flush_rewrite_rules();
 
 	    add_theme_support( 'post-thumbnails', array( 'aslaninst_bighorse', 'aslaninst_provider' ) );
 

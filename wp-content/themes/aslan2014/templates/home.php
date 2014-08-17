@@ -3,6 +3,12 @@
 Template Name: Home
 */
 
+$provider = get_field('provider_spotlight');
+$event = get_field('calendar_event');
+$event_page = get_page( $event->ID );
+$training = get_field('training_spotlight');
+$training_page = get_page( $training->ID );
+
 get_header(); ?>
 
 <section class="content" id="post-<?php the_ID(); ?>">
@@ -17,29 +23,53 @@ get_header(); ?>
 	</div><!-- /.carousel -->
 	<div class="features">
 		<article class="feature">
-			<?php
-				$provider = get_field('provider_spotlight');
-				// print_r( $provider );
-				echo get_the_post_thumbnail( $provider->ID, 'thumbnail', array('class' => 'feature-thumb'));
-			?>
+			<h1>Training Spotlight</h1>
+			<div class="feature-inner">
+				<?php
+					if( has_post_thumbnail( $training->ID ) ):
+						echo get_the_post_thumbnail( $training->ID, 'thumbnail' );
+					endif;
+				?>
+				<h2><?php echo $training_page->post_title; ?></h2>
+				<p><?php echo $training_page->post_content; ?></p>
+				<div class="actions">
+					<a href="<?php echo get_the_permalink( $training->ID ); ?>" class="btn">View This Event</a>
+				</div>
+				<div class="actions">
+					<a href="<?php echo get_the_permalink( $training->ID ); ?>" class="btn">View This Training</a>
+				</div>
+			</div>
+		</article>
+		<article class="feature">
+			<h1>Upcoming Event</h1>
+			<div class="feature-inner">
+				<?php
+					if( has_post_thumbnail( $event->ID ) ):
+						echo get_the_post_thumbnail( $event->ID, 'thumbnail' );
+					else:
+						?>
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/icon-feature-calendar.png">
+						<?php
+					endif;
+				?>
+				<h2><?php echo $event_page->post_title; ?></h2>
+				<p><?php echo $event_page->post_content; ?></p>
+				<div class="actions">
+					<a href="<?php echo get_the_permalink( $event->ID ); ?>" class="btn">View This Event</a>
+				</div>
+			</div>
+		</article>
+		<article class="feature">
 			<h1>Provider Spotlight</h1>
-			<h2><?php echo get_the_title( $provider->ID ); ?></h2>
-			<div class="feature-details">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro, aperiam culpa non nobis dolores esse minima ducimus architecto sed.
-			</div>
-		</article>
-		<article class="feature">
-			<img src="http://placehold.it/100x100">
-			<h1>Feature #2</h1>
-			<div class="feature-details">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro, aperiam culpa non nobis dolores esse minima ducimus architecto sed.
-			</div>
-		</article>
-		<article class="feature">
-			<img src="http://placehold.it/100x100">
-			<h1>Feature #3</h1>
-			<div class="feature-details">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro, aperiam culpa non nobis dolores esse minima ducimus architecto sed.
+			<div class="feature-inner">
+				<?php
+					echo get_the_post_thumbnail( $provider->ID, 'thumbnail' );
+				?>
+				<h2><?php echo get_the_title( $provider->ID ); ?></h2>
+				<p><?php echo the_field( 'provider_spotlight_message' ); ?></p>
+				<div class="actions">
+					<a href="<?php echo get_the_permalink( $provider->ID ); ?>" class="btn">View This Provider's Profile</a>
+				</div>
 			</div>
 		</article>
 	</div><!-- /.features -->

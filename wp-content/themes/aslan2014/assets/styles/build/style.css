@@ -411,21 +411,70 @@ body {
   height: 18em;
   width: 22.57143em;
   margin: 1em 3em;
-  padding: .5em;
   border: 1px solid black;
   box-shadow: .25em .25em 1em #666666;
 }
-.features .feature img {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  height: 100px;
-  width: 100px;
-}
 .features .feature h1 {
-  padding-left: 7em;
-  height: 6em;
+  margin: 0;
+  line-height: 2em;
   text-align: center;
+  background: gold;
+  font-size: 1.2em;
+}
+.features .feature .feature-inner {
+  height: 14em;
+  margin: 1em;
+}
+.features .feature .feature-inner h2 {
+  padding-bottom: .5em;
+  font-size: 1.2em;
+}
+.features .feature .feature-inner img {
+  float: left;
+  margin: 0 1em 1em 0;
+  height: 8em;
+  width: 8em;
+}
+.features .feature .actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+}
+.features .feature .actions a {
+  border: 1px solid #458e3c;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #a0c29c;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #6bae63;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6bae63), color-stop(100%, #4a9940));
+  background-image: -webkit-linear-gradient(#6bae63, #4a9940);
+  background-image: linear-gradient(#6bae63, #4a9940);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #398530;
+  background-clip: padding-box;
+  margin: 1em;
+}
+.features .feature .actions a:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #81af7b;
+  cursor: pointer;
+  background-color: #619e5a;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #619e5a), color-stop(100%, #458d3d));
+  background-image: -webkit-linear-gradient(#619e5a, #458d3d);
+  background-image: linear-gradient(#619e5a, #458d3d);
+}
+.features .feature .actions a:active:not(:disabled) {
+  border: 1px solid #458e3c;
+  box-shadow: inset 0 0 8px 4px #418139, inset 0 0 8px 4px #418139, 0 1px 1px 0 #eeeeee;
+}
+.features .feature .actions a:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .provider-select-wrapper,
@@ -449,10 +498,10 @@ body {
   background: white;
 }
 .provider-select-wrapper .provider-select.leadership {
-  height: 8em;
+  height: 10em;
 }
 .provider-select-wrapper .provider-select.providers {
-  height: 16em;
+  height: 14em;
 }
 .provider-select-wrapper .provider-select a {
   position: relative;
@@ -749,6 +798,8 @@ body {
   text-decoration: none;
   text-shadow: 0 1px 0 #892300;
   background-clip: padding-box;
+  font-size: 1em;
+  padding: .5em 1em;
 }
 .btn:hover:not(:disabled) {
   box-shadow: inset 0 1px 0 0 #e64d18;
