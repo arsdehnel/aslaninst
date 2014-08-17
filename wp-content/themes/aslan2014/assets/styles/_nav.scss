@@ -46,6 +46,23 @@
 	}
 }
 
+.nav-breadcrumbs{
+	margin-bottom: 1em;
+	opacity: .5;
+	a{
+		color: $rust;
+		text-decoration: none;
+		@include linear-gradient(to bottom, transparent 0%, transparent 95%, $rust 97%);
+		background-position: 0 0;
+		&:hover{
+			background: none;
+		}
+	}
+	*{
+		display: inline-block;
+	}
+}
+
 .nav-footer{
 	background: $gold;
 	text-align: right;

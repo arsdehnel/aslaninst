@@ -80,7 +80,6 @@ body {
   color: black;
 }
 .site-header .connect-options li a:hover {
-  text-decoration: none;
   background: none;
 }
 .site-header .connect-options li.facebook {
@@ -154,6 +153,26 @@ body {
 }
 .nav-main a.active:hover {
   background-color: #b5d6b1;
+}
+
+.nav-breadcrumbs {
+  margin-bottom: 1em;
+  opacity: .5;
+}
+.nav-breadcrumbs a {
+  color: #d7410e;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(95%, transparent), color-stop(97%, #d7410e));
+  background-image: -webkit-linear-gradient(top, transparent 0%, transparent 95%, #d7410e 97%);
+  background-image: linear-gradient(to bottom,transparent 0%, transparent 95%, #d7410e 97%);
+  background-position: 0 0;
+}
+.nav-breadcrumbs a:hover {
+  background: none;
+}
+.nav-breadcrumbs * {
+  display: inline-block;
 }
 
 .nav-footer {

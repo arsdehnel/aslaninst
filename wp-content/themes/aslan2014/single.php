@@ -34,6 +34,9 @@ get_header(); ?>
     			elseif( get_post_type( get_the_ID() ) == 'aslaninst_training' ):
 
     				//this is the header and excerpt
+    				get_template_part( 'partials/content', 'breadcrumbs' );
+
+    				//this is the header and excerpt
     				get_template_part( 'partials/content', 'header' );
 
     				//and then we just needs the tabs
