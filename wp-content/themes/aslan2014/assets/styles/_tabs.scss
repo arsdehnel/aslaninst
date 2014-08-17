@@ -1,8 +1,8 @@
-.tabs-wrapper{
-	.nav-tabs{
+.tabs-wrapper {
+	.nav-tabs {
 		text-align: right;
 		padding-right: 4em;
-		a{
+		a {
 			position: relative;
 			display: inline-block;
 			height: 0;
@@ -17,23 +17,26 @@
 			color: $nav-color;
 			font-weight: 400;
 			text-decoration: none;
-			&.active{
+			&.active {
 				font-weight: 700;
 				color: $tab-active-color;
 				border-bottom-color: $tab-active-bg;
-				&:hover{
-					border-bottom-color: $tab-active-bg;
-				}
+				pointer-events: none;
 			}
-			&:hover{
-				border-bottom-color: tint( $tab-active-bg, 40% );
-				color: white;
+			&:hover {
+				border-bottom-color: tint( $tab-inactive-bg, 30% );
 			}
 		}
 	}
-	.tabs-content{
+	.tabs-content {
 		min-height: 20em;
 		border: 1px solid black;
 		background: white;
+		.tab-content{
+			display: none;
+			&.current {
+				display: block;
+			}
+		}
 	}
 }

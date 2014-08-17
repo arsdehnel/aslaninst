@@ -226,7 +226,7 @@ body {
   height: 0;
   margin: 0 .5em;
   padding: 0 2em;
-  border-bottom: 2em solid white;
+  border-bottom: 2em solid #6bae63;
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
   line-height: 2em;
@@ -238,20 +238,23 @@ body {
 }
 .tabs-wrapper .nav-tabs a.active {
   font-weight: 700;
-  color: white;
-  border-bottom-color: #6bae63;
-}
-.tabs-wrapper .nav-tabs a.active:hover {
-  border-bottom-color: #6bae63;
+  color: black;
+  border-bottom-color: white;
+  pointer-events: none;
 }
 .tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: #a6cea1;
-  color: white;
+  border-bottom-color: #97c691;
 }
 .tabs-wrapper .tabs-content {
   min-height: 20em;
   border: 1px solid black;
   background: white;
+}
+.tabs-wrapper .tabs-content .tab-content {
+  display: none;
+}
+.tabs-wrapper .tabs-content .tab-content.current {
+  display: block;
 }
 
 .carousel {
