@@ -31,7 +31,7 @@ get_header(); ?>
 					endif;
 				?>
 				<h2><?php echo $training_page->post_title; ?></h2>
-				<p><?php echo $training_page->post_content; ?></p>
+				<p><?php echo the_field( 'training_spotlight_message' ); ?></p>
 				<div class="actions">
 					<a href="<?php echo get_the_permalink( $training->ID ); ?>" class="btn">View This Event</a>
 				</div>
@@ -53,7 +53,7 @@ get_header(); ?>
 					endif;
 				?>
 				<h2><?php echo $event_page->post_title; ?></h2>
-				<p><?php echo $event_page->post_content; ?></p>
+				<p><?php echo the_field( 'calendar_event_message' ); ?></p>
 				<div class="actions">
 					<a href="<?php echo get_the_permalink( $event->ID ); ?>" class="btn">View This Event</a>
 				</div>
