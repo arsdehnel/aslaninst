@@ -56,6 +56,9 @@
 			&.email{
 				background: transparent url( "assets/images/icon16-email.png" ) 20px 3px no-repeat;
 			}
+			&.my-account{
+				background: transparent url( "assets/images/icon16-my-account.png" ) 20px 3px no-repeat;
+			}
 			&:before{
 				content: '|';
 				display: inline-block;
