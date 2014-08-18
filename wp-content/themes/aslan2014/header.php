@@ -40,6 +40,7 @@
 					</div>
 			   	</div>
 			   	<div class="tel">Phone: 651.686.8818</div>
+			   	<div class="fax">Fax: 651.882.6280</div>
 			</address>
 			<ul class="connect-options">
 				<li class="email"><a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a></li>

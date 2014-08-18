@@ -54,7 +54,8 @@ body {
   display: inline-block;
   font-style: normal;
 }
-.site-header .vcard .tel {
+.site-header .vcard .tel,
+.site-header .vcard .fax {
   font-style: normal;
 }
 .site-header .connect-options {
