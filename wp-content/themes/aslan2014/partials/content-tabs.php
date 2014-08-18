@@ -15,11 +15,11 @@
 						if( $tab_id == $tab->ID || ( $tab_id == 0 && $tabs[0]->ID == $tab->ID ) ):
 							$current_tab_id = $tab->ID;
 							?>
-							<a class="active"><?php echo $tab->post_title; ?></a>
+							<a class="active"><span><?php echo $tab->post_title; ?></span></a>
 							<?php
 						else:
 							?>
-							<a href="?tab_id=<?php echo $tab->ID; ?>"><?php echo $tab->post_title; ?></a>
+							<a href="?tab_id=<?php echo $tab->ID; ?>"><span><?php echo $tab->post_title; ?></span></a>
 							<?php
 						endif;
 					endforeach;

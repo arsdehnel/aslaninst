@@ -243,6 +243,18 @@ body {
   border-bottom-color: white;
   pointer-events: none;
 }
+.tabs-wrapper .nav-tabs a.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -1px;
+  left: -1px;
+  bottom: 0;
+  height: 0;
+  border-bottom: 2.1em solid #6bae63;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}
 .tabs-wrapper .nav-tabs a:hover {
   border-bottom-color: #97c691;
 }
