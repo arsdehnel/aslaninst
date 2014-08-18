@@ -36,10 +36,6 @@ var aslanInstitute = {
 		iFrame.attr('src',url);
 		$('.modal-window').append(iFrame).removeClass('hide');
 
-		// $('.modal-window').load(url,function(){
-		// 	$(this).removeClass('hide');
-		// });
-
 	},
 
 	modalClose: function(){
@@ -107,7 +103,7 @@ var aslanCarousel = {
 		var curChar = 0;
 
 		//slideObj.find('.horse-content').addClass('on').lettering('words').find('span').lettering();
-		slideObj.find('.horse-content').addClass('on');//.lettering('words').find('span').lettering();
+		slideObj.find('.horse-content').addClass('on').lettering('words').find('span').lettering();
 
 		var chars = slideObj.find('span[class*=char]');
 
