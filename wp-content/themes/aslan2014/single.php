@@ -23,14 +23,6 @@ get_header(); ?>
     				//and the profile area
     				get_template_part( 'partials/provider', 'profile' );
 
-    			elseif( get_post_type( get_the_ID() ) == 'ai1ec_event' ):
-
-    				//this will output the "left rail" sort of thing
-    				get_template_part( 'partials/calendar', 'agenda' );
-
-    				//and then this will show the details of the event
-    				get_template_part( 'partials/calendar', 'details' );
-
     			elseif( get_post_type( get_the_ID() ) == 'aslaninst_training' ):
 
     				//this is the header and excerpt
