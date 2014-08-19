@@ -53,7 +53,7 @@ var aslanCarousel = {
 
 	init: function(){
 		if( ! $('.carousel').size() ){
-			log('no carousel');
+			//log('no carousel');
 			return;
 		}
 		this.carouselsInit();
@@ -132,5 +132,16 @@ var aslanCarousel = {
 
 };
 
-aslanInstitute.init();
-aslanCarousel.init();
+aslanCalendar = {
+
+	init: function(){
+		jQuery('#tribe-bar-event-type').select2();
+	}
+
+}
+
+$(function(){
+	aslanInstitute.init();
+	aslanCarousel.init();
+	aslanCalendar.init();
+})

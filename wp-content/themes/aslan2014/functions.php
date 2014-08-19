@@ -8,6 +8,7 @@
 	include_once( 'includes/providers.php' );
 	include_once( 'includes/tabs.php' );
 	include_once( 'includes/training.php' );
+	include_once( 'includes/calendar.php' );
 
 	function aslaninst_table_content( $column_name, $post_id ) {
 
@@ -45,6 +46,7 @@
 
 	function aslaninst2014_enqueue_scripts(){
 		wp_enqueue_style( 'aslaninst2014-style', get_stylesheet_uri(), array() );
+		wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
 	}
 	function aslaninst2014_admin_queue_scripts( $hook ){
 		wp_enqueue_style( 'aslaninst2014-style', get_template_directory_uri() . '/admin.css', array() );
@@ -85,7 +87,7 @@
 				return get_top_level_page_obj( 'training' )->ID;
 			elseif( $post_type == "aslaninst_provider" ):
 				return get_top_level_page_obj( 'providers' )->ID;
-			elseif( $post_type == "ai1ec_event" ):
+			elseif( $post_type == "tribe_events" ):
 				return get_top_level_page_obj( 'calendar' )->ID;
 			else:
 				echo $post_type;
