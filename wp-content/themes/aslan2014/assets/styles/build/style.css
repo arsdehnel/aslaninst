@@ -731,6 +731,22 @@ body {
   float: right;
 }
 
+#tribe-events-bar {
+  margin-bottom: 5px;
+}
+
+.tribe-events-category-trainingevents a {
+  color: #d00;
+}
+
+.tribe-events-category-generalevents a {
+  color: #333;
+}
+
+.tribe-events-category-providerevents a {
+  color: #00c;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;

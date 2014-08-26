@@ -1,13 +1,27 @@
 .tribe-bar-date-filter,
 .tribe-bar-search-filter,
-.tribe-bar-event-type-filter{
+.tribe-bar-event-type-filter {
 	width: 20%;
 }
-.tribe-bar-event-type-filter{
+.tribe-bar-event-type-filter {
 	float: left;
 	padding: 15px;
 }
-.tribe-bar-submit{
+.tribe-bar-submit {
 	margin-left: 10px;
 	float: right;
+}
+#tribe-events-bar {
+	margin-bottom: 5px;
+}
+.tribe-events-category-trainingevents a {
+    color: #d00;
+}
+
+.tribe-events-category-generalevents a {
+    color: #333;
+}
+
+.tribe-events-category-providerevents a {
+    color: #00c;
 }
