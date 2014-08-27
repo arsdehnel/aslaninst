@@ -1,6 +1,6 @@
 <?php
 
-	add_filter( 'tribe-events-bar-filters',  'setup_my_field_in_bar', 1, 1 );
+	// add_filter( 'tribe-events-bar-filters',  'setup_my_field_in_bar', 1, 1 );
 
 	function setup_my_field_in_bar( $filters ) {
 		$filters['tribe-bar-event-type'] = array(
@@ -12,7 +12,7 @@
 		return $filters;
 	}
 
-	add_filter( 'tribe_events_pre_get_posts', 'setup_my_bar_field_in_query', 10, 1 );
+	// add_filter( 'tribe_events_pre_get_posts', 'setup_my_bar_field_in_query', 10, 1 );
 
 	function setup_my_bar_field_in_query( $query ){
 		if ( !empty( $_REQUEST['tribe-bar-event-type'] ) ) {
