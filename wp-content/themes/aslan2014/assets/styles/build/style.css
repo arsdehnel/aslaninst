@@ -347,9 +347,9 @@ body {
   transform-origin: 50% 50%;
 }
 .js .carousel .horse-content.location-middle-center.on {
-  -webkit-transform: scale(2, 2);
-  -ms-transform: scale(2, 2);
-  transform: scale(2, 2);
+  -webkit-transform: scale(1.7, 2);
+  -ms-transform: scale(1.7, 2);
+  transform: scale(1.7, 2);
 }
 .js .carousel .horse-content.location-middle-right {
   -webkit-transform-origin: 100% 50%;
