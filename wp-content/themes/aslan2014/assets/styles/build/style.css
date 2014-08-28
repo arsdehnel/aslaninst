@@ -126,11 +126,11 @@ body {
 }
 .nav-main:before {
   left: -0.1em;
-  border-color: transparent tint(#6bae63, 40%) tint(#6bae63, 40%) transparent;
+  border-color: transparent #a6cea1 #a6cea1 transparent;
 }
 .nav-main:after {
   right: .1em;
-  border-color: transparent transparent tint(#6bae63, 40%) tint(#6bae63, 40%);
+  border-color: transparent transparent #a6cea1 #a6cea1;
 }
 .nav-main a {
   display: inline-block;
@@ -144,16 +144,16 @@ body {
   transition: 0.2s all linear;
 }
 .nav-main a:hover {
-  background-color: tint(#6bae63, 50%);
+  background-color: #b5d6b1;
   color: black;
 }
 .nav-main a.active {
   font-weight: 700;
-  border: 1px solid tint(#6bae63, 50%);
-  background-color: tint(tint(#6bae63, 50%), 70%);
+  border: 1px solid #b5d6b1;
+  background-color: #e8f2e7;
 }
 .nav-main a.active:hover {
-  background-color: tint(#6bae63, 50%);
+  background-color: #b5d6b1;
 }
 
 .nav-breadcrumbs {
@@ -256,7 +256,7 @@ body {
   border-right: 1em solid transparent;
 }
 .tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: tint(#6bae63, 30%);
+  border-bottom-color: #97c691;
 }
 .tabs-wrapper .tabs-content {
   min-height: 20em;
@@ -698,7 +698,7 @@ body {
   font-weight: 300;
 }
 .training-summary-wrapper.primary article h3 a:hover {
-  background-color: shade(#d7410e, 30%);
+  background-color: #962d09;
 }
 .training-summary-wrapper.secondary article {
   width: -webkit-calc(33% - 2em );
@@ -708,12 +708,12 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   padding: .5em;
-  background-color: shade(gold, 10%);
+  background-color: #e5c100;
   padding: .6667em;
   text-decoration: none;
 }
 .training-summary-wrapper.secondary article h3 a:hover {
-  background-color: shade(gold, 30%);
+  background-color: #b29600;
 }
 
 .tribe-bar-date-filter,
@@ -805,7 +805,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1em;
-  background: tint(gold, 70%);
+  background: #fff3b2;
   border-top: 1px solid black;
   text-align: right;
 }

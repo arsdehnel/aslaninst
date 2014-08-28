@@ -30,7 +30,7 @@
 				text-decoration: none;
 				font-weight: 300;
 				&:hover{
-					background-color: shade( $rust, 30% );
+					background-color: mix(black, $rust, 30% );
 				}
 			}
 		}
@@ -42,11 +42,11 @@
 				font-size: 1.5em;
 				font-weight: 600;
 				padding: .5em;
-				background-color: shade( $gold, 10% );
+				background-color: mix(black, $gold, 10% );
 				padding: .6667em;
 				text-decoration: none;
 				&:hover{
-					background-color: shade( $gold, 30% );
+					background-color: mix(black, $gold, 30% );
 				}
 			}
 		}
