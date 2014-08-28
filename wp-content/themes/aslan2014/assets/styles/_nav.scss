@@ -52,7 +52,7 @@
 	a{
 		color: $rust;
 		text-decoration: none;
-		@include linear-gradient(to bottom, transparent 0%, transparent 95%, $rust 97%);
+		background: linear-gradient(to bottom, transparent 0%, transparent 95%, $rust 97%);
 		background-position: 0 0;
 		&:hover{
 			background: none;

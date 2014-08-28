@@ -73,10 +73,8 @@ body {
 }
 .site-header .connect-options li a {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(top, compact(rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(to bottom,compact(rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
   background-position: 0 0;
   color: black;
 }
@@ -163,10 +161,8 @@ body {
 .nav-breadcrumbs a {
   color: #d7410e;
   text-decoration: none;
-  background-color: transparent;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(transparent 0%, transparent 95%, #d7410e 97%, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(top, compact(transparent 0%, transparent 95%, #d7410e 97%, false, false, false, false, false, false, false));
-  background-image: linear-gradient(to bottom,compact(transparent 0%, transparent 95%, #d7410e 97%, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 95%, #d7410e 97%);
+  background: linear-gradient(to bottom, transparent 0%, transparent 95%, #d7410e 97%);
   background-position: 0 0;
 }
 .nav-breadcrumbs a:hover {
@@ -293,7 +289,7 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   -webkit-transition: opacity 1s linear;
-  transition: opacity 1s linear;
+          transition: opacity 1s linear;
 }
 .carousel .horses .horse.active {
   opacity: 1;
@@ -307,101 +303,101 @@ body {
 }
 .js .carousel .horse-content {
   -webkit-transition: all 12s linear;
-  transition: all 12s linear;
+          transition: all 12s linear;
 }
 .js .carousel .horse-content.on {
   -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
+      -ms-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
 }
 .js .carousel .horse-content.location-top-left {
   -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 .js .carousel .horse-content.location-top-left.on {
   -webkit-transform: translate3d(30px, 25px, 0);
-  transform: translate3d(30px, 25px, 0);
+          transform: translate3d(30px, 25px, 0);
 }
 .js .carousel .horse-content.location-top-center, .js .carousel .horse-content.location-top-right {
   -webkit-transform-origin: 100% 0;
-  -ms-transform-origin: 100% 0;
-  transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+          transform-origin: 100% 0;
 }
 .js .carousel .horse-content.location-top-center.on, .js .carousel .horse-content.location-top-right.on {
   -webkit-transform: translate3d(5px, 35px, 0) scale(1.5, 1.5);
-  transform: translate3d(5px, 35px, 0) scale(1.5, 1.5);
+          transform: translate3d(5px, 35px, 0) scale(1.5, 1.5);
 }
 .js .carousel .horse-content.location-middle-left {
   -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 .js .carousel .horse-content.location-middle-left.on {
   -webkit-transform: translate3d(50px, 10px, 0);
-  transform: translate3d(50px, 10px, 0);
+          transform: translate3d(50px, 10px, 0);
 }
 .js .carousel .horse-content.location-middle-center {
   -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 .js .carousel .horse-content.location-middle-center.on {
   -webkit-transform: scale(1.7, 2);
-  -ms-transform: scale(1.7, 2);
-  transform: scale(1.7, 2);
+      -ms-transform: scale(1.7, 2);
+          transform: scale(1.7, 2);
 }
 .js .carousel .horse-content.location-middle-right {
   -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
 }
 .js .carousel .horse-content.location-middle-right.on {
   -webkit-transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
-  transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
+          transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
 }
 .js .carousel .horse-content.location-bottom-left {
   -webkit-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
 }
 .js .carousel .horse-content.location-bottom-left.on {
   -webkit-transform: translate3d(30px, 0, 0);
-  transform: translate3d(30px, 0, 0);
+          transform: translate3d(30px, 0, 0);
 }
 .js .carousel .horse-content.location-bottom-center {
   -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
 }
 .js .carousel .horse-content.location-bottom-center.on {
   -webkit-transform: translate3d(-20px, 30px, 0) scale(2, 2);
-  transform: translate3d(-20px, 30px, 0) scale(2, 2);
+          transform: translate3d(-20px, 30px, 0) scale(2, 2);
 }
 .js .carousel .horse-content.location-bottom-right {
   -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
 }
 .js .carousel .horse-content.location-bottom-right.on {
   -webkit-transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
-  transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
+          transform: translate3d(-30px, 5px, 0) scale(2, 1.5);
 }
 .js .carousel .horse-content span[class*=char] {
   color: white;
   opacity: .1;
   display: inline-block;
   -webkit-transform: scale(0.2, 0.2);
-  -ms-transform: scale(0.2, 0.2);
-  transform: scale(0.2, 0.2);
+      -ms-transform: scale(0.2, 0.2);
+          transform: scale(0.2, 0.2);
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.02, 1.5, 0.9, 1.31);
-  transition: transform 0.3s cubic-bezier(0.02, 1.5, 0.9, 1.31);
+          transition: transform 0.3s cubic-bezier(0.02, 1.5, 0.9, 1.31);
   text-shadow: 0 0 5px black;
 }
 .js .carousel .horse-content span[class*=char].on {
   -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
   opacity: 1;
 }
 .carousel .horse-content.location-top-left {
@@ -490,10 +486,8 @@ body {
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
-  background-color: #6bae63;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#6bae63, #4a9940);
+  background: linear-gradient(#6bae63, #4a9940);
   padding: 7px 18px;
   text-decoration: none;
   text-shadow: 0 1px 0 #398530;
@@ -503,10 +497,8 @@ body {
 .features .feature .actions a:hover:not(:disabled) {
   box-shadow: inset 0 1px 0 0 #81af7b;
   cursor: pointer;
-  background-color: #619e5a;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#619e5a, #458d3d);
+  background: linear-gradient(#619e5a, #458d3d);
 }
 .features .feature .actions a:active:not(:disabled) {
   border: 1px solid #458e3c;
@@ -629,10 +621,8 @@ body {
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
-  background-color: #6bae63;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#6bae63, #4a9940, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#6bae63, #4a9940);
+  background: linear-gradient(#6bae63, #4a9940);
   padding: 7px 18px;
   text-decoration: none;
   text-shadow: 0 1px 0 #398530;
@@ -641,10 +631,8 @@ body {
 .provider-profile .provider-website:hover:not(:disabled) {
   box-shadow: inset 0 1px 0 0 #81af7b;
   cursor: pointer;
-  background-color: #619e5a;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#619e5a, #458d3d, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#619e5a, #458d3d);
+  background: linear-gradient(#619e5a, #458d3d);
 }
 .provider-profile .provider-website:active:not(:disabled) {
   border: 1px solid #458e3c;
@@ -825,10 +813,8 @@ body {
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
-  background-color: #d7410e;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#d7410e, #aa2d03, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#d7410e, #aa2d03, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#d7410e, #aa2d03, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#d7410e, #aa2d03);
+  background: linear-gradient(#d7410e, #aa2d03);
   padding: 7px 18px;
   text-decoration: none;
   text-shadow: 0 1px 0 #892300;
@@ -839,10 +825,8 @@ body {
 .btn:hover:not(:disabled) {
   box-shadow: inset 0 1px 0 0 #e64d18;
   cursor: pointer;
-  background-color: #bb3c11;
-  background-image: _deprecated-webkit-gradient(linear, left top, left bottom, compact(#bb3c11, #9a2a03, false, false, false, false, false, false, false, false));
-  background-image: -webkit-linear-gradient(compact(#bb3c11, #9a2a03, false, false, false, false, false, false, false, false));
-  background-image: linear-gradient(compact(#bb3c11, #9a2a03, false, false, false, false, false, false, false, false));
+  background: -webkit-linear-gradient(#bb3c11, #9a2a03);
+  background: linear-gradient(#bb3c11, #9a2a03);
 }
 .btn:active:not(:disabled) {
   border: 1px solid #9b2903;
@@ -910,7 +894,8 @@ Version: @@ver@@ Timestamp: @@timestamp@@
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, white));
   background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
-  background-image: linear, to top, #eeeeee 0%, white 50%;
+  background-image: -webkit-linear-gradient(bottom, #eeeeee 0%, white 50%);
+  background-image: linear-gradient(to top, #eeeeee 0%, white 50%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice {
@@ -923,7 +908,8 @@ html[dir="rtl"] .select2-container .select2-choice {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.9, white));
   background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
-  background-image: linear, to bottom, #eeeeee 0%, white 90%;
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, white 90%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, white 90%);
 }
 
 .select2-container.select2-allowclear .select2-choice .select2-chosen {
@@ -1041,7 +1027,8 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(0.6, #eeeeee));
   background-image: -webkit-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-  background-image: linear, to top, #cccccc 0%, #eeeeee 60%;
+  background-image: -webkit-linear-gradient(bottom, #cccccc 0%, #eeeeee 60%);
+  background-image: linear-gradient(to top, #cccccc 0%, #eeeeee 60%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
@@ -1090,7 +1077,8 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
   background: white url("assets/images/select2.png") no-repeat 100% -22px;
   background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
   background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("assets/images/select2.png") no-repeat 100% -22px, linear, to bottom, white 85%, #eeeeee 99% 0 0;
+  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
+  background: url("assets/images/select2.png") no-repeat 100% -22px, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
 }
 
 html[dir="rtl"] .select2-search input {
@@ -1098,7 +1086,8 @@ html[dir="rtl"] .select2-search input {
   background: white url("assets/images/select2.png") no-repeat -37px -22px;
   background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
   background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("assets/images/select2.png") no-repeat -37px -22px, linear, to bottom, white 85%, #eeeeee 99% 0 0;
+  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
+  background: url("assets/images/select2.png") no-repeat -37px -22px, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
 }
 
 .select2-drop.select2-drop-above .select2-search input {
@@ -1109,7 +1098,8 @@ html[dir="rtl"] .select2-search input {
   background: white url("select2-spinner.gif") no-repeat 100%;
   background: url("select2-spinner.gif") no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
   background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("select2-spinner.gif") no-repeat 100%, linear, to bottom, white 85%, #eeeeee 99% 0 0;
+  background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
+  background: url("select2-spinner.gif") no-repeat 100%, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
 }
 
 .select2-container-active .select2-choice,
@@ -1127,7 +1117,8 @@ html[dir="rtl"] .select2-search input {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(0.5, #eeeeee));
   background-image: -webkit-linear-gradient(center bottom, white 0%, #eeeeee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
-  background-image: linear, to top, white 0%, #eeeeee 50%;
+  background-image: -webkit-linear-gradient(bottom, white 0%, #eeeeee 50%);
+  background-image: linear-gradient(to top, white 0%, #eeeeee 50%);
 }
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
@@ -1136,14 +1127,15 @@ html[dir="rtl"] .select2-search input {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(0.5, #eeeeee));
   background-image: -webkit-linear-gradient(center top, white 0%, #eeeeee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
-  background-image: linear, to bottom, white 0%, #eeeeee 50%;
+  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
 }
 
 .select2-dropdown-open .select2-choice .select2-arrow {
   background: transparent;
   border-left: none;
   -webkit-filter: none;
-  filter: none;
+          filter: none;
 }
 
 html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow {
@@ -1402,7 +1394,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
   background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: linear, to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%;
+  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
 }
 
 html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice {
@@ -1523,3 +1515,5 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 #tribe-bar-form .select2-container input[type="text"] {
   border-bottom: 0;
 }
+
+/*# sourceMappingURL=style.css.map */
