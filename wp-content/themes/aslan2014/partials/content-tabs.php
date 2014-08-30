@@ -31,7 +31,7 @@
 					// foreach( $tabs as $tab ):
 					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
 						if( $tab_id == get_the_ID() || ( $tab_id == 0 && $tabs[0]->ID == get_the_ID() ) ):
-							$current_tab_id = the_ID();
+							$current_tab_id = get_the_ID();
 							?>
 							<a class="active"><span><?php the_title(); ?></span></a>
 							<?php
