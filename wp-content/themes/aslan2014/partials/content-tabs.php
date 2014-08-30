@@ -30,14 +30,14 @@
 				<?php
 					// foreach( $tabs as $tab ):
 					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
-						if( $tab_id == $tab->ID || ( $tab_id == 0 && $tabs[0]->ID == $tab->ID ) ):
-							$current_tab_id = $tab->ID;
+						if( $tab_id == the_ID() || ( $tab_id == 0 && $tabs[0]->ID == the_ID() ) ):
+							$current_tab_id = the_ID();
 							?>
-							<a class="active"><span><?php echo $tab->post_title; ?></span></a>
+							<a class="active"><span><?php the_title(); ?></span></a>
 							<?php
 						else:
 							?>
-							<a href="?tab_id=<?php echo $tab->ID; ?>"><span><?php echo $tab->post_title; ?></span></a>
+							<a href="?tab_id=<?php the_ID(); ?>"><span><?php the_title(); ?></span></a>
 							<?php
 						endif;
 					// endforeach;
