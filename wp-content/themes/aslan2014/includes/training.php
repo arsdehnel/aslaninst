@@ -26,6 +26,7 @@
 
 		$args = array(
 				'post_type' => 'aslaninst_training',
+				'posts_per_page' => -1,
 				'post_status' => 'publish',
 				'meta_key' => 'category',
 				'meta_value' => $category,
