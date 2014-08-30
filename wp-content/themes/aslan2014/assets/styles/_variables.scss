@@ -28,9 +28,9 @@ $nav-wrap-triangle-color: mix( white, $nav-main-bg, 40% );
 
 // TABS
 $tab-height: 2em;
-$tab-active-bg: white;
+$tab-active-bg: $sage;
 $tab-active-color: black;
-$tab-inactive-bg: $sage;
+$tab-inactive-bg: #999999;
 
 // PROVIDERS
 $provider-select-width: 22em;

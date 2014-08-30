@@ -223,7 +223,7 @@ body {
   height: 0;
   margin: 0 .5em;
   padding: 0 2em;
-  border-bottom: 2em solid #6bae63;
+  border-bottom: 2em solid #999999;
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
   line-height: 2em;
@@ -236,11 +236,11 @@ body {
 .tabs-wrapper .nav-tabs a.active {
   font-weight: 700;
   color: black;
-  border-bottom-color: white;
+  border-bottom-color: #6bae63;
   pointer-events: none;
 }
 .tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: #97c691;
+  border-bottom-color: #b7b7b7;
 }
 .tabs-wrapper .tabs-content {
   min-height: 20em;
