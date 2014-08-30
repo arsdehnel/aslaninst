@@ -1,4 +1,12 @@
 <?php
+
+	$tabs_query = new WP_Query( 'post_type=aslaninst_tabs&posts_per_page=-1&meta_key=aslaninst_tab_parent_id&meta_value='.get_the_ID().'&orderby=menu_order&order=ASC' );
+
+	print_r( $tabs_query );
+
+//while ( $my_query->have_posts() ) : $my_query->the_post();
+// endwhile;
+
 	$args = array(
 		'posts_per_page' => -1,
 		'meta_key' => 'aslaninst_tab_parent_id',
