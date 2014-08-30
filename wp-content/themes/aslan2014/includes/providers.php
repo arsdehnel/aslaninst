@@ -77,6 +77,7 @@
 
 		$args = array(
 				'post_type' => 'aslaninst_provider',
+				'posts_per_page' => -1,
 				'post_status' => 'publish',
 				'meta_key' => 'member_type',
 				'meta_value' => $member_type,
