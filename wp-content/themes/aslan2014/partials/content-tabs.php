@@ -1,5 +1,13 @@
 <?php
-	$tabs = get_posts( array( 'meta_key' => 'aslaninst_tab_parent_id', 'meta_value' => get_the_ID(), 'post_type' => 'aslaninst_tabs', 'orderby' => 'menu_order', 'order' => 'ASC' ) );
+	$args = array(
+		'posts_per_page' => -1,
+		'meta_key' => 'aslaninst_tab_parent_id',
+		'meta_value' => get_the_ID(),
+		'post_type' => 'aslaninst_tabs',
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
+		);
+	$tabs = get_posts( $args );
 
 	if( is_array( $tabs ) && count( $tabs ) ):
 		if( array_key_exists( 'tab_id', $_GET ) ){
