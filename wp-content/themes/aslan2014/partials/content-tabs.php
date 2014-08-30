@@ -21,8 +21,10 @@
 	if( $tabs_query->have_posts() ):
 		if( array_key_exists( 'tab_id', $_GET ) ){
 			$tab_id = $_REQUEST['tab_id'];
+			$current_tab_id = $tab_id;
 		}else{
 			$tab_id = 0;
+			$current_tab_id = null;
 		}
 		?>
 		<div class="tabs-wrapper">
@@ -30,7 +32,7 @@
 				<?php
 					// foreach( $tabs as $tab ):
 					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
-						if( $tab_id == get_the_ID() || ( $tab_id == 0 && $tabs[0]->ID == get_the_ID() ) ):
+						if( $tab_id == get_the_ID() || ( $tab_id == 0 && is_null( $current_tab_id ) ) ):
 							$current_tab_id = get_the_ID();
 							?>
 							<a class="active"><span><?php the_title(); ?></span></a>
