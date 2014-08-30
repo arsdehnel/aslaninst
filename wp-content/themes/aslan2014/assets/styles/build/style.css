@@ -246,6 +246,7 @@ body {
   min-height: 20em;
   border: 1px solid black;
   background: white;
+  padding: .5em 1em;
 }
 .tabs-wrapper .tabs-content .tab-content {
   display: none;
