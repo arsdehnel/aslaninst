@@ -98,11 +98,19 @@
 
 	function aslaninst2014_acf_taxonomy_to_string( $acf_array ){
 
-		foreach( $acf_array as $entry ):
-			$return[] = $entry->name;
-		endforeach;
+		if( is_array( $acf_array ) && count( $acf_array ) > 0 ):
 
-		return implode( ', ', $return );
+			foreach( $acf_array as $entry ):
+				$return[] = $entry->name;
+			endforeach;
+
+			return implode( ', ', $return );
+
+		else:
+
+			return 'N/A';
+
+		endif;
 
 	}
 
