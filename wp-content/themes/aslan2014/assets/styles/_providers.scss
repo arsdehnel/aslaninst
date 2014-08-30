@@ -1,10 +1,10 @@
 .provider-select-wrapper,
 .provider-profile{
 	float: left;
-	height: 30em;
+	height: ( $provider-select-leadership-height + $provider-select-providers-height );
 }
 .provider-select-wrapper{
-	width: 17em;
+	width: $provider-select-width;
 	margin-right: 1em;
 	p{
 		text-align: center;
@@ -15,10 +15,10 @@
 		border: 1px solid black;
 		overflow-y: scroll;
 		&.leadership{
-			height: 10em;
+			height: $provider-select-leadership-height;
 		}
 		&.providers{
-			height: 14em;
+			height: $provider-select-providers-height;
 		}
 		background: white;
 		a{
@@ -52,7 +52,7 @@
 }
 .provider-profile{
 	position: relative;
-	width: ( $papa-bear-site-width - 21em );
+	width: ( $papa-bear-site-width - $provider-select-width - 4em );
 	padding: 1em;
 	border: 1px solid black;
 	background: white;
