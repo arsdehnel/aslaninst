@@ -14,7 +14,7 @@
 			line-height: $tab-height;
 			font-family: $nav-font;
 			text-transform: uppercase;
-			color: $nav-color;
+			color: $tab-inactive-color;
 			font-weight: 400;
 			text-decoration: none;
 			&.active {
