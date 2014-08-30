@@ -30,7 +30,7 @@
 				<?php
 					// foreach( $tabs as $tab ):
 					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
-						if( $tab_id == the_ID() || ( $tab_id == 0 && $tabs[0]->ID == the_ID() ) ):
+						if( $tab_id == get_the_ID() || ( $tab_id == 0 && $tabs[0]->ID == get_the_ID() ) ):
 							$current_tab_id = the_ID();
 							?>
 							<a class="active"><span><?php the_title(); ?></span></a>
@@ -51,7 +51,7 @@
 					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
 						?>
 						<!-- <div class="tab-content <?php echo ( $tab->ID == $current_tab_id ? 'current' : '' ); ?>"><?php echo $tab->post_content; ?></div> -->
-						<div class="tab-content <?php echo ( the_id() == $current_tab_id ? 'current' : '' ); ?>"><?php echo the_content(); ?></div>
+						<div class="tab-content <?php echo ( get_the_id() == $current_tab_id ? 'current' : '' ); ?>"><?php the_content(); ?></div>
 						<?php
 					// endforeach;
 					endwhile;
