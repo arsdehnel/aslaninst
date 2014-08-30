@@ -1,7 +1,7 @@
 .provider-select-wrapper,
 .provider-profile{
 	float: left;
-	height: ( $provider-select-leadership-height + $provider-select-providers-height );
+	height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
 }
 .provider-select-wrapper{
 	width: $provider-select-width;

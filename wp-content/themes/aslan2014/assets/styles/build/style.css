@@ -512,7 +512,7 @@ body {
 .provider-select-wrapper,
 .provider-profile {
   float: left;
-  height: 41em;
+  height: 47em;
 }
 
 .provider-select-wrapper {
@@ -657,7 +657,7 @@ body {
   float: left;
   margin: 1em;
   background-color: #eeeeee;
-  box-shadow: 3px 3px 5px #888;
+  box-shadow: 2px 2px 8px #888;
 }
 .training-summary-wrapper article h3 {
   margin: 0;
@@ -676,6 +676,7 @@ body {
 .training-summary-wrapper.primary article {
   width: -webkit-calc(50% - 2em );
   width: calc(50% - 2em );
+  height: 25em;
 }
 .training-summary-wrapper.primary article h3 a {
   padding: .5em;
@@ -691,13 +692,13 @@ body {
 .training-summary-wrapper.secondary article {
   width: -webkit-calc(33% - 2em );
   width: calc(33% - 2em );
+  height: 25em;
 }
 .training-summary-wrapper.secondary article h3 a {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 300;
   padding: .5em;
   background-color: #e5c100;
-  padding: .6667em;
   text-decoration: none;
 }
 .training-summary-wrapper.secondary article h3 a:hover {

@@ -4,7 +4,7 @@
 		float: left;
 		margin: 1em;
 		background-color: #eeeeee;
-		box-shadow: 3px 3px 5px #888;
+		box-shadow: 2px 2px 8px #888;
 		h3{
 			margin: 0;
 			padding: 0;
@@ -22,6 +22,7 @@
 	&.primary{
 		article{
 			width: calc( 50% - 2em );
+			height: 25em;
 			h3 a{
 				padding: .5em;
 				background-color: $rust;
@@ -38,12 +39,12 @@
 	&.secondary{
 		article{
 			width: calc( 33% - 2em );
+			height: 25em;
 			h3 a{
 				font-size: 1.5em;
-				font-weight: 600;
+				font-weight: 300;
 				padding: .5em;
 				background-color: mix(black, $gold, 10% );
-				padding: .6667em;
 				text-decoration: none;
 				&:hover{
 					background-color: mix(black, $gold, 30% );
