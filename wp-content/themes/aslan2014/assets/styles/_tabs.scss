@@ -22,18 +22,18 @@
 				color: $tab-active-color;
 				border-bottom-color: $tab-active-bg;
 				pointer-events: none;
-				&:after{
-					content: '';
-					display: block;
-					position: absolute;
-					right: -1px;
-					left: -1px;
-					bottom: 0;
-					height: 0;
-					border-bottom: ( $tab-height + .1em ) solid $tab-inactive-bg;
-					border-left: 1em solid transparent;
-					border-right: 1em solid transparent;
-				}
+				// &:after{
+				// 	content: '';
+				// 	display: block;
+				// 	position: absolute;
+				// 	right: -1px;
+				// 	left: -1px;
+				// 	bottom: 0;
+				// 	height: 0;
+				// 	border-bottom: ( $tab-height + .1em ) solid $tab-inactive-bg;
+				// 	border-left: 1em solid transparent;
+				// 	border-right: 1em solid transparent;
+				// }
 			}
 			&:hover {
 				border-bottom-color: mix(white, $tab-inactive-bg, 30% );
