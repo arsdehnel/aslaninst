@@ -29,7 +29,7 @@
 			<nav class="nav-tabs">
 				<?php
 					// foreach( $tabs as $tab ):
-					while ( $tabs_query>have_posts() ) : $tabs_query>the_post();
+					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
 						if( $tab_id == $tab->ID || ( $tab_id == 0 && $tabs[0]->ID == $tab->ID ) ):
 							$current_tab_id = $tab->ID;
 							?>
@@ -48,7 +48,7 @@
 			<div class="tabs-content">
 				<?php
 					// foreach( $tabs as $tab ):
-					while ( $tabs_query>have_posts() ) : $tabs_query>the_post();
+					while ( $tabs_query->have_posts() ) : $tabs_query->the_post();
 						?>
 						<!-- <div class="tab-content <?php echo ( $tab->ID == $current_tab_id ? 'current' : '' ); ?>"><?php echo $tab->post_content; ?></div> -->
 						<div class="tab-content <?php echo ( the_id() == $current_tab_id ? 'current' : '' ); ?>"><?php echo the_content(); ?></div>
