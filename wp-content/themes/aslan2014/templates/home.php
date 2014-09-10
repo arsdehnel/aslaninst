@@ -23,7 +23,7 @@ get_header(); ?>
 	</div><!-- /.carousel -->
 	<div class="features">
 		<article class="feature">
-			<h1>Training Spotlight</h1>
+			<h1>Training Institute Spotlight</h1>
 			<div class="feature-inner">
 				<?php
 					if( has_post_thumbnail( $training->ID ) ):
@@ -41,7 +41,7 @@ get_header(); ?>
 			</div>
 		</article>
 		<article class="feature">
-			<h1>Upcoming Event</h1>
+			<h1>Upcoming Event at Aslan</h1>
 			<div class="feature-inner">
 				<?php
 					if( has_post_thumbnail( $event->ID ) ):
