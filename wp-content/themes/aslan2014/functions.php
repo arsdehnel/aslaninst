@@ -9,6 +9,7 @@
 	include_once( 'includes/tabs.php' );
 	include_once( 'includes/training.php' );
 	include_once( 'includes/calendar.php' );
+	include_once( 'includes/client-side-color-picker.php' );
 
 	function aslaninst_table_content( $column_name, $post_id ) {
 
