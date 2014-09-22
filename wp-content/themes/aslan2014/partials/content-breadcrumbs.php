@@ -9,6 +9,14 @@
 		<span><?php the_title(); ?></span>
 		<?php
 
+	elseif( get_post_type( get_the_ID() ) == 'product' ):
+
+		?>
+		<a href="/store">Back to Store</a>
+		<span class="divider">></span>
+		<span><?php the_title(); ?></span>
+		<?php
+
 	endif;
 
 ?>

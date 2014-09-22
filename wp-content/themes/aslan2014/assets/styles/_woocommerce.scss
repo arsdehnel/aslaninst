@@ -1,0 +1,10 @@
+.woocommerce {
+	div.product {
+		div.images,
+		div.summary,
+		div.woocommerce-tabs {
+			float: left;
+			width: 30%;
+		}
+	}
+}
