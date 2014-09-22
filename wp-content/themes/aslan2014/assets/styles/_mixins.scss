@@ -1,3 +1,33 @@
+@mixin banner-with-wrap( $banner-color, $triangle-color ) {
+
+	position: relative;
+	width: $papa-bear-nav-main-width;
+	margin: 0 -1em -.1em;
+	padding: .25em 2em;
+	background: $banner-color;
+	text-align: right;
+	border: 1px solid #666;
+	min-height: 3.8em;
+	&:after,
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: -1em;
+		border: .5em solid;
+	}
+	&:before{
+		left: -.1em;
+		border-color: transparent $triangle-color $triangle-color transparent;
+	}
+	&:after{
+		right: .1em;
+		border-color: transparent transparent $triangle-color $triangle-color;
+	}
+
+}
+
+
 @function _linear-positions-parser($pos) {
   $type: type-of(nth($pos, 1));
   $spec: null;

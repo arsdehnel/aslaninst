@@ -5,6 +5,7 @@ body{
 	font-family: 'Open Sans', arial;
 	font-size: 80%;
 	background: $body-bg;
+	padding-bottom: 3em;
 }
 .site-wrapper{
 	width: $papa-bear-site-width;
@@ -14,4 +15,8 @@ body{
 .main{
 	background: #eee;
 	min-height: 400px;
+}
+
+.site-footer{
+	@include banner-with-wrap( $sage, $nav-wrap-triangle-color );
 }

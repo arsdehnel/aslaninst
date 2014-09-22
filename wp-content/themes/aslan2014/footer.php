@@ -1,9 +1,5 @@
-		<footer class="site-footer">
-			<nav class="nav-footer">
-				<!-- <a href="/wp-admin">My Account</a> -->
-			</nav>
-		</footer>
-	</div><!-- /.site-wrapper -->
+	</div><!-- /.main -->
+	<footer class="site-footer"></footer>
 	<div class="modal-overlay hide"></div>
 	<div class="modal-window hide">
 		<a href="#" class="modal-close">X</a>
