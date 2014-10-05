@@ -15,7 +15,7 @@
 		<?php
 			if( strlen( get_field( 'website_url' ) ) ):
 				?>
-				<a href="<?php echo get_field( 'website_url' ); ?>" class="provider-website">Link to Website</a>
+				<a href="<?php echo get_field( 'website_url' ); ?>" class="provider-website" target="_blank">Link to Website</a>
 				<?php
 			endif;
 		?>
