@@ -41,7 +41,7 @@
 	    // so they can be cached for subsequent changes
 	    // flush_rewrite_rules();
 
-	    add_theme_support( 'post-thumbnails', array( 'aslaninst_bighorse', 'aslaninst_training', 'aslaninst_provider' ) );
+	    add_theme_support( 'post-thumbnails', array( 'aslaninst_bighorse', 'aslaninst_training', 'aslaninst_provider', 'tribe_events' ) );
 
 	}
 
