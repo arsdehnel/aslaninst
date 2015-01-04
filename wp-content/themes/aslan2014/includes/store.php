@@ -1,5 +1,15 @@
 <?php
 
+    function wc_add_meta_query($query) {
+
+        // TODO: fix product query here
+        if (function_exists('is_shop') && is_shop() && is_main_query() && is_post_type_archive( 'product' ) && !is_admin() ) {
+        // echo 'yay';
+            $query->set('category', '-53');
+            // print_r( $query );
+        }
+        // return $query;
+    }
 
     function redirect_to_checkout() {
         global $woocommerce;

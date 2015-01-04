@@ -20,19 +20,6 @@
 	include_once( 'includes/calendar.php' );
 	include_once( 'includes/store.php' );
 
-
-function wc_add_meta_query($query) {
-
-	// TODO: fix product query here
-	if (is_shop() && is_main_query() && is_post_type_archive( 'product' ) && !is_admin() ) {
-	// echo 'yay';
-		$query->set('category', '-53');
-		// print_r( $query );
-	}
-	// return $query;
-}
-// add_filter('pre_get_posts','wc_add_meta_query');
-
 	function aslaninst_table_content( $column_name, $post_id ) {
 
 	    if ($column_name == 'parent') {
