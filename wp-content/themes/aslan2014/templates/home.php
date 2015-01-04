@@ -3,10 +3,10 @@
 Template Name: Home
 */
 
-$provider = get_field('provider_spotlight');
-$event = get_field('calendar_event');
+// $provider = get_field('provider_spotlight');
+// $event = get_field('calendar_event');
 $event_page = get_page( $event->ID );
-$training = get_field('training_spotlight');
+// $training = get_field('training_spotlight');
 $training_page = get_page( $training->ID );
 
 get_header(); ?>

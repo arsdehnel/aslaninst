@@ -9,7 +9,7 @@
 		<span><?php the_title(); ?></span>
 		<?php
 
-	elseif( get_post_type( get_the_ID() ) == 'product' ):
+	elseif( get_post_type( get_the_ID() ) == 'product' && ! is_shop() ):
 
 		?>
 		<a href="/store">Back to Store</a>

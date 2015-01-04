@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: default single post template
+Template Name: Default & Router
 * for this theme it's also acting as a router of sorts
 * so all the templates can live together in the templates folder
 * rather than a bunch of single-* files here in the root
@@ -36,7 +36,7 @@ get_header(); ?>
 
     			else:
 
-    				echo get_post_type( get_the_ID() ) . ' has no customized template setup.';
+    				// echo get_post_type( get_the_ID() ) . ' has no customized template setup.';
     				echo the_content();
 
 				endif;

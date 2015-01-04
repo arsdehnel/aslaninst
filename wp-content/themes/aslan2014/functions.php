@@ -3,13 +3,35 @@
 	add_action( 'init'                 , 'aslaninst2014_init' );
 	add_action( 'wp_enqueue_scripts'   , 'aslaninst2014_enqueue_scripts' );
 	add_action( 'admin_enqueue_scripts', 'aslaninst2014_admin_queue_scripts' );
+	add_action( 'pre_get_posts'        , 'wc_add_meta_query', 20 );
+    add_filter( 'add_to_cart_redirect' , 'redirect_to_checkout');
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+    add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 
 	include_once( 'includes/big_horses.php' );
 	include_once( 'includes/providers.php' );
 	include_once( 'includes/tabs.php' );
 	include_once( 'includes/training.php' );
 	include_once( 'includes/calendar.php' );
-	// include_once( 'includes/client-side-color-picker.php' );
+	include_once( 'includes/store.php' );
+
+
+function wc_add_meta_query($query) {
+
+	// TODO: fix product query here
+	if (is_shop() && is_main_query() && is_post_type_archive( 'product' ) && !is_admin() ) {
+	// echo 'yay';
+		$query->set('category', '-53');
+		// print_r( $query );
+	}
+	// return $query;
+}
+// add_filter('pre_get_posts','wc_add_meta_query');
 
 	function aslaninst_table_content( $column_name, $post_id ) {
 
@@ -42,12 +64,14 @@
 	    // flush_rewrite_rules();
 
 	    add_theme_support( 'post-thumbnails', array( 'aslaninst_bighorse', 'aslaninst_training', 'aslaninst_provider', 'tribe_events' ) );
-
+		add_theme_support( 'woocommerce' );
 	}
 
 	function aslaninst2014_enqueue_scripts(){
 		wp_enqueue_style( 'aslaninst2014-style', get_stylesheet_uri(), array() );
-		wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
+		wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/jquery.lettering.js' );
+
+		// wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
 	}
 	function aslaninst2014_admin_queue_scripts( $hook ){
 		wp_enqueue_style( 'aslaninst2014-style', get_template_directory_uri() . '/admin.css', array() );
@@ -90,6 +114,8 @@
 				return get_top_level_page_obj( 'providers' )->ID;
 			elseif( $post_type == "tribe_events" ):
 				return get_top_level_page_obj( 'calendar' )->ID;
+			elseif( $post_type == "page" || $post_type == 'product' ):
+				return get_top_level_page_obj( 'store' )->ID;
 			else:
 				echo $post_type;
 			endif;

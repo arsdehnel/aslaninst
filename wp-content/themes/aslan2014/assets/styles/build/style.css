@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-/*
+/*!
   Theme Name: Aslan Institute 2014
   Author: Adam Dehnel
   Author URI: http://arsdehnel.net/
@@ -9,6 +7,8 @@
   License: GNU General Public License v2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+@import url(//fonts.googleapis.com/css?family=EB+Garamond);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
 * {
   box-sizing: border-box;
 }
@@ -34,7 +34,7 @@ body {
 .site-footer {
   position: relative;
   width: 88em;
-  margin: 0 -1em -0.1em;
+  margin: 0 -1em -.1em;
   padding: .25em 2em;
   background: #bedc72;
   text-align: center;
@@ -49,7 +49,7 @@ body {
   border: .5em solid;
 }
 .site-footer:before {
-  left: -0.1em;
+  left: -.1em;
   border-color: transparent #d8eaaa #d8eaaa transparent;
 }
 .site-footer:after {
@@ -59,7 +59,7 @@ body {
 
 .site-header {
   position: relative;
-  height: 10em;
+  height: 11em;
   overflow: hidden;
   background: white;
 }
@@ -70,7 +70,19 @@ body {
 }
 .site-header h2 {
   position: absolute;
-  top: 10em;
+  bottom: .5em;
+  left: 1em;
+  width: 342px;
+  margin: 0;
+  padding-top: .1em;
+  border-top: 1px solid #999;
+  font-family: 'EB Garamond';
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: lighter;
+  color: #999;
+  font-size: 15px;
+  text-align: center;
 }
 .site-header .vcard {
   position: absolute;
@@ -82,7 +94,8 @@ body {
   font-style: normal;
 }
 .site-header .vcard .tel,
-.site-header .vcard .fax {
+.site-header .vcard .fax,
+.site-header .vcard .email {
   font-style: normal;
 }
 .site-header .connect-options {
@@ -100,8 +113,8 @@ body {
 }
 .site-header .connect-options li a {
   text-decoration: none;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.6) 95%);
+  background: -webkit-linear-gradient(top, transparent 95%, rgba(0, 0, 0, 0.6) 95%);
+  background: linear-gradient(to bottom, transparent 95%, rgba(0, 0, 0, 0.6) 95%);
   background-position: 0 0;
   color: black;
 }
@@ -117,14 +130,20 @@ body {
 .site-header .connect-options li.email {
   background: transparent url("assets/images/icon16-email.png") 20px 3px no-repeat;
 }
+.site-header .connect-options li.store {
+  background: transparent url("assets/images/icon16-store.png") 20px 3px no-repeat;
+}
+.site-header .connect-options li.cart {
+  background: transparent url("assets/images/icon16-cart.png") 20px 3px no-repeat;
+}
 .site-header .connect-options li.my-account {
   background: transparent url("assets/images/icon16-my-account.png") 20px 3px no-repeat;
 }
 .site-header .connect-options li:before {
   content: '|';
   display: inline-block;
-  padding: 0 -webkit-calc(20px + .5em ) 0 0.5em;
-  padding: 0 calc(20px + .5em ) 0 0.5em;
+  padding: 0 -webkit-calc( 20px + .5em ) 0 0.5em;
+  padding: 0 calc( 20px + .5em ) 0 0.5em;
 }
 .site-header .connect-options li:first-child {
   padding: 0 0 0 8px;
@@ -136,7 +155,7 @@ body {
 .nav-main {
   position: relative;
   width: 88em;
-  margin: 0 -1em -0.1em;
+  margin: 0 -1em -.1em;
   padding: .25em 2em;
   background: #bedc72;
   text-align: center;
@@ -151,7 +170,7 @@ body {
   border: .5em solid;
 }
 .nav-main:before {
-  left: -0.1em;
+  left: -.1em;
   border-color: transparent #d8eaaa #d8eaaa transparent;
 }
 .nav-main:after {
@@ -211,6 +230,9 @@ body {
 .content h2 {
   margin: 0;
   padding: 0;
+}
+.content .post-header {
+  position: relative;
 }
 .content:before, .content:after {
   content: " ";
@@ -498,7 +520,7 @@ body {
 }
 .features .feature .actions a:active:not(:disabled) {
   border: 1px solid #a8d92e;
-  box-shadow: inset 0 0 8px 4px #a0cf29, inset 0 0 8px 4px #a0cf29, 0 1px 1px 0 #eeeeee;
+  box-shadow: inset 0 0 8px 4px #a0cf29, inset 0 0 8px 4px #a0cf29, 0 1px 1px 0 #eee;
 }
 .features .feature .actions a:disabled {
   opacity: 0.5;
@@ -582,8 +604,8 @@ body {
   left: 1em;
 }
 .provider-profile .provider-details {
-  padding-left: -webkit-calc(1em + 180px );
-  padding-left: calc(1em + 180px );
+  padding-left: -webkit-calc( 1em + 180px );
+  padding-left: calc( 1em + 180px );
   min-height: 180px;
 }
 .provider-profile .provider-details h3 {
@@ -632,7 +654,7 @@ body {
 }
 .provider-profile .provider-website:active:not(:disabled) {
   border: 1px solid #a8d92e;
-  box-shadow: inset 0 0 8px 4px #a0cf29, inset 0 0 8px 4px #a0cf29, 0 1px 1px 0 #eeeeee;
+  box-shadow: inset 0 0 8px 4px #a0cf29, inset 0 0 8px 4px #a0cf29, 0 1px 1px 0 #eee;
 }
 .provider-profile .provider-website:disabled {
   opacity: 0.5;
@@ -670,8 +692,8 @@ body {
   transition: 0.2s all linear;
 }
 .training-summary-wrapper.primary article {
-  width: -webkit-calc(50% - 2em );
-  width: calc(50% - 2em );
+  width: -webkit-calc( 50% - 2em );
+  width: calc( 50% - 2em );
   height: 25em;
 }
 .training-summary-wrapper.primary article h3 a {
@@ -686,8 +708,8 @@ body {
   background-color: #660e09;
 }
 .training-summary-wrapper.secondary article {
-  width: -webkit-calc(33% - 2em );
-  width: calc(33% - 2em );
+  width: -webkit-calc( 33% - 2em );
+  width: calc( 33% - 2em );
   height: 25em;
 }
 .training-summary-wrapper.secondary article h3 a {
@@ -827,7 +849,7 @@ body {
 }
 .btn:active:not(:disabled) {
   border: 1px solid #550803;
-  box-shadow: inset 0 0 8px 4px #460703, inset 0 0 8px 4px #460703, 0 1px 1px 0 #eeeeee;
+  box-shadow: inset 0 0 8px 4px #460703, inset 0 0 8px 4px #460703, 0 1px 1px 0 #eee;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -888,11 +910,11 @@ Version: @@ver@@ Timestamp: @@timestamp@@
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, white));
-  background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff));
+  background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
-  background-image: -webkit-linear-gradient(bottom, #eeeeee 0%, white 50%);
-  background-image: linear-gradient(to top, #eeeeee 0%, white 50%);
+  background-image: -webkit-linear-gradient(bottom, #eee 0%, #fff 50%);
+  background-image: linear-gradient(to top, #eee 0%, #fff 50%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice {
@@ -902,11 +924,11 @@ html[dir="rtl"] .select2-container .select2-choice {
 .select2-container.select2-drop-above .select2-choice {
   border-bottom-color: #aaa;
   border-radius: 0 0 4px 4px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.9, white));
-  background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 90%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.9, #fff));
+  background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
-  background-image: -webkit-linear-gradient(top, #eeeeee 0%, white 90%);
-  background-image: linear-gradient(to bottom, #eeeeee 0%, white 90%);
+  background-image: -webkit-linear-gradient(top, #eee 0%, #fff 90%);
+  background-image: linear-gradient(to bottom, #eee 0%, #fff 90%);
 }
 
 .select2-container.select2-allowclear .select2-choice .select2-chosen {
@@ -1021,11 +1043,11 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   border-radius: 0 4px 4px 0;
   background-clip: padding-box;
   background: #ccc;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(0.6, #eeeeee));
-  background-image: -webkit-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
+  background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-  background-image: -webkit-linear-gradient(bottom, #cccccc 0%, #eeeeee 60%);
-  background-image: linear-gradient(to top, #cccccc 0%, #eeeeee 60%);
+  background-image: -webkit-linear-gradient(bottom, #ccc 0%, #eee 60%);
+  background-image: linear-gradient(to top, #ccc 0%, #eee 60%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
@@ -1071,20 +1093,20 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
   border: 1px solid #aaa;
   border-radius: 0;
   box-shadow: none;
-  background: white url("assets/images/select2.png") no-repeat 100% -22px;
-  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
-  background: url("assets/images/select2.png") no-repeat 100% -22px, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
+  background: #fff url("assets/images/select2.png") no-repeat 100% -22px;
+  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("assets/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(top, #fff 85%, #eee 99%) 0 0;
+  background: url("assets/images/select2.png") no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
 }
 
 html[dir="rtl"] .select2-search input {
   padding: 4px 5px 4px 20px;
-  background: white url("assets/images/select2.png") no-repeat -37px -22px;
-  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
-  background: url("assets/images/select2.png") no-repeat -37px -22px, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
+  background: #fff url("assets/images/select2.png") no-repeat -37px -22px;
+  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("assets/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(top, #fff 85%, #eee 99%) 0 0;
+  background: url("assets/images/select2.png") no-repeat -37px -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
 }
 
 .select2-drop.select2-drop-above .select2-search input {
@@ -1092,11 +1114,11 @@ html[dir="rtl"] .select2-search input {
 }
 
 .select2-search input.select2-active {
-  background: white url("select2-spinner.gif") no-repeat 100%;
-  background: url("select2-spinner.gif") no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-  background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(top, white 85%, #eeeeee 99%) 0 0;
-  background: url("select2-spinner.gif") no-repeat 100%, linear-gradient(to bottom, white 85%, #eeeeee 99%) 0 0;
+  background: #fff url("select2-spinner.gif") no-repeat 100%;
+  background: url("select2-spinner.gif") no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("select2-spinner.gif") no-repeat 100%, -webkit-linear-gradient(top, #fff 85%, #eee 99%) 0 0;
+  background: url("select2-spinner.gif") no-repeat 100%, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
 }
 
 .select2-container-active .select2-choice,
@@ -1111,21 +1133,21 @@ html[dir="rtl"] .select2-search input {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   background-color: #eee;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(0.5, #eeeeee));
-  background-image: -webkit-linear-gradient(center bottom, white 0%, #eeeeee 50%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #eee));
+  background-image: -webkit-linear-gradient(center bottom, #fff 0%, #eee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
-  background-image: -webkit-linear-gradient(bottom, white 0%, #eeeeee 50%);
-  background-image: linear-gradient(to top, white 0%, #eeeeee 50%);
+  background-image: -webkit-linear-gradient(bottom, #fff 0%, #eee 50%);
+  background-image: linear-gradient(to top, #fff 0%, #eee 50%);
 }
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
   border-top-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(0.5, #eeeeee));
-  background-image: -webkit-linear-gradient(center top, white 0%, #eeeeee 50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.5, #eee));
+  background-image: -webkit-linear-gradient(center top, #fff 0%, #eee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
-  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
-  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+  background-image: -webkit-linear-gradient(top, #fff 0%, #eee 50%);
+  background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);
 }
 
 .select2-dropdown-open .select2-choice .select2-arrow {
@@ -1166,7 +1188,7 @@ html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow b {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 html[dir="rtl"] .select2-results {
@@ -1364,7 +1386,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li {
 }
 
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
-  background: white url("select2-spinner.gif") no-repeat 100% !important;
+  background: #fff url("select2-spinner.gif") no-repeat 100% !important;
 }
 
 .select2-default {
@@ -1380,7 +1402,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li {
   cursor: default;
   border: 1px solid #aaaaaa;
   border-radius: 3px;
-  box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
   background-clip: padding-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1389,9 +1411,9 @@ html[dir="rtl"] .select2-container-multi .select2-choices li {
   user-select: none;
   background-color: #e4e4e4;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
 }
 
 html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice {
@@ -1513,11 +1535,157 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-bottom: 0;
 }
 
-.woocommerce div.product div.images,
-.woocommerce div.product div.summary,
-.woocommerce div.product div.woocommerce-tabs {
+.woocommerce .products .product {
+  position: relative;
+}
+.woocommerce .products .product .images img {
+  width: 50%;
   float: left;
-  width: 30%;
+}
+.woocommerce .products .product footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3em;
+  background: #e0ca9d;
+}
+.woocommerce .products .product footer .price {
+  padding: 0 1em;
+  line-height: 3em;
+}
+.woocommerce .products .product footer > :first-child {
+  float: left;
+  width: 50%;
+}
+.woocommerce .products .product footer > :last-child {
+  float: right;
+  width: 40%;
+  padding: .5em;
+  text-align: right;
+}
+.woocommerce .content .product .summary {
+  width: 100%;
+  float: none;
+}
+.woocommerce .content .product .images {
+  max-width: 250px;
+  margin-right: 20px;
+  box-shadow: none;
+}
+.woocommerce .content .product .single_add_to_cart_button {
+  background: #93150d;
+  color: white;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+}
+.woocommerce .content .product .single_add_to_cart_button:hover {
+  background: #75100a;
+  color: white;
+  text-shadow: none;
+}
+.woocommerce .content .product .woocommerce-tabs .tabs {
+  display: none;
+}
+.woocommerce .content .product .woocommerce-tabs li:only-child {
+  display: none;
+}
+.woocommerce .cart .product-name a {
+  line-height: 32px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.woocommerce .cart .product-remove {
+  width: 30px;
+  text-align: center;
+}
+.woocommerce .cart .product-remove a {
+  margin: 0 auto;
+}
+.woocommerce .cart .actions .input-text {
+  width: 120px;
+}
+.woocommerce .cart-collaterals .cart_totals {
+  max-width: 350px;
+}
+.woocommerce .cart-collaterals .cart_totals table {
+  width: 100%;
+}
+.woocommerce .cart-collaterals .cart_totals table th {
+  width: 50%;
+}
+.woocommerce .button.checkout-button {
+  background: #bedc72 !important;
+}
+.woocommerce .woocommerce-message {
+  border-top-color: #bedc72;
+}
+.woocommerce .woocommerce-message::before {
+  background-color: #bedc72;
+}
+.woocommerce .woocommerce-info {
+  border-top-color: #e0ca9d;
+}
+.woocommerce .woocommerce-info::before {
+  background-color: #e0ca9d;
+}
+.woocommerce #payment {
+  background: transparent;
+  border-radius: 0;
+}
+.woocommerce #payment ul.payment_methods {
+  margin: 0 10px;
+  padding: 0;
+}
+.woocommerce #payment div.payment_box {
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+}
+.woocommerce #payment div.payment_box fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.woocommerce #payment div.payment_box .wc-credit-card-form-card-number,
+.woocommerce #payment div.payment_box .wc-credit-card-form-card-expiry,
+.woocommerce #payment div.payment_box .wc-credit-card-form-card-cvc {
+  font-size: 12px !important;
+  border: 1px solid #666;
+  padding: 2px 8px !important;
+}
+.woocommerce form .form-row input.input-text {
+  line-height: 2em;
+}
+.woocommerce ::-webkit-input-placeholder {
+  padding-top: 4px;
+}
+.woocommerce ::-moz-input-placeholder {
+  padding-top: 4px;
+}
+.woocommerce ::-ms-input-placeholder {
+  padding-top: 4px;
+}
+
+.register-now-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #93150d;
+  color: white;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 6px 12px;
+}
+.register-now-button:hover {
+  background: #75100a;
+  color: white;
+  text-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

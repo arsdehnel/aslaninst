@@ -18,8 +18,6 @@
     <!-- Wordpress Head Items -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/build/jquery-1.11.1.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/build/jquery.lettering.js"></script>
     <?php wp_head(); ?>
 
 </head>
@@ -27,11 +25,11 @@
 	<div class="site-wrapper">
 		<header class="site-header">
 			<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg"></h1>
-			<h2><?php wp_title('', true, 'right'); ?></h2>
+			<h2>Integral Mental Health Clinic</h2>
 			<address class="vcard">
 			   	<div class="adr">
 			   		<div class="addr-line">
-				      	<div class="street-address">4141 Old Sibley Memorial Highway</div>
+				      	<div class="street-address">4141 Old Sibley Memorial Hwy</div>
 					</div>
 			   		<div class="addr-line">
 				      	<div class="locality">Eagan, MN</div >
@@ -41,11 +39,21 @@
 			   	</div>
 			   	<div class="tel">Phone: 651.686.8818</div>
 			   	<div class="fax">Fax: 651.882.6280</div>
+				<div class="email">
+					Email: <a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a>
+				</div>
 			</address>
 			<ul class="connect-options">
-				<li class="email"><a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a></li>
+				<!-- <li class="email"><a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a></li> -->
 				<li class="facebook"><a href="https://www.facebook.com/pages/Aslan-Institute/57758293600">Facebook</a></li>
 				<li class="constant-contact"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=cozbrycab&p=oi&m=1102482302402&sit=woe9n45db&f=e618077a-40b4-4a94-bb13-3d847164207e">Newsletter</a></li>
+				<li class="store"><a href="/store">Store</a></li>
+				<?php
+				    global $woocommerce;
+      				if( sizeof( $woocommerce->cart->get_cart() ) > 0 ):
+        				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a></li>';
+      				endif;
+  				?>
 				<li class="my-account"><a href="/wp-admin">My Account</a></li>
 			</ul>
 		</header>

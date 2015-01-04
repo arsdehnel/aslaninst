@@ -13,8 +13,8 @@ module.exports = function(grunt) {
                 tasks: ['sass', 'autoprefixer', 'cssmin']
             },
             js: {
-                files: '<%= jshint.all %>',
-                tasks: ['jshint', 'uglify']
+                files: ['assets/scripts/*.js'],
+                tasks: ['uglify']
             },
             images: {
                 files: ['assets/images/**/*.{png,jpg,gif}'],

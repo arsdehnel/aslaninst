@@ -1,0 +1,166 @@
+.woocommerce {
+    .products {
+        .product {
+            position: relative;
+            .images img {
+                width: 50%;
+                float: left;
+            }
+            footer {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 3em;
+                background: $gold;
+                .price {
+                    padding: 0 1em;
+                    line-height: 3em;
+                }
+                > :first-child {
+                    float: left;
+                    width: 50%;
+                }
+                > :last-child {
+                    float: right;
+                    width: 40%;
+                    padding: .5em;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    // single product page stuff
+    .content .product {
+        .summary {
+            width: 100%;
+            float: none;
+        }
+        .images {
+            max-width: 250px;
+            margin-right: 20px;
+            box-shadow: none;
+        }
+        .single_add_to_cart_button {
+            background: $rust;
+            color: white;
+            text-shadow: none;
+            border: 0;
+            border-radius: 0;
+            &:hover {
+                background: mix( black, $rust, 20% );
+                color: white;
+                text-shadow: none;
+            }
+        }
+        .woocommerce-tabs {
+            .tabs {
+                display: none;
+            }
+            li:only-child {
+                display: none;
+            }
+        }
+    }
+    .cart {
+        .product-name a {
+            line-height: 32px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+        .product-remove {
+            width: 30px;
+            text-align: center;
+        }
+        .product-remove a {
+            margin: 0 auto;
+        }
+        .actions .input-text {
+            width: 120px;
+        }
+        // .button {
+        //     background: $gold !important;
+        //     box-shadow: none !important;
+        // }
+    }
+    .cart-collaterals .cart_totals {
+        max-width: 350px;
+        table {
+            width: 100%;
+            th {
+                width: 50%;
+            }
+        }
+    }
+    .button.checkout-button {
+        background: $sage !important;
+    }
+    .woocommerce-message {
+        border-top-color: $sage;
+        &::before {
+            background-color: $sage;
+        }
+    }
+    .woocommerce-info {
+        border-top-color: $gold;
+        &::before {
+            background-color: $gold;
+        }
+    }
+    #payment {
+        background: transparent;
+        border-radius: 0;
+        ul.payment_methods {
+            margin: 0 10px;
+            padding: 0;
+        }
+        div.payment_box {
+            background: transparent !important;
+            box-shadow: none !important;
+            margin: 0;
+            padding: 0;
+            fieldset {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            .wc-credit-card-form-card-number,
+            .wc-credit-card-form-card-expiry,
+            .wc-credit-card-form-card-cvc {
+                font-size: 12px !important;
+                border: 1px solid #666;
+                padding: 2px 8px !important;
+            }
+        }
+    }
+    form .form-row input.input-text {
+        line-height: 2em;
+    }
+    ::-webkit-input-placeholder {
+        padding-top: 4px;
+    }
+    ::-moz-input-placeholder {
+        padding-top: 4px;
+    }
+    ::-ms-input-placeholder {
+        padding-top: 4px;
+    }
+}
+.register-now-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $rust;
+    color: white;
+    text-shadow: none;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 6px 12px;
+    &:hover {
+        background: mix( black, $rust, 20% );
+        color: white;
+        text-shadow: none;
+    }
+}

@@ -1,10 +1,10 @@
 <?php
 /**
- * Product Loop Start
+ * Product Loop End
  *
  * @author      WooThemes
  * @package     WooCommerce/Templates
  * @version     2.0.0
  */
 ?>
-<div class="products training-summary-wrapper secondary">
+</div><!-- /.products -->

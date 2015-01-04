@@ -1,6 +1,6 @@
 .site-header{
 	position: relative;
-	height: 10em;
+	height: 11em;
 	overflow: hidden;
 	background: white;
 	h1{
@@ -10,7 +10,19 @@
 	}
 	h2{
 		position: absolute;
-		top: 10em;
+		bottom: .5em;
+		left: 1em;
+		width: 342px;
+		margin: 0;
+		padding-top: .1em;
+		border-top: 1px solid #999;
+		font-family: 'EB Garamond';
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-weight: lighter;
+		color: #999;
+		font-size: 15px;
+		text-align: center;
 	}
 	.vcard{
 		position: absolute;
@@ -23,7 +35,8 @@
 			}
 		}
 		.tel,
-		.fax{
+		.fax,
+		.email{
 			font-style: normal;
 		}
 	}
@@ -55,6 +68,12 @@
 			}
 			&.email{
 				background: transparent url( "assets/images/icon16-email.png" ) 20px 3px no-repeat;
+			}
+			&.store{
+				background: transparent url( "assets/images/icon16-store.png" ) 20px 3px no-repeat;
+			}
+			&.cart{
+				background: transparent url( "assets/images/icon16-cart.png" ) 20px 3px no-repeat;
 			}
 			&.my-account{
 				background: transparent url( "assets/images/icon16-my-account.png" ) 20px 3px no-repeat;

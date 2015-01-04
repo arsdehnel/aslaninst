@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <div id="main">
-	main!
+	<!-- main! -->
 </div>
 <?php
 

@@ -16,10 +16,10 @@ var aslanInstitute = {
 
 	bindUIFunctions: function(){
 
-		$('body')
+		jQuery('body')
 			.on('click','.constant-contact a',function(e){
 				e.preventDefault();
-				aslanInstitute.modalOpen( $(this).attr('href') );
+				aslanInstitute.modalOpen( jQuery(this).attr('href') );
 			})
 			.on('click','.modal-close',function(e){
 				e.preventDefault();
@@ -30,18 +30,18 @@ var aslanInstitute = {
 
 	modalOpen: function( url ){
 
-		$('.modal-overlay').removeClass('hide');
+		jQuery('.modal-overlay').removeClass('hide');
 
-		var iFrame = $('<iframe />');
+		var iFrame = jQuery('<iframe />');
 		iFrame.attr('src',url);
-		$('.modal-window').append(iFrame).removeClass('hide');
+		jQuery('.modal-window').append(iFrame).removeClass('hide');
 
 	},
 
 	modalClose: function(){
 
-		$('.modal-window').addClass('hide').children(':not(.modal-close)').remove();
-		$('.modal-overlay').addClass('hide');
+		jQuery('.modal-window').addClass('hide').children(':not(.modal-close)').remove();
+		jQuery('.modal-overlay').addClass('hide');
 
 	}
 
@@ -52,7 +52,7 @@ var aslanCarousel = {
 	crossFadeDuration: 300,
 
 	init: function(){
-		if( ! $('.carousel').size() ){
+		if( ! jQuery('.carousel').size() ){
 			//log('no carousel');
 			return;
 		}
@@ -61,8 +61,8 @@ var aslanCarousel = {
 
 	carouselsInit: function(){
 		var ac = this;
-		$('.carousel').each(function(){
-			var carousel = $(this);
+		jQuery('.carousel').each(function(){
+			var carousel = jQuery(this);
 			setTimeout(function(){
 				ac.nextSlide( carousel );
 			},500);
@@ -135,13 +135,15 @@ var aslanCarousel = {
 aslanCalendar = {
 
 	init: function(){
-		jQuery('#tribe-bar-event-type').select2();
+		if( jQuery('#tribe-bar-event-type').size() > 0 ){
+			jQuery('#tribe-bar-event-type').select2();
+		}
 	}
 
 }
 
-$(function(){
+jQuery(document).ready(function(){
 	aslanInstitute.init();
 	aslanCarousel.init();
 	aslanCalendar.init();
-})
+});
