@@ -50,7 +50,7 @@
 				<li class="store"><a href="/store">Store</a></li>
 				<?php
 				    global $woocommerce;
-      				if( sizeof( $woocommerce->cart->get_cart() ) > 0 ):
+      				if( is_object( $woocommerce ) && is_object( $woocommerce->cart ) && sizeof( $woocommerce->cart->get_cart() ) > 0 ):
         				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a></li>';
       				endif;
   				?>
