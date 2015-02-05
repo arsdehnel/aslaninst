@@ -56,8 +56,8 @@
 
 	function aslaninst2014_enqueue_scripts(){
 		wp_enqueue_style( 'aslaninst2014-style', get_stylesheet_uri(), array() );
-		wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/jquery.lettering.js' );
     	wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'jquery-lettering', get_template_directory_uri() . '/assets/scripts/build/jquery.lettering.js' );
 		// wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
 	}
 	function aslaninst2014_admin_queue_scripts( $hook ){
