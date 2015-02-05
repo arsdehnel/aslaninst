@@ -35,6 +35,7 @@ foreach($environments AS $url_partial => $env){
 }
 
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+define('WP_MEMORY_LIMIT','128M');
 
 // If no environment is set default to production
 if(!defined('ENVIRONMENT')) define('ENVIRONMENT', 'prod');
@@ -44,10 +45,10 @@ switch(ENVIRONMENT){
 	case 'dev':
 
 		define('WP_PLUGIN_URL', 'http://aslaninst.local/wp-content/plugins');
-		define('WP_CONTENT_URL', 'http://aslaninst.local/wp-content');
+		// define('WP_CONTENT_URL', 'http://aslaninst.local/wp-content');
 
-		define('DB_NAME', 'aslaninstorg');
-		define('DB_USER', 'aslaninstorg');
+		define('DB_NAME', 'aslaninstcom');
+		define('DB_USER', 'aslaninstcom');
 		define('DB_PASSWORD', 't3ZsxVmg');
 		define('DB_HOST', 'localhost');
 		define('WP_DEBUG', true);
