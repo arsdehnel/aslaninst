@@ -1,6 +1,6 @@
 <?php
 
-	add_filter('manage_aslaninst_bighorse_posts_columns', 'aslaninst_bighorse_table_head');
+	add_filter( 'manage_aslaninst_bighorse_posts_columns', 'aslaninst_bighorse_table_head');
 	add_action( 'manage_aslaninst_bighorse_posts_custom_column', 'aslaninst_table_content', 10, 2 );
 
 	function big_horses_init() {
