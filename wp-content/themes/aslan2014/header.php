@@ -47,12 +47,16 @@
 				<!-- <li class="email"><a href="mailto:<?php echo antispambot( 'info@aslaninst.com' ); ?>"><?php echo antispambot( 'info@aslaninst.com' ); ?></a></li> -->
 				<li class="facebook"><a href="https://www.facebook.com/pages/Aslan-Institute/57758293600">Facebook</a></li>
 				<li class="constant-contact"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=cozbrycab&p=oi&m=1102482302402&sit=woe9n45db&f=e618077a-40b4-4a94-bb13-3d847164207e">Newsletter</a></li>
-				<li class="store"><a href="/store">Store</a></li>
-				<?php
-				    global $woocommerce;
-      				if( is_object( $woocommerce ) && is_object( $woocommerce->cart ) && sizeof( $woocommerce->cart->get_cart() ) > 0 ):
-        				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a></li>';
-      				endif;
+                <?php
+                    if( is_user_logged_in() ):
+                        ?>
+				        <li class="store"><a href="/store">Store</a></li>
+                        <?php
+    				    global $woocommerce;
+          				if( is_object( $woocommerce ) && is_object( $woocommerce->cart ) && sizeof( $woocommerce->cart->get_cart() ) > 0 ):
+            				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a></li>';
+          				endif;
+                    endif;
   				?>
 				<li class="my-account"><a href="/wp-admin">My Account</a></li>
 			</ul>
