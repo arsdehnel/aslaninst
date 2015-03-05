@@ -54,7 +54,7 @@
                         <?php
     				    global $woocommerce;
           				if( is_object( $woocommerce ) && is_object( $woocommerce->cart ) && sizeof( $woocommerce->cart->get_cart() ) > 0 ):
-            				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a></li>';
+            				echo '<li class="cart"><a href="'.$woocommerce->cart->get_cart_url().'" title="View your shopping cart">Cart</a> ('.sizeof( $woocommerce->cart->get_cart() ).')</li>';
           				endif;
                     endif;
   				?>
