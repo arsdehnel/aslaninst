@@ -25,7 +25,7 @@
 	<div class="site-wrapper">
 		<header class="site-header">
 			<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg"></h1>
-			<h2>Integral Mental Health Clinic</h2>
+			<h2>Integrative Mental Health Clinic</h2>
 			<address class="vcard">
 			   	<div class="adr">
 			   		<div class="addr-line">
