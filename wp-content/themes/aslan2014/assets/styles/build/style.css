@@ -755,6 +755,10 @@ body {
   color: #00c;
 }
 
+#tribe-bar-form {
+  background: transparent;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
