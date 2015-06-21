@@ -755,7 +755,12 @@ body {
   color: #00c;
 }
 
-#tribe-bar-form,
+#tribe-bar-form {
+  border: solid #e0e0e0;
+  border-width: 0 1px 1px 1px;
+  top: 1px;
+  background: #ddd;
+}
 #tribe-bar-form .tribe-bar-views-inner {
   background: transparent;
 }
