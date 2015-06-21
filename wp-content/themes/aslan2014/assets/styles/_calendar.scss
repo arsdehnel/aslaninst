@@ -26,5 +26,17 @@
     color: #00c;
 }
 #tribe-bar-form {
-    background: transparent;
+    &,
+    .tribe-bar-views-inner {
+        background: transparent;
+    }
+    #tribe-bar-views + .tribe-bar-filters,
+    #tribe-bar-views {
+        right: auto;
+        left: auto;
+    }
+    .tribe-bar-views-list .tribe-bar-views-option a {
+        background: #ebebeb;
+        border: 1px solid #e0e0e0;
+    }
 }

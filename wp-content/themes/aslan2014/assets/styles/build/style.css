@@ -755,8 +755,18 @@ body {
   color: #00c;
 }
 
-#tribe-bar-form {
+#tribe-bar-form,
+#tribe-bar-form .tribe-bar-views-inner {
   background: transparent;
+}
+#tribe-bar-form #tribe-bar-views + .tribe-bar-filters,
+#tribe-bar-form #tribe-bar-views {
+  right: auto;
+  left: auto;
+}
+#tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option a {
+  background: #ebebeb;
+  border: 1px solid #e0e0e0;
 }
 
 .modal-overlay {
