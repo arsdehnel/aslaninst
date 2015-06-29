@@ -39,7 +39,11 @@ body {
   background: #bedc72;
   text-align: center;
   border: 1px solid #666;
-  min-height: 3.8em;
+}
+@media screen and (min-width: 40em) {
+  .site-footer {
+    min-height: 3.8em;
+  }
 }
 .site-footer:after, .site-footer:before {
   content: '';
@@ -201,8 +205,12 @@ body {
   background: #bedc72;
   text-align: center;
   border: 1px solid #666;
-  min-height: 3.8em;
   padding-right: 3em;
+}
+@media screen and (min-width: 40em) {
+  .nav-main {
+    min-height: 3.8em;
+  }
 }
 .nav-main:after, .nav-main:before {
   content: '';
@@ -246,10 +254,6 @@ body {
   color: black;
 }
 .nav-main a.active {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   display: block;
   font-weight: 700;
   border: 1px solid #deedb8;

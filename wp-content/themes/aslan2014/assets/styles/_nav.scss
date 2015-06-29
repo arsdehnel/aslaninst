@@ -22,10 +22,6 @@
 			color: $nav-main-hover-color;
 		}
 		&.active{
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
 			display: block;
 			font-weight: 700;
 			border: 1px solid $nav-main-hover-bg;
