@@ -21,7 +21,7 @@ body {
 }
 
 .site-wrapper {
-  min-width: 86em;
+  max-width: 86em;
   margin: 0 auto;
   border: 1px solid #666;
 }
@@ -290,7 +290,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 40em) {
   .carousel {
     display: block;
   }
@@ -476,6 +476,7 @@ body {
   width: 22.57143em;
   border: 1px solid black;
   box-shadow: .25em .25em 1em #666666;
+  margin: 1em auto;
 }
 @media screen and (min-width: 50em) {
   .features .feature {

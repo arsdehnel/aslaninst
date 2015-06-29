@@ -10,6 +10,7 @@
 		width: ( $papa-bear-site-width / 3.01 ) - 6em;
 		border: 1px solid black;
 		box-shadow: .25em .25em 1em #666666;
+		margin: 1em auto;
 		@media screen and (min-width: 50em){
 			float: left;
 			margin: 1em 3em;
