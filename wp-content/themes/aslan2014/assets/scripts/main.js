@@ -64,6 +64,7 @@ var aslanInstitute = {
 		var newHeight;
 
 		$targetObj.closest('article').children().each(function(){
+			console.log(jQuery(this));
 			newHeight += jQuery(this).outerHeight();
 		});
 		$targetObj.closest('article').animate({
