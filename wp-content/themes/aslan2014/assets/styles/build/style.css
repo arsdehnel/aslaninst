@@ -292,6 +292,11 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
 }
+@media screen and (min-width: 40em) {
+  .nav-main .menu-toggle {
+    display: none;
+  }
+}
 
 .nav-breadcrumbs {
   margin-bottom: 1em;
