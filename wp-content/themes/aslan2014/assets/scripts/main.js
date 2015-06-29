@@ -61,7 +61,7 @@ var aslanInstitute = {
 
 	readMore: function($targetObj) {
 
-		var newHeight;
+		var newHeight = 0;
 
 		$targetObj.closest('article').children().each(function(){
 			console.log(jQuery(this));
