@@ -61,7 +61,14 @@ var aslanInstitute = {
 
 	readMore: function($targetObj) {
 
-		$targetObj.closest('article').css('height','auto');
+		var newHeight;
+
+		$targetObj.closest('article').children().each(function(){
+			newHeight += jQuery(this).outerHeight();
+		});
+		$targetObj.closest('article').animate({
+			'height':newHeight
+		},'slow');
 		$targetObj.parent().fadeOut('slow');
 
 	}
