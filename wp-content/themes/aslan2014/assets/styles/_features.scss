@@ -1,14 +1,19 @@
 .features{
 	height: 27em;
-	padding: 3em 0;
+	padding: 1em 0;
+	@media screen and (min-width: 50em) {
+		padding: 3em 0;
+	}
 	.feature{
 		position: relative;
-		float: left;
 		height: 18em;
 		width: ( $papa-bear-site-width / 3.01 ) - 6em;
-		margin: 1em 3em;
 		border: 1px solid black;
 		box-shadow: .25em .25em 1em #666666;
+		@media screen and (min-width: 50em){
+			float: left;
+			margin: 1em 3em;
+		}
 		h1{
 			margin: 0;
 			line-height: 2em;

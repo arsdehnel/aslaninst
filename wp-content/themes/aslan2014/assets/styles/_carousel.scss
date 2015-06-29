@@ -1,7 +1,11 @@
 .carousel{
+	display: none;
 	height: 15em;
 	width: 100%;
 	overflow: hidden;
+	@media screen and (min-width: 60em){
+		display: block;
+	}
 	.horses{
 		margin: 0;
 		padding: 0;
