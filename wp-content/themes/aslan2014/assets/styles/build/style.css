@@ -850,7 +850,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: orange;
+  background: white;
+  background: -webkit-linear-gradient(legacy-direction(rgba(255, 255, 255, 0)), white);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
 .tribe-bar-date-filter,
