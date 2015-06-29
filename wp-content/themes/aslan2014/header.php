@@ -79,5 +79,6 @@
 		  			<?php
 				endforeach;
 			?>
+            <a href="#" class="menu-toggle"><span>menu</span></a>
 		</nav>
 		<div id="main" class="main">

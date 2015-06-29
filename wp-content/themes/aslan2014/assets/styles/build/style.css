@@ -243,6 +243,9 @@ body {
 .nav-main a.active {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: block;
   font-weight: 700;
   border: 1px solid #deedb8;
