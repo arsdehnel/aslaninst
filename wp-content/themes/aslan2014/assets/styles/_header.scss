@@ -35,10 +35,21 @@
 		}
 	}
 	.vcard{
+	    margin: .5em;
+	    background: #eee;
+	    padding: .5em;
+	    border: 1px solid #ccc;
 		@media screen and (min-width: 40em){
 			position: absolute;
 			top: 1em;
 			right: 1em;
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: 0;
+		}
+		.adr {
+			float: right;
 		}
 		.addr-line{
 			*{
@@ -50,6 +61,11 @@
 		.fax,
 		.email{
 			font-style: normal;
+		}
+		&:after {
+		    content: '';
+		    display: table;
+		    clear: both;
 		}
 	}
 	.connect-options{

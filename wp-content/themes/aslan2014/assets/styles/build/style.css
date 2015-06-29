@@ -100,12 +100,25 @@ body {
     left: 1em;
   }
 }
+.site-header .vcard {
+  margin: .5em;
+  background: #eee;
+  padding: .5em;
+  border: 1px solid #ccc;
+}
 @media screen and (min-width: 40em) {
   .site-header .vcard {
     position: absolute;
     top: 1em;
     right: 1em;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
   }
+}
+.site-header .vcard .adr {
+  float: right;
 }
 .site-header .vcard .addr-line * {
   display: inline-block;
@@ -115,6 +128,11 @@ body {
 .site-header .vcard .fax,
 .site-header .vcard .email {
   font-style: normal;
+}
+.site-header .vcard:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .site-header .connect-options {
   position: absolute;
