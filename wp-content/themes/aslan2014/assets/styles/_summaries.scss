@@ -1,11 +1,14 @@
 .training-summary-wrapper{
 	@include clearfix();
 	article{
+		height: 15em;
 		margin: 1em;
 		background-color: #eeeeee;
 		box-shadow: 2px 2px 8px #888;
 		position: relative;
+		overflow: hidden;
 		@media screen and (min-width: 40em) {
+			height: 25em;
 			float: left;
 		}
 		h3{
@@ -24,7 +27,6 @@
 	}
 	&.primary{
 		article{
-			height: 25em;
 			@media screen and (min-width: 40em) {
 				width: calc( 50% - 2em );
 			}
@@ -43,7 +45,6 @@
 	}
 	&.secondary{
 		article{
-			height: 25em;
 			@media screen and (min-width: 40em) {
 				width: calc( 33% - 2em );
 			}
