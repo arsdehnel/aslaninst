@@ -31,7 +31,7 @@ var aslanInstitute = {
 			})
 			.on('click','.read-more a',function(e){
 				e.preventDefault();
-				aslanInstitute.readMore();
+				aslanInstitute.readMore(jQuery(e.target));
 			});
 
 	},
@@ -59,13 +59,13 @@ var aslanInstitute = {
 
 	},
 
-	readMore: function() {
+	readMore: function($targetObj) {
 
 		var $el, $ps, $up, totalHeight;
 
 		totalHeight = 0;
 
-		$el = jQuery(this);
+		$el = $targetObj;
 		$p  = $el.parent();
 		$up = $p.parent();
 		$ps = $up.find("p:not('.read-more')");
