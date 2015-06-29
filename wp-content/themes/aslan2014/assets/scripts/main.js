@@ -65,7 +65,7 @@ var aslanInstitute = {
 
 		totalHeight = 0;
 
-		$el = $(this);
+		$el = jQuery(this);
 		$p  = $el.parent();
 		$up = $p.parent();
 		$ps = $up.find("p:not('.read-more')");
