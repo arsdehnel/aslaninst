@@ -1,21 +1,21 @@
 .site-header{
 	position: relative;
-	height: 11em;
-	overflow: hidden;
 	background: white;
+	overflow: hidden;
+	@media screen and (min-width: 40em){
+		height: 11em;
+	}
 	h1{
-		margin: .5em;
 		font-family: $title-font;
 		font-weight: 700;
-		// max-width: 50%;
-		// img {
-		// 	max-width: 100%;
-		// }
+		@media screen and (min-width: 40em){
+			margin: .5em;
+		}
+		img {
+			max-width: 100%;
+		}
 	}
 	h2{
-		position: absolute;
-		bottom: .5em;
-		left: 1em;
 		width: 342px;
 		margin: 0;
 		padding-top: .1em;
@@ -27,6 +27,11 @@
 		color: #999;
 		font-size: 15px;
 		text-align: center;
+		@media screen and (min-width: 40em){
+			position: absolute;
+			bottom: .5em;
+			left: 1em;
+		}
 	}
 	.vcard{
 		position: absolute;

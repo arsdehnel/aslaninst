@@ -59,19 +59,27 @@ body {
 
 .site-header {
   position: relative;
-  height: 11em;
-  overflow: hidden;
   background: white;
+  overflow: hidden;
+}
+@media screen and (min-width: 40em) {
+  .site-header {
+    height: 11em;
+  }
 }
 .site-header h1 {
-  margin: .5em;
   font-family: "Open Sans";
   font-weight: 700;
 }
+@media screen and (min-width: 40em) {
+  .site-header h1 {
+    margin: .5em;
+  }
+}
+.site-header h1 img {
+  max-width: 100%;
+}
 .site-header h2 {
-  position: absolute;
-  bottom: .5em;
-  left: 1em;
   width: 342px;
   margin: 0;
   padding-top: .1em;
@@ -83,6 +91,13 @@ body {
   color: #999;
   font-size: 15px;
   text-align: center;
+}
+@media screen and (min-width: 40em) {
+  .site-header h2 {
+    position: absolute;
+    bottom: .5em;
+    left: 1em;
+  }
 }
 .site-header .vcard {
   position: absolute;
