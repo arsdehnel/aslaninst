@@ -785,10 +785,14 @@ body {
   clear: both;
 }
 .training-summary-wrapper article {
-  float: left;
   margin: 1em;
   background-color: #eeeeee;
   box-shadow: 2px 2px 8px #888;
+}
+@media screen and (min-width: 40em) {
+  .training-summary-wrapper article {
+    float: left;
+  }
 }
 .training-summary-wrapper article h3 {
   margin: 0;
@@ -805,9 +809,13 @@ body {
   transition: 0.2s all linear;
 }
 .training-summary-wrapper.primary article {
-  width: -webkit-calc( 50% - 2em );
-  width: calc( 50% - 2em );
   height: 25em;
+}
+@media screen and (min-width: 40em) {
+  .training-summary-wrapper.primary article {
+    width: -webkit-calc( 50% - 2em );
+    width: calc( 50% - 2em );
+  }
 }
 .training-summary-wrapper.primary article h3 a {
   padding: .5em;
@@ -821,9 +829,13 @@ body {
   background-color: #660e09;
 }
 .training-summary-wrapper.secondary article {
-  width: -webkit-calc( 33% - 2em );
-  width: calc( 33% - 2em );
   height: 25em;
+}
+@media screen and (min-width: 40em) {
+  .training-summary-wrapper.secondary article {
+    width: -webkit-calc( 33% - 2em );
+    width: calc( 33% - 2em );
+  }
 }
 .training-summary-wrapper.secondary article h3 a {
   font-size: 1.5em;
