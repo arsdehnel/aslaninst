@@ -70,6 +70,7 @@ body {
 .site-header h1 {
   font-family: "Open Sans";
   font-weight: 700;
+  margin: 0;
 }
 @media screen and (min-width: 40em) {
   .site-header h1 {
@@ -99,10 +100,12 @@ body {
     left: 1em;
   }
 }
-.site-header .vcard {
-  position: absolute;
-  top: 1em;
-  right: 1em;
+@media screen and (min-width: 40em) {
+  .site-header .vcard {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
 }
 .site-header .vcard .addr-line * {
   display: inline-block;
