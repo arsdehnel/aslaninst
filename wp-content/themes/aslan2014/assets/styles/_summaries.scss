@@ -66,5 +66,12 @@
 	    left:  0;
 	    right: 0;
 	    @include linear-gradient( rgba(255, 255, 255, 0), rgba( 255, 255, 255, 100) );
+	    a {
+			text-align: center;
+			background: $gold;
+			background: rgba( $gold, .8 );
+			color: black;
+			padding: .5em;
+	    }
 	}
 }

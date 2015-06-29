@@ -855,6 +855,13 @@ body {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
   background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
+.training-summary-wrapper .read-more a {
+  text-align: center;
+  background: #e0ca9d;
+  background: rgba(224, 202, 157, 0.8);
+  color: black;
+  padding: .5em;
+}
 
 .tribe-bar-date-filter,
 .tribe-bar-search-filter,
