@@ -8,5 +8,9 @@
 	$training_summary_return .= '<p>';
 	$training_summary_return .= $summary->post_excerpt;
 	$training_summary_return .= '</p>';
+	$training_summary_return .= '<p class="read-more">';
+	$training_summary_return .= '<a href="#">read more</a>';
+	$training_summary_return .= '</p>';
+
 	$training_summary_return .= '</article>';
 	return $training_summary_return;
