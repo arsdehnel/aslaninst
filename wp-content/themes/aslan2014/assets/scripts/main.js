@@ -25,6 +25,10 @@ var aslanInstitute = {
 				e.preventDefault();
 				aslanInstitute.modalClose();
 			})
+			.on('click','.menu-toggle',function(e){
+				e.preventDefault();
+				aslanInstitute.menuToggle();
+			});
 
 	},
 
@@ -43,9 +47,15 @@ var aslanInstitute = {
 		jQuery('.modal-window').addClass('hide').children(':not(.modal-close)').remove();
 		jQuery('.modal-overlay').addClass('hide');
 
+	},
+
+	menuToggle: function() {
+
+		jQuery('.nav-main').toggleClass('open');
+
 	}
 
-}
+};
 
 var aslanCarousel = {
 
@@ -140,7 +150,7 @@ aslanCalendar = {
 		}
 	}
 
-}
+};
 
 jQuery(document).ready(function(){
 	aslanInstitute.init();
