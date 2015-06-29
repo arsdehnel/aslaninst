@@ -21,7 +21,7 @@ body {
 }
 
 .site-wrapper {
-  width: 86em;
+  min-width: 86em;
   margin: 0 auto;
   border: 1px solid #666;
 }
@@ -285,9 +285,15 @@ body {
 }
 
 .carousel {
+  display: none;
   height: 15em;
   width: 100%;
   overflow: hidden;
+}
+@media screen and (min-width: 60em) {
+  .carousel {
+    display: block;
+  }
 }
 .carousel .horses {
   margin: 0;
@@ -456,17 +462,26 @@ body {
 }
 
 .features {
-  height: 27em;
-  padding: 3em 0;
+  padding: 1em 0;
+}
+@media screen and (min-width: 50em) {
+  .features {
+    height: 27em;
+    padding: 3em 0;
+  }
 }
 .features .feature {
   position: relative;
-  float: left;
   height: 18em;
   width: 22.57143em;
-  margin: 1em 3em;
   border: 1px solid black;
   box-shadow: .25em .25em 1em #666666;
+}
+@media screen and (min-width: 50em) {
+  .features .feature {
+    float: left;
+    margin: 1em 3em;
+  }
 }
 .features .feature h1 {
   margin: 0;
