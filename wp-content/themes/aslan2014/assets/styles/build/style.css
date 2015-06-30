@@ -674,6 +674,7 @@ body {
 }
 .provider-select-toggle {
   position: relative;
+  left: 100%;
   display: block;
   padding: 5px 10px 5px 40px;
   background: #666;
@@ -689,7 +690,14 @@ body {
 }
 
 .provider-select-wrapper {
+  position: absolute;
+  right: 100%;
   width: 100%;
+  -webkit-transition: all 1s linear;
+          transition: all 1s linear;
+}
+.provider-select-wrapper.in {
+  right: 0;
 }
 .provider-select-wrapper p {
   text-align: center;

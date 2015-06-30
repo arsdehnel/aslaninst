@@ -32,6 +32,10 @@ var aslanInstitute = {
 			.on('click','.read-more a',function(e){
 				e.preventDefault();
 				aslanInstitute.readMore(jQuery(e.target));
+			})
+			.on('click','.provider-select-toggle',function(e){
+				e.preventDefault();
+				aslanInstitute.provideSelectToggle();
 			});
 
 	},
@@ -70,6 +74,12 @@ var aslanInstitute = {
 			'height':newHeight
 		},'slow');
 		$targetObj.parent().fadeOut('slow');
+
+	},
+
+	provideSelectToggle: function() {
+
+		$('.provider-select-wrapper').toggleClass('in');
 
 	}
 

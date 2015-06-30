@@ -11,6 +11,7 @@
 }
 .provider-select-toggle {
     position: relative;
+    left: 100%;
     display: block;
     padding:  5px 10px 5px 40px;
     background: #666;
@@ -25,7 +26,13 @@
 	}
 }
 .provider-select-wrapper{
+	position: absolute;
+	right: 100%;
 	width: 100%;
+	transition: all 1s linear;
+	&.in {
+		right: 0;
+	}
 	p{
 		text-align: center;
 		font-weight: 600;
