@@ -5,6 +5,19 @@
 		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
 	}
 }
+.provider-select-toggle {
+    position: relative;
+    background: #666;
+    color: white;
+    text-decoration: none;
+    padding:  5px 10px 5px 30px;
+	svg {
+	    position: absolute;
+	    left: 3px;
+	    top: 9px;
+	    fill: $gold;
+	}
+}
 .provider-select-wrapper{
 	width: $provider-select-width;
 	margin-right: 1em;

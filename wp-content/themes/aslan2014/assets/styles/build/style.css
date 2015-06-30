@@ -667,6 +667,20 @@ body {
     height: 47em;
   }
 }
+.provider-select-toggle {
+  position: relative;
+  background: #666;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 30px;
+}
+.provider-select-toggle svg {
+  position: absolute;
+  left: 3px;
+  top: 9px;
+  fill: #e0ca9d;
+}
+
 .provider-select-wrapper {
   width: 22em;
   margin-right: 1em;
