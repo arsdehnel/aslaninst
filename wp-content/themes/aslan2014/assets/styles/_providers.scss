@@ -4,6 +4,10 @@
 		float: left;
 		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
 	}
+	.provider-select-wrapper {
+		margin-right: 1em;
+		width: $provider-select-width;
+	}
 }
 .provider-select-toggle {
     position: relative;
@@ -21,8 +25,7 @@
 	}
 }
 .provider-select-wrapper{
-	width: $provider-select-width;
-	margin-right: 1em;
+	width: 100%;
 	p{
 		text-align: center;
 		font-weight: 600;

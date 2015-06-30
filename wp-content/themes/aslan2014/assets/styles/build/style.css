@@ -666,6 +666,11 @@ body {
     float: left;
     height: 47em;
   }
+
+  .provider-select-wrapper {
+    margin-right: 1em;
+    width: 22em;
+  }
 }
 .provider-select-toggle {
   position: relative;
@@ -684,8 +689,7 @@ body {
 }
 
 .provider-select-wrapper {
-  width: 22em;
-  margin-right: 1em;
+  width: 100%;
 }
 .provider-select-wrapper p {
   text-align: center;
