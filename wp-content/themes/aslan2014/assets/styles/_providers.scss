@@ -29,6 +29,8 @@
 	right: 100%;
 	width: 100%;
 	transition: all 1s linear;
+	padding: 0 1em;
+	background: #bbb;
 	&.in {
 		right: 0;
 	}

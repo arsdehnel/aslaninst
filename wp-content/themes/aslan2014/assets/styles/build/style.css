@@ -694,6 +694,8 @@ body {
   width: 100%;
   -webkit-transition: all 1s linear;
           transition: all 1s linear;
+  padding: 0 1em;
+  background: #bbb;
 }
 .provider-select-wrapper.in {
   right: 0;
