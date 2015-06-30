@@ -1,7 +1,9 @@
-.provider-select-wrapper,
-.provider-profile{
-	float: left;
-	height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
+@media screen and (min-width: 40em){
+	.provider-select-wrapper,
+	.provider-profile{
+		float: left;
+		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
+	}
 }
 .provider-select-wrapper{
 	width: $provider-select-width;
@@ -52,7 +54,7 @@
 }
 .provider-profile{
 	position: relative;
-	width: ( $papa-bear-site-width - $provider-select-width - 4em );
+	max-width: ( $papa-bear-site-width - $provider-select-width - 4em );
 	padding: 1em;
 	border: 1px solid black;
 	background: white;

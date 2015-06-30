@@ -1,4 +1,5 @@
 <div class="provider-select-wrapper">
+	<a href="#" class="provider-select-toggle">view provider list</a>
 	<p>Leadership Team</p>
 	<nav class="provider-select leadership">
 		<?php

@@ -17,7 +17,9 @@
 			color: $rust;
 			border-bottom: 1px solid #888;
 			&.active {
+				background: #fff;
 				color: black;
+				font-weight: bold;
 			}
 		}
 	}
