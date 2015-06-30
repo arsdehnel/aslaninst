@@ -7,13 +7,15 @@
 }
 .provider-select-toggle {
     position: relative;
+    display: block;
+    padding:  5px 10px 5px 40px;
     background: #666;
     color: white;
     text-decoration: none;
-    padding:  5px 10px 5px 30px;
+    text-transform: uppercase;
 	svg {
 	    position: absolute;
-	    left: 3px;
+	    left: 8px;
 	    top: 9px;
 	    fill: $gold;
 	}
