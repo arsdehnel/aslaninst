@@ -153,7 +153,7 @@ body {
 .site-header .connect-options li {
   display: inline-block;
   text-align: right;
-  padding: 0;
+  padding: 0 0 0 8px;
   margin: 0;
 }
 .site-header .connect-options li a {
@@ -167,34 +167,28 @@ body {
   background: none;
 }
 .site-header .connect-options li.facebook {
-  background: transparent url("assets/images/icon16-facebook.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-facebook.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li.constant-contact {
-  background: transparent url("assets/images/icon16-constant-contact.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-constant-contact.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li.email {
-  background: transparent url("assets/images/icon16-email.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-email.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li.store {
-  background: transparent url("assets/images/icon16-store.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-store.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li.cart {
-  background: transparent url("assets/images/icon16-cart.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-cart.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li.my-account {
-  background: transparent url("assets/images/icon16-my-account.png") 20px 3px no-repeat;
+  background: transparent url("assets/images/icon16-my-account.png") 10px 3px no-repeat;
 }
 .site-header .connect-options li:before {
-  content: '|';
+  content: '';
   display: inline-block;
   padding: 0 -webkit-calc( 20px + .5em ) 0 0.5em;
   padding: 0 calc( 20px + .5em ) 0 0.5em;
-}
-.site-header .connect-options li:first-child {
-  padding: 0 0 0 8px;
-}
-.site-header .connect-options li:first-child:before {
-  content: '';
 }
 
 .nav-main {
