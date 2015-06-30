@@ -79,7 +79,7 @@ var aslanInstitute = {
 
 	provideSelectToggle: function() {
 
-		$('.provider-select-wrapper').toggleClass('in');
+		jQuery('.provider-select-wrapper').toggleClass('in');
 
 	}
 

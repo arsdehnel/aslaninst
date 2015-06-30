@@ -674,7 +674,6 @@ body {
 }
 .provider-select-toggle {
   position: relative;
-  left: 100%;
   display: block;
   padding: 5px 10px 5px 40px;
   background: #666;
