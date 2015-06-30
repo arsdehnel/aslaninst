@@ -85,7 +85,6 @@ body {
   max-width: 100%;
 }
 .site-header h2 {
-  width: 342px;
   margin: 0;
   padding-top: .1em;
   border-top: 1px solid #999;
@@ -93,8 +92,8 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: lighter;
+  font-size: 12px;
   color: #999;
-  font-size: 15px;
   text-align: center;
 }
 @media screen and (min-width: 40em) {
@@ -102,6 +101,8 @@ body {
     position: absolute;
     bottom: .5em;
     left: 1em;
+    width: 342px;
+    font-size: 15px;
   }
 }
 .site-header .vcard {
@@ -328,39 +329,51 @@ body {
 }
 
 .tabs-wrapper .nav-tabs {
-  text-align: right;
-  padding-right: 4em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
 }
 .tabs-wrapper .nav-tabs a {
-  position: relative;
-  display: inline-block;
-  height: 0;
-  margin: 0 .5em;
-  padding: 0 2em;
-  border-bottom: 2em solid #777777;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  line-height: 2em;
-  font-family: "Open Sans";
-  text-transform: uppercase;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.tabs-wrapper .nav-tabs a.active {
-  font-weight: 700;
-  color: black;
-  border-bottom-color: #bedc72;
-  pointer-events: none;
-}
-.tabs-wrapper .nav-tabs a:hover {
-  border-bottom-color: #9f9f9f;
+@media screen and (min-width: 50em) {
+  .tabs-wrapper .nav-tabs {
+    text-align: right;
+    padding-right: 4em;
+  }
+  .tabs-wrapper .nav-tabs a {
+    position: relative;
+    display: inline-block;
+    height: 0;
+    margin: 0 .5em;
+    padding: 0 2em;
+    border-bottom: 2em solid #777777;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    line-height: 2em;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .tabs-wrapper .nav-tabs a.active {
+    font-weight: 700;
+    color: black;
+    border-bottom-color: #bedc72;
+    pointer-events: none;
+  }
+  .tabs-wrapper .nav-tabs a:hover {
+    border-bottom-color: #9f9f9f;
+  }
 }
 .tabs-wrapper .tabs-content {
   min-height: 20em;
   border: 1px solid black;
   background: white;
-  padding: .5em 1em;
+  padding: .5em 1em .5em 150px;
 }
 .tabs-wrapper .tabs-content .tab-content {
   display: none;
@@ -853,6 +866,7 @@ body {
   color: black;
   padding: .25em .5em;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tribe-bar-date-filter,
