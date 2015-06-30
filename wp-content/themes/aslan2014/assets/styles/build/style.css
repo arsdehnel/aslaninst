@@ -328,15 +328,29 @@ body {
   clear: both;
 }
 
+.tabs-wrapper {
+  position: relative;
+}
 .tabs-wrapper .nav-tabs {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
   width: 150px;
+  background: #eee;
 }
 .tabs-wrapper .nav-tabs a {
+  display: block;
+  background: #ddd;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 2em;
+  padding: 4px;
+  color: #93150d;
+  border-bottom: 1px solid #888;
+}
+.tabs-wrapper .nav-tabs a.active {
+  color: black;
 }
 @media screen and (min-width: 50em) {
   .tabs-wrapper .nav-tabs {
@@ -368,12 +382,15 @@ body {
   .tabs-wrapper .nav-tabs a:hover {
     border-bottom-color: #9f9f9f;
   }
+  .tabs-wrapper .tabs-content {
+    padding-right: 1em;
+  }
 }
 .tabs-wrapper .tabs-content {
   min-height: 20em;
   border: 1px solid black;
   background: white;
-  padding: .5em 1em .5em 150px;
+  padding: .5em 1em .5em 160px;
 }
 .tabs-wrapper .tabs-content .tab-content {
   display: none;

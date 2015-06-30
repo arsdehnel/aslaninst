@@ -1,12 +1,24 @@
 .tabs-wrapper {
+	position: relative;
 	.nav-tabs {
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
 		width: 150px;
+		background: #eee;
 		a {
+			display: block;
+			background: #ddd;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			line-height: 2em;
+			padding: 4px;
+			color: $rust;
+			border-bottom: 1px solid #888;
+			&.active {
+				color: black;
+			}
 		}
 	}
 	@media screen and (min-width: 50em) {
@@ -39,12 +51,15 @@
 				}
 			}
 		}
+		.tabs-content {
+			padding-right: 1em;
+		}
 	}
 	.tabs-content {
 		min-height: 20em;
 		border: 1px solid black;
 		background: white;
-		padding: .5em 1em .5em 150px;
+		padding: .5em 1em .5em 160px;
 		.tab-content{
 			display: none;
 			&.current {
