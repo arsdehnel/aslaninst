@@ -696,6 +696,7 @@ body {
           transition: all 1s linear;
   padding: 0 1em;
   background: #bbb;
+  z-index: 999;
 }
 .provider-select-wrapper.in {
   right: 0;
