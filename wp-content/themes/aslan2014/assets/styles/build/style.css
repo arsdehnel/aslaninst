@@ -701,6 +701,7 @@ body {
     width: 22em;
     height: 47em;
     margin-right: 1em;
+    background: transparent;
   }
 }
 .provider-select-wrapper p {
@@ -726,6 +727,9 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: #93150d;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .provider-select-wrapper .provider-select a:hover:after {
   content: '';
@@ -760,6 +764,8 @@ body {
 .provider-profile {
   position: relative;
   max-width: 60em;
+  width: -webkit-calc( 100% - 24em );
+  width: calc( 100% - 24em );
   padding: 1em;
   border: 1px solid black;
   background: white;

@@ -33,6 +33,7 @@
 		width: $provider-select-width;
 		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
 		margin-right: 1em;
+		background: transparent;
 	}
 	p{
 		text-align: center;
@@ -42,13 +43,13 @@
 	.provider-select{
 		border: 1px solid black;
 		overflow-y: scroll;
+		background: white;
 		&.leadership{
 			height: $provider-select-leadership-height;
 		}
 		&.providers{
 			height: $provider-select-providers-height;
 		}
-		background: white;
 		a{
 			position: relative;
 			display: block;
@@ -56,6 +57,9 @@
 			text-decoration: none;
 			font-weight: 600;
 			color: $rust;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
 			&:hover:after{
 				content: '';
 				position: absolute;
@@ -81,6 +85,7 @@
 .provider-profile{
 	position: relative;
 	max-width: ( $papa-bear-site-width - $provider-select-width - 4em );
+	width: calc( 100% - 24em );
 	padding: 1em;
 	border: 1px solid black;
 	background: white;
