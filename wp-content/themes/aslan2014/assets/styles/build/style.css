@@ -687,6 +687,11 @@ body {
   top: 9px;
   fill: #e0ca9d;
 }
+@media screen and (min-width: 50em) {
+  .provider-select-toggle {
+    display: none;
+  }
+}
 
 .provider-select-wrapper {
   position: absolute;
@@ -700,6 +705,11 @@ body {
 }
 .provider-select-wrapper.in {
   right: 0;
+}
+@media screen and (min-width: 50em) {
+  .provider-select-wrapper {
+    position: static;
+  }
 }
 .provider-select-wrapper p {
   text-align: center;

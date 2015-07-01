@@ -23,6 +23,9 @@
 	    top: 9px;
 	    fill: $gold;
 	}
+	@media screen and (min-width: 50em) {
+		display: none;
+	}
 }
 .provider-select-wrapper{
 	position: absolute;
@@ -34,6 +37,9 @@
 	z-index: 999;
 	&.in {
 		right: 0;
+	}
+	@media screen and (min-width: 50em) {
+		position: static;
 	}
 	p{
 		text-align: center;
