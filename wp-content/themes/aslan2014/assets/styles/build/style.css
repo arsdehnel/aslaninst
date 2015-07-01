@@ -683,7 +683,7 @@ body {
 
 .provider-select-wrapper {
   position: absolute;
-  right: 100%;
+  right: 120%;
   width: 100%;
   -webkit-transition: all 1s linear;
           transition: all 1s linear;
