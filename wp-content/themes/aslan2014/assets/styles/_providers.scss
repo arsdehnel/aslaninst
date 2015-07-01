@@ -85,13 +85,13 @@
 .provider-profile{
 	position: relative;
 	max-width: ( $papa-bear-site-width - $provider-select-width - 4em );
-	width: calc( 100% - 24em );
 	padding: 1em;
 	border: 1px solid black;
 	background: white;
 	@media screen and (min-width: 50em){
 		float: left;
 		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
+		width: calc( 100% - 24em );
 	}
 	.provider-thumb{
 		position: absolute;
@@ -99,7 +99,6 @@
 		left: 1em;
 	}
 	.provider-details{
-		padding-left: calc( 1em + 180px );
 		min-height: 180px;
 		h3{
 			margin: 0;
@@ -120,6 +119,11 @@
 				vertical-align: top;
 				display: inline-block;
 			}
+		}
+	}
+	&.has-thumbnail {
+		.provider-details{
+			padding-left: calc( 1em + 180px );
 		}
 	}
 	.provider-website{

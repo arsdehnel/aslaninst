@@ -1,4 +1,4 @@
-<div class="provider-profile" id="provider-profile">
+<div class="provider-profile <?php echo has_post_thumbnail() ? ' has-thumbnail' : ''; ?>" id="provider-profile">
 	<?php
 		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
   			echo get_the_post_thumbnail( $post->ID, 'thumbnail', array('class' => 'provider-thumb'));

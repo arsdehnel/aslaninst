@@ -764,8 +764,6 @@ body {
 .provider-profile {
   position: relative;
   max-width: 60em;
-  width: -webkit-calc( 100% - 24em );
-  width: calc( 100% - 24em );
   padding: 1em;
   border: 1px solid black;
   background: white;
@@ -774,6 +772,8 @@ body {
   .provider-profile {
     float: left;
     height: 47em;
+    width: -webkit-calc( 100% - 24em );
+    width: calc( 100% - 24em );
   }
 }
 .provider-profile .provider-thumb {
@@ -782,8 +782,6 @@ body {
   left: 1em;
 }
 .provider-profile .provider-details {
-  padding-left: -webkit-calc( 1em + 180px );
-  padding-left: calc( 1em + 180px );
   min-height: 180px;
 }
 .provider-profile .provider-details h3 {
@@ -805,6 +803,10 @@ body {
 .provider-profile .provider-details li span {
   vertical-align: top;
   display: inline-block;
+}
+.provider-profile.has-thumbnail .provider-details {
+  padding-left: -webkit-calc( 1em + 180px );
+  padding-left: calc( 1em + 180px );
 }
 .provider-profile .provider-website {
   position: absolute;
