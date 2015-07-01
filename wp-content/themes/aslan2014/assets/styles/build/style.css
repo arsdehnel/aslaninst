@@ -768,6 +768,14 @@ body {
   border: 1px solid black;
   background: white;
 }
+.provider-profile.provider-welcome-message {
+  display: none;
+}
+@media screen and (min-width: 50em) {
+  .provider-profile.provider-welcome-message {
+    display: block;
+  }
+}
 @media screen and (min-width: 50em) {
   .provider-profile {
     float: left;

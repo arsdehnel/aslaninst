@@ -88,6 +88,12 @@
 	padding: 1em;
 	border: 1px solid black;
 	background: white;
+	&.provider-welcome-message {
+		display: none;
+		@media screen and (min-width: 50em){
+			display: block;
+		}
+	}
 	@media screen and (min-width: 50em){
 		float: left;
 		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
