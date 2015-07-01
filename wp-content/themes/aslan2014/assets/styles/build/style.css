@@ -765,7 +765,7 @@ body {
   background: white;
 }
 @media screen and (min-width: 50em) {
-  .provider-profile .provider-profile {
+  .provider-profile {
     float: left;
     height: 47em;
   }

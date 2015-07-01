@@ -85,10 +85,8 @@
 	border: 1px solid black;
 	background: white;
 	@media screen and (min-width: 50em){
-		.provider-profile{
-			float: left;
-			height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
-		}
+		float: left;
+		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
 	}
 	.provider-thumb{
 		position: absolute;
