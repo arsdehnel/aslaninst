@@ -45,7 +45,7 @@ get_header();
 		</nav><!-- /.provider-select -->
 	</div><!-- /.provider-select-wrapper -->
 	<div class="provider-profile" id="provider-profile">
-		<p><?php the_content(); ?></p>
+		<p class="provider-welcome-message"><?php the_content(); ?></p>
 	</div><!-- /.provider-profile -->
 </section><!-- /.content -->
 <?php endwhile; endif; ?>
