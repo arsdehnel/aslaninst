@@ -1,14 +1,3 @@
-@media screen and (min-width: 40em){
-	.provider-select-wrapper,
-	.provider-profile{
-		float: left;
-		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
-	}
-	.provider-select-wrapper {
-		margin-right: 1em;
-		width: $provider-select-width;
-	}
-}
 .provider-select-toggle {
     position: relative;
     display: block;
@@ -40,6 +29,10 @@
 	}
 	@media screen and (min-width: 50em) {
 		position: static;
+		float: left;
+		width: $provider-select-width;
+		height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
+		margin-right: 1em;
 	}
 	p{
 		text-align: center;
@@ -91,6 +84,12 @@
 	padding: 1em;
 	border: 1px solid black;
 	background: white;
+	@media screen and (min-width: 50em){
+		.provider-profile{
+			float: left;
+			height: ( $provider-select-leadership-height + $provider-select-providers-height + 6em );
+		}
+	}
 	.provider-thumb{
 		position: absolute;
 		top: 1em;

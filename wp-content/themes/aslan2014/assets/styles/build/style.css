@@ -660,18 +660,6 @@ body {
   cursor: not-allowed;
 }
 
-@media screen and (min-width: 40em) {
-  .provider-select-wrapper,
-  .provider-profile {
-    float: left;
-    height: 47em;
-  }
-
-  .provider-select-wrapper {
-    margin-right: 1em;
-    width: 22em;
-  }
-}
 .provider-select-toggle {
   position: relative;
   display: block;
@@ -709,6 +697,10 @@ body {
 @media screen and (min-width: 50em) {
   .provider-select-wrapper {
     position: static;
+    float: left;
+    width: 22em;
+    height: 47em;
+    margin-right: 1em;
   }
 }
 .provider-select-wrapper p {
@@ -771,6 +763,12 @@ body {
   padding: 1em;
   border: 1px solid black;
   background: white;
+}
+@media screen and (min-width: 50em) {
+  .provider-profile .provider-profile {
+    float: left;
+    height: 47em;
+  }
 }
 .provider-profile .provider-thumb {
   position: absolute;
