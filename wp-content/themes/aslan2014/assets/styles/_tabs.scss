@@ -34,8 +34,7 @@
 				display: inline-block;
 				height: 0;
 				margin: 0 .5em;
-				padding: 0 2em;
-				background: transparent;
+				padding: 0 2em;				background: transparent;
 				border-bottom: $tab-height solid $tab-inactive-bg;
 				border-left: 1em solid transparent;
 				border-right: 1em solid transparent;
@@ -59,7 +58,7 @@
 			}
 		}
 		.tabs-content {
-			padding-right: 1em;
+			padding: .5em 1em;
 		}
 	}
 	.tabs-content {
