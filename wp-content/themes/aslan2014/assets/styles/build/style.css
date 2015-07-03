@@ -367,6 +367,7 @@ body {
     height: 0;
     margin: 0 .5em;
     padding: 0 2em;
+    background: transparent;
     border-bottom: 2em solid #777777;
     border-left: 1em solid transparent;
     border-right: 1em solid transparent;
@@ -379,6 +380,7 @@ body {
     overflow: visible;
   }
   .tabs-wrapper .nav-tabs a.active {
+    background: transparent;
     font-weight: 700;
     color: black;
     border-bottom-color: #bedc72;

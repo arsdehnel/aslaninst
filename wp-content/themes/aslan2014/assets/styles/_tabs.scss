@@ -35,6 +35,7 @@
 				height: 0;
 				margin: 0 .5em;
 				padding: 0 2em;
+				background: transparent;
 				border-bottom: $tab-height solid $tab-inactive-bg;
 				border-left: 1em solid transparent;
 				border-right: 1em solid transparent;
@@ -46,6 +47,7 @@
 				text-decoration: none;
 				overflow: visible;
 				&.active {
+					background: transparent;
 					font-weight: 700;
 					color: $tab-active-color;
 					border-bottom-color: $tab-active-bg;
