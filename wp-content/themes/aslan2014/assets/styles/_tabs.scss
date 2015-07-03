@@ -25,6 +25,8 @@
 	}
 	@media screen and (min-width: 50em) {
 		.nav-tabs {
+			position: static;
+			width: auto;
 			text-align: right;
 			padding-right: 4em;
 			a {
@@ -42,6 +44,7 @@
 				color: $tab-inactive-color;
 				font-weight: 400;
 				text-decoration: none;
+				overflow: visible;
 				&.active {
 					font-weight: 700;
 					color: $tab-active-color;

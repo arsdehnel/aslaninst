@@ -356,6 +356,8 @@ body {
 }
 @media screen and (min-width: 50em) {
   .tabs-wrapper .nav-tabs {
+    position: static;
+    width: auto;
     text-align: right;
     padding-right: 4em;
   }
@@ -374,6 +376,7 @@ body {
     color: white;
     font-weight: 400;
     text-decoration: none;
+    overflow: visible;
   }
   .tabs-wrapper .nav-tabs a.active {
     font-weight: 700;
