@@ -390,7 +390,7 @@ body {
     border-bottom-color: #9f9f9f;
   }
   .tabs-wrapper .tabs-content {
-    padding: .5em 1em;
+    padding: .5em 1em !important;
   }
 }
 .tabs-wrapper .tabs-content {
