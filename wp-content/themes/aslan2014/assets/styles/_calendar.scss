@@ -52,4 +52,7 @@
     .tribe-events-calendar .tribe-events-has-events:after {
         content: none;
     }
+    .events-archive.events-gridview #tribe-events-content table .type-tribe_events {
+        padding: 1px;
+    }
 }
