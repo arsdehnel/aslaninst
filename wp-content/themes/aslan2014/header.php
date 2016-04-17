@@ -60,6 +60,7 @@
   				?>
 				<li class="my-account"><a href="/wp-admin">My Account</a></li>
 			</ul>
+			<img src="https://clinic.opencare.com/img/award/badge.png" class="award-logo" />
 		</header>
 		<nav class="nav-main">
 			<?php

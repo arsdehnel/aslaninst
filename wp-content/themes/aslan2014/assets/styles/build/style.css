@@ -105,6 +105,12 @@ body {
     font-size: 15px;
   }
 }
+.site-header .award-logo {
+  position: absolute;
+  top: 1.5em;
+  right: 18em;
+  height: 6em;
+}
 .site-header .vcard {
   margin: .5em;
   background: #eee;
@@ -239,14 +245,14 @@ body {
   }
 }
 .nav-main a:hover {
-  background-color: #deedb8;
+  background-color: #dfeeb9;
   color: black;
 }
 .nav-main a.active {
   display: block;
   font-weight: 700;
-  border: 1px solid #deedb8;
-  background-color: #f5f9e9;
+  border: 1px solid #dfeeb9;
+  background-color: #f5faea;
 }
 @media screen and (min-width: 40em) {
   .nav-main a.active {
@@ -255,7 +261,7 @@ body {
   }
 }
 .nav-main a.active:hover {
-  background-color: #deedb8;
+  background-color: #dfeeb9;
 }
 .nav-main.open a {
   display: block;
@@ -387,7 +393,7 @@ body {
     pointer-events: none;
   }
   .tabs-wrapper .nav-tabs a:hover {
-    border-bottom-color: #9f9f9f;
+    border-bottom-color: #a0a0a0;
   }
   .tabs-wrapper .tabs-content {
     padding: .5em 1em !important;
@@ -907,7 +913,7 @@ body {
   font-weight: 300;
 }
 .training-summary-wrapper.primary article h3 a:hover {
-  background-color: #660e09;
+  background-color: #670f09;
 }
 @media screen and (min-width: 40em) {
   .training-summary-wrapper.secondary article {
@@ -919,11 +925,11 @@ body {
   font-size: 1.5em;
   font-weight: 300;
   padding: .5em;
-  background-color: #c9b58d;
+  background-color: #cab68d;
   text-decoration: none;
 }
 .training-summary-wrapper.secondary article h3 a:hover {
-  background-color: #9c8d6d;
+  background-color: #9d8d6e;
 }
 .training-summary-wrapper .read-more {
   position: absolute;
@@ -1075,7 +1081,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1em;
-  background: #f5efe1;
+  background: #f6efe2;
   border-top: 1px solid black;
   text-align: right;
 }
@@ -1844,7 +1850,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-radius: 0;
 }
 .woocommerce .content .product .single_add_to_cart_button:hover {
-  background: #75100a;
+  background: #76110a;
   color: white;
   text-shadow: none;
 }
@@ -1946,7 +1952,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 6px 12px;
 }
 .register-now-button:hover {
-  background: #75100a;
+  background: #76110a;
   color: white;
   text-shadow: none;
 }
