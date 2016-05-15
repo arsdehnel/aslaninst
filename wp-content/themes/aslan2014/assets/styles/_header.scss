@@ -38,9 +38,21 @@
 	.award-logo {
 	    position: absolute;
 	    top: 1.5em;
-	    right: 18em;
-	    height: 6em;
+	    right: 1.5em;
+	    height: 6em
 	}
+
+	@media screen and (min-width: 40em) {
+	    .award-logo {
+	        right: 15em;
+	    }
+	}
+	@media screen and (min-width: 45em) {
+	    .award-logo {
+	        right: 18em;
+	    }
+	}
+
 	.vcard{
 	    margin: .5em;
 	    background: #eee;
